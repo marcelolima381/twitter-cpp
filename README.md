@@ -1,2 +1,1 @@
-# twitter-cpp
-A Twitter prototype in C++
+# 2018-2-grupo19
