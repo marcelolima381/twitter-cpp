@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mihawk/CLionProjects/classesTwitter
+# Install script for directory: C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,6 +5,8 @@
 #ifndef CLASSESTWITTER_USUARIO_H
 #define CLASSESTWITTER_USUARIO_H
 #include <iostream>
+#include <vector>
+#include "Tweet.h"
 
 class Usuario {
 private:
@@ -13,6 +15,10 @@ private:
     int id, idade;
 
 public:
+
+    Usuario(const std::string &login, const std::string &senha, const std::string &perfil, const std::string &nome,
+            const std::string &cidade, int id, int idade);
+
     const std::string &getLogin() const;
 
     void setLogin(const std::string &login);
@@ -41,9 +47,7 @@ public:
 
     void setIdade(int idade);
 
-    Usuario(const std::string &login, const std::string &senha, const std::string &perfil, const std::string &nome,
-            const std::string &cidade, int id, int idade);
-
+    std::vector<Tweet> MeusTweets();
 };
 
 

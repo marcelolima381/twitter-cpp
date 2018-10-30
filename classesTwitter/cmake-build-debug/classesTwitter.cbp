@@ -4,103 +4,114 @@
 	<Project>
 		<Option title="classesTwitter"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="classesTwitter">
-				<Option output="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug"/>
+				<Option output="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Sybase\OCS-15_0\include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 classesTwitter"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 classesTwitter"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="classesTwitter/fast">
-				<Option output="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug"/>
+				<Option output="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Sybase\OCS-15_0\include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 classesTwitter/fast"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 classesTwitter/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mihawk/CLionProjects/classesTwitter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Feed.cpp">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Feed.cpp">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Feed.h">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Feed.h">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Mencao.cpp">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Main.cpp">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Mencao.h">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Mencao.cpp">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Usuario.cpp">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Mencao.h">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/Usuario.h">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Tweet.cpp">
 			<Option target="classesTwitter"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihawk/CLionProjects/classesTwitter/CMakeLists.txt">
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Tweet.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Usuario.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Usuario.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -2,12 +2,16 @@
 // Created by Mihawk on 09/10/2018.
 //
 
+#include <vector>
+#include <string>
 #include "Usuario.h"
 
 
 Usuario::Usuario(const std::string &login, const std::string &senha, const std::string &perfil, const std::string &nome,
                  const std::string &cidade, int id, int idade) : login(login), senha(senha), perfil(perfil), nome(nome),
-                                                                 cidade(cidade), id(id), idade(idade) {}
+                                                                 cidade(cidade), id(id), idade(idade) {
+
+}
 
 const std::string &Usuario::getLogin() const {
     return login;
@@ -63,4 +67,9 @@ int Usuario::getIdade() const {
 
 void Usuario::setIdade(int idade) {
     Usuario::idade = idade;
+}
+
+std::vector<Tweet> Usuario::MeusTweets()
+{
+    return Tweet::listarTweetsPorUsuario(1);
 }
