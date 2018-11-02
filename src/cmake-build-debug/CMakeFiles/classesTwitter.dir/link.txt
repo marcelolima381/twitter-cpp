@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/classesTwitter.dir/Feed.cpp.o CMakeFiles/classesTwitter.dir/Usuario.cpp.o CMakeFiles/classesTwitter.dir/Mencao.cpp.o CMakeFiles/classesTwitter.dir/main.cpp.o CMakeFiles/classesTwitter.dir/Tweet.cpp.o CMakeFiles/classesTwitter.dir/home/marcelo/Projects/2018-2-grupo19/teste.cpp.o  -o classesTwitter 

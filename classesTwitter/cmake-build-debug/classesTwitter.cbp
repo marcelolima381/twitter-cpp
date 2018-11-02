@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="classesTwitter"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="classesTwitter">
+				<Option output="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Sybase\OCS-15_0\include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 classesTwitter"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="classesTwitter/fast">
+				<Option output="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug/classesTwitter.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Sybase\OCS-15_0\include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 classesTwitter/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pedro\CLionProjects\2018-2-grupo19\classesTwitter\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Feed.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Feed.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Main.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Mencao.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Mencao.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Tweet.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Tweet.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Usuario.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/Usuario.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="C:/Users/pedro/CLionProjects/2018-2-grupo19/classesTwitter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
