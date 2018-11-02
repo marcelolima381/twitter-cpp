@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="classesTwitter"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="classesTwitter">
+				<Option output="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/classesTwitter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 classesTwitter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="classesTwitter/fast">
+				<Option output="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/classesTwitter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 classesTwitter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/2018-2-grupo19/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Feed.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Feed.hpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Mencao.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Mencao.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Tweet.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Tweet.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Usuario.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/Usuario.h">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/main.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/teste.cpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/teste.hpp">
+			<Option target="classesTwitter"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/2018-2-grupo19/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
