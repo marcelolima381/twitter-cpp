@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Interface/Login.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Login *login = new Login();
+    login->exibir();
     return 0;
 }

@@ -123,6 +123,141 @@ depend:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/build
 .PHONY : 2018_2_grupo19/fast
 
+Interface/AbstractInterface.o: Interface/AbstractInterface.cpp.o
+
+.PHONY : Interface/AbstractInterface.o
+
+# target to build an object file
+Interface/AbstractInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o
+.PHONY : Interface/AbstractInterface.cpp.o
+
+Interface/AbstractInterface.i: Interface/AbstractInterface.cpp.i
+
+.PHONY : Interface/AbstractInterface.i
+
+# target to preprocess a source file
+Interface/AbstractInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.i
+.PHONY : Interface/AbstractInterface.cpp.i
+
+Interface/AbstractInterface.s: Interface/AbstractInterface.cpp.s
+
+.PHONY : Interface/AbstractInterface.s
+
+# target to generate assembly for a file
+Interface/AbstractInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.s
+.PHONY : Interface/AbstractInterface.cpp.s
+
+Interface/Feed.o: Interface/Feed.cpp.o
+
+.PHONY : Interface/Feed.o
+
+# target to build an object file
+Interface/Feed.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o
+.PHONY : Interface/Feed.cpp.o
+
+Interface/Feed.i: Interface/Feed.cpp.i
+
+.PHONY : Interface/Feed.i
+
+# target to preprocess a source file
+Interface/Feed.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.i
+.PHONY : Interface/Feed.cpp.i
+
+Interface/Feed.s: Interface/Feed.cpp.s
+
+.PHONY : Interface/Feed.s
+
+# target to generate assembly for a file
+Interface/Feed.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s
+.PHONY : Interface/Feed.cpp.s
+
+Interface/Login.o: Interface/Login.cpp.o
+
+.PHONY : Interface/Login.o
+
+# target to build an object file
+Interface/Login.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o
+.PHONY : Interface/Login.cpp.o
+
+Interface/Login.i: Interface/Login.cpp.i
+
+.PHONY : Interface/Login.i
+
+# target to preprocess a source file
+Interface/Login.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.i
+.PHONY : Interface/Login.cpp.i
+
+Interface/Login.s: Interface/Login.cpp.s
+
+.PHONY : Interface/Login.s
+
+# target to generate assembly for a file
+Interface/Login.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.s
+.PHONY : Interface/Login.cpp.s
+
+Sessao/Session.o: Sessao/Session.cpp.o
+
+.PHONY : Sessao/Session.o
+
+# target to build an object file
+Sessao/Session.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o
+.PHONY : Sessao/Session.cpp.o
+
+Sessao/Session.i: Sessao/Session.cpp.i
+
+.PHONY : Sessao/Session.i
+
+# target to preprocess a source file
+Sessao/Session.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.i
+.PHONY : Sessao/Session.cpp.i
+
+Sessao/Session.s: Sessao/Session.cpp.s
+
+.PHONY : Sessao/Session.s
+
+# target to generate assembly for a file
+Sessao/Session.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.s
+.PHONY : Sessao/Session.cpp.s
+
+TAD/AbstractConnection.o: TAD/AbstractConnection.cpp.o
+
+.PHONY : TAD/AbstractConnection.o
+
+# target to build an object file
+TAD/AbstractConnection.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o
+.PHONY : TAD/AbstractConnection.cpp.o
+
+TAD/AbstractConnection.i: TAD/AbstractConnection.cpp.i
+
+.PHONY : TAD/AbstractConnection.i
+
+# target to preprocess a source file
+TAD/AbstractConnection.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.i
+.PHONY : TAD/AbstractConnection.cpp.i
+
+TAD/AbstractConnection.s: TAD/AbstractConnection.cpp.s
+
+.PHONY : TAD/AbstractConnection.s
+
+# target to generate assembly for a file
+TAD/AbstractConnection.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.s
+.PHONY : TAD/AbstractConnection.cpp.s
+
 TAD/Comments.o: TAD/Comments.cpp.o
 
 .PHONY : TAD/Comments.o
@@ -375,6 +510,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 2018_2_grupo19"
+	@echo "... Interface/AbstractInterface.o"
+	@echo "... Interface/AbstractInterface.i"
+	@echo "... Interface/AbstractInterface.s"
+	@echo "... Interface/Feed.o"
+	@echo "... Interface/Feed.i"
+	@echo "... Interface/Feed.s"
+	@echo "... Interface/Login.o"
+	@echo "... Interface/Login.i"
+	@echo "... Interface/Login.s"
+	@echo "... Sessao/Session.o"
+	@echo "... Sessao/Session.i"
+	@echo "... Sessao/Session.s"
+	@echo "... TAD/AbstractConnection.o"
+	@echo "... TAD/AbstractConnection.i"
+	@echo "... TAD/AbstractConnection.s"
 	@echo "... TAD/Comments.o"
 	@echo "... TAD/Comments.i"
 	@echo "... TAD/Comments.s"

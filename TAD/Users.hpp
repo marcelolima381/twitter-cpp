@@ -6,11 +6,12 @@
 #define INC_2018_2_GRUPO19_USERS_HPP
 
 #include <iostream>
+#include "AbstractConnection.hpp"
 
-class Users {
+class Users : public AbstractConnection {
 private:
     int id;
-    std::string acount;
+    std::string account;
     std::string password;
     std::string profile;
     std::string name;
@@ -22,9 +23,9 @@ public:
 
     void setId(int id);
 
-    const std::string &getAcount() const;
+    const std::string &getAccount() const;
 
-    void setAcount(const std::string &acount);
+    void setAccount(const std::string &account);
 
     const std::string &getPassword() const;
 
@@ -45,6 +46,10 @@ public:
     const std::string &getCity() const;
 
     void setCity(const std::string &city);
+
+    bool validarLogin(std::string conta, std::string senha);
+
+    string criarConta(string basicString, string string1, string string2, string string3, string string4, int i);
 };
 
 #endif //INC_2018_2_GRUPO19_USERS_HPP

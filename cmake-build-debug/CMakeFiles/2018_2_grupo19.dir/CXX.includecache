@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/2018-2-grupo19/main.cpp
+/home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
 iostream
 -
+
+/home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp
+Feed.hpp
+/home/marcelo/Projects/2018-2-grupo19/Interface/Feed.hpp
+
+/home/marcelo/Projects/2018-2-grupo19/Interface/Feed.hpp
+AbstractInterface.hpp
+/home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
 

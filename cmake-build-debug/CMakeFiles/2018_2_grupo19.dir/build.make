@@ -174,6 +174,71 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/TAD/Usertags.cpp -o CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s
 
+CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o: CMakeFiles/2018_2_grupo19.dir/flags.make
+CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o: ../Interface/AbstractInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o -c /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.cpp
+
+CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.cpp > CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.i
+
+CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.cpp -o CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.s
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: CMakeFiles/2018_2_grupo19.dir/flags.make
+CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Login.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o -c /home/marcelo/Projects/2018-2-grupo19/Interface/Login.cpp
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/Projects/2018-2-grupo19/Interface/Login.cpp > CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.i
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/Interface/Login.cpp -o CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.s
+
+CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o: CMakeFiles/2018_2_grupo19.dir/flags.make
+CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o: ../TAD/AbstractConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o -c /home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.cpp
+
+CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.cpp > CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.i
+
+CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.cpp -o CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.s
+
+CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: CMakeFiles/2018_2_grupo19.dir/flags.make
+CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../Sessao/Session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o -c /home/marcelo/Projects/2018-2-grupo19/Sessao/Session.cpp
+
+CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/Projects/2018-2-grupo19/Sessao/Session.cpp > CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.i
+
+CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/Sessao/Session.cpp -o CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.s
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: CMakeFiles/2018_2_grupo19.dir/flags.make
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Feed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o -c /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp > CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.i
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp -o CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s
+
 # Object files for target 2018_2_grupo19
 2018_2_grupo19_OBJECTS = \
 "CMakeFiles/2018_2_grupo19.dir/main.cpp.o" \
@@ -184,7 +249,12 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s: cmake_force
 "CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o" \
 "CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o" \
 "CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o" \
-"CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o"
+"CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o" \
+"CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o" \
+"CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o" \
+"CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o" \
+"CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o" \
+"CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
 
 # External object files for target 2018_2_grupo19
 2018_2_grupo19_EXTERNAL_OBJECTS =
@@ -198,9 +268,14 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s: cmake_force
 2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o
 2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o
 2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o
+2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o
+2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o
+2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o
+2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o
+2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o
 2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/build.make
 2018_2_grupo19: CMakeFiles/2018_2_grupo19.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable 2018_2_grupo19"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable 2018_2_grupo19"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/2018_2_grupo19.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
