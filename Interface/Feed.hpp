@@ -6,15 +6,20 @@
 #define INC_2018_2_GRUPO19_FEED_HPP
 
 #include "AbstractInterface.hpp"
+#include "../TAD/Tweet.hpp"
 
 class Feed : public AbstractInterface {
 public:
     Feed();
 
     void exibir() override;
-private:
 
-    void processarEntrada(int opcao) override;
+ private:
+  	std::vector<Tweet> tweets;
+	unsigned long index;
+
+	void processarEntrada(int opcao) override;
+	void exibirTweet(Tweet tweet);
 };
 
 

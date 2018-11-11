@@ -6,13 +6,18 @@
 #define INC_2018_2_GRUPO19_TWEET_HPP
 
 #include <iostream>
+#include <vector>
+#include "AbstractConnection.hpp"
+#include "Users.hpp"
+#include "Comments.hpp"
 
-class Tweet {
+class Tweet : public AbstractConnection {
 private:
     int id;
+    std::vector<Comments> comments;
     std::string details;
     std::string description;
-    int user_id;
+    Users *user;
 
 public:
     int getId() const;
@@ -27,10 +32,19 @@ public:
 
     void setDescription(const std::string &description);
 
-    int getUser_id() const;
+	Users * getUser() const;
 
-    void setUser_id(int user_id);
+	void setUser(Users *user);
 
+	const vector<Comments> &getComments() const;
+
+	void setComments(const vector<Comments> &comments);
+
+	std::vector<Tweet> carregarTweets(int user_id);
+
+    void avancarTweet(int index);
+
+    void retrocederTweet(int index);
 };
 
 

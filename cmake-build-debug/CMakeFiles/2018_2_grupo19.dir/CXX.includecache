@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.cpp
-AbstractInterface.hpp
-/home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
-
 /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
 iostream
 -
@@ -17,10 +13,20 @@ iostream
 /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp
 Feed.hpp
 /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.hpp
+../TAD/Users.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/Users.hpp
+../Sessao/Session.hpp
+/home/marcelo/Projects/2018-2-grupo19/Sessao/Session.hpp
+../TAD/Tweet.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/Tweet.hpp
+vector
+-
 
 /home/marcelo/Projects/2018-2-grupo19/Interface/Feed.hpp
 AbstractInterface.hpp
 /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/marcelo/Projects/2018-2-grupo19/Interface/Login.cpp
 iostream
@@ -38,19 +44,9 @@ Feed.hpp
 AbstractInterface.hpp
 /home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.hpp
 
-/home/marcelo/Projects/2018-2-grupo19/Sessao/Session.cpp
-utility
--
-Session.hpp
-/home/marcelo/Projects/2018-2-grupo19/Sessao/Session.hpp
-
 /home/marcelo/Projects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Users.hpp
 /home/marcelo/Projects/2018-2-grupo19/TAD/Users.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.cpp
-AbstractConnection.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.hpp
 
 /home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.hpp
 stdlib.h
@@ -71,34 +67,18 @@ cppconn/statement.h
 /home/marcelo/Projects/2018-2-grupo19/TAD/Comments.cpp
 Comments.hpp
 /home/marcelo/Projects/2018-2-grupo19/TAD/Comments.hpp
+vector
+-
 
 /home/marcelo/Projects/2018-2-grupo19/TAD/Comments.hpp
 iostream
 -
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Comments_likes.cpp
-Comments_likes.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/Comments_likes.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Comments_likes.hpp
-iostream
+vector
 -
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Followee.cpp
-Followee.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/Followee.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Followee.hpp
-iostream
--
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Hashtags.cpp
-Hashtags.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/Hashtags.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Hashtags.hpp
-iostream
--
+AbstractConnection.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.hpp
+Users.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/Users.hpp
 
 /home/marcelo/Projects/2018-2-grupo19/TAD/Tweet.cpp
 Tweet.hpp
@@ -107,36 +87,18 @@ Tweet.hpp
 /home/marcelo/Projects/2018-2-grupo19/TAD/Tweet.hpp
 iostream
 -
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Tweets_likes.cpp
-Tweets_likes.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/Tweets_likes.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Tweets_likes.hpp
-iostream
+vector
 -
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Users.cpp
+AbstractConnection.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
 /home/marcelo/Projects/2018-2-grupo19/TAD/Users.hpp
+Comments.hpp
+/home/marcelo/Projects/2018-2-grupo19/TAD/Comments.hpp
 
 /home/marcelo/Projects/2018-2-grupo19/TAD/Users.hpp
 iostream
 -
 AbstractConnection.hpp
 /home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Usertags.cpp
-Usertags.hpp
-/home/marcelo/Projects/2018-2-grupo19/TAD/Usertags.hpp
-
-/home/marcelo/Projects/2018-2-grupo19/TAD/Usertags.hpp
-iostream
--
-
-/home/marcelo/Projects/2018-2-grupo19/main.cpp
-iostream
--
-Interface/Login.hpp
-/home/marcelo/Projects/2018-2-grupo19/Interface/Login.hpp
 

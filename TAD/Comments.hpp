@@ -6,12 +6,16 @@
 #define INC_2018_2_GRUPO19_COMMENTS_HPP
 
 #include <iostream>
+#include <vector>
+#include "AbstractConnection.hpp"
+#include "Users.hpp"
 
-class Comments {
+class Comments : public AbstractConnection {
 private:
     int id;
     std::string description;
     int tweets_id;
+  	Users *user;
 
 public:
     int getId() const;
@@ -26,6 +30,10 @@ public:
 
     void setTweets_id(int tweets_id);
 
+  Users *getUser() const;
+  void setUser(Users *user);
+
+  vector<Comments> carregarComments(int i);
 };
 
 
