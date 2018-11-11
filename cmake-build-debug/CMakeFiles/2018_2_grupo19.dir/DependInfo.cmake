@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/marcelo/Projects/2018-2-grupo19/Interface/AbstractInterface.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/Interface/Feed.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/Interface/Login.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/Sessao/Session.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/AbstractConnection.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Comments.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Comments_likes.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Followee.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Hashtags.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Tweet.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Tweets_likes.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Users.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/TAD/Usertags.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o"
-  "/home/marcelo/Projects/2018-2-grupo19/main.cpp" "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/main.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Followee.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Hashtags.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/TAD/Usertags.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/main.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
