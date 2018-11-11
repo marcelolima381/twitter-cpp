@@ -8,7 +8,7 @@ void AbstractConnection::abrirConexao() {
 //        Criando conexão
     driver = get_driver_instance();
 //        Dados do banco MySQL
-    con = driver->connect("tcp://127.0.0.1:3306", "marcelo", "fsohexbpf123");
+    con = driver->connect("tcp://91.121.180.213:3305", "myuser", "mypass");
 //        Escolhendo o database
     con->setSchema("twittercpp");
 }
