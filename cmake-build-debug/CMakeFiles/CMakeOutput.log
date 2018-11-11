@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,32 +23,32 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_d330f/fast"
 /usr/bin/make -f CMakeFiles/cmTC_d330f.dir/build.make CMakeFiles/cmTC_d330f.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_d330f.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_d330f.dir/testCCompiler.c.o   -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+/usr/bin/cc    -o CMakeFiles/cmTC_d330f.dir/testCCompiler.c.o   -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
 Linking C executable cmTC_d330f
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d330f.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d330f.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_d330f.dir/testCCompiler.c.o  -o cmTC_d330f 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_809ab/fast"
 /usr/bin/make -f CMakeFiles/cmTC_809ab.dir/build.make CMakeFiles/cmTC_809ab.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o   -c /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+/usr/bin/cc    -o CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o   -c /home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c
 Linking C executable cmTC_809ab
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809ab.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809ab.dir/link.txt --verbose=1
 /usr/bin/cc     -v CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o  -o cmTC_809ab 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
@@ -64,20 +64,20 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/..
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_809ab' '-mtune=generic' '-march=x86-64'
  /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6FAuN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_809ab /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_809ab' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command:"/usr/bin/make" "cmTC_809ab/fast"]
   ignore line: [/usr/bin/make -f CMakeFiles/cmTC_809ab.dir/build.make CMakeFiles/cmTC_809ab.dir/build]
-  ignore line: [make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp']
   ignore line: [Building C object CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o   -c /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o   -c /home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
   ignore line: [Linking C executable cmTC_809ab]
-  ignore line: [/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809ab.dir/link.txt --verbose=1]
+  ignore line: [/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809ab.dir/link.txt --verbose=1]
   ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_809ab.dir/CMakeCCompilerABI.c.o  -o cmTC_809ab ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
@@ -157,17 +157,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_9e29e/fast"
 /usr/bin/make -f CMakeFiles/cmTC_9e29e.dir/build.make CMakeFiles/cmTC_9e29e.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_9e29e.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_9e29e.dir/feature_tests.c.o   -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_9e29e.dir/feature_tests.c.o   -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
 Linking C executable cmTC_9e29e
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e29e.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e29e.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_9e29e.dir/feature_tests.c.o  -o cmTC_9e29e 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,17 +177,17 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_8a17c/fast"
 /usr/bin/make -f CMakeFiles/cmTC_8a17c.dir/build.make CMakeFiles/cmTC_8a17c.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_8a17c.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_8a17c.dir/feature_tests.c.o   -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_8a17c.dir/feature_tests.c.o   -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
 Linking C executable cmTC_8a17c
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a17c.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a17c.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_8a17c.dir/feature_tests.c.o  -o cmTC_8a17c 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,17 +197,17 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_4e2da/fast"
 /usr/bin/make -f CMakeFiles/cmTC_4e2da.dir/build.make CMakeFiles/cmTC_4e2da.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_4e2da.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_4e2da.dir/feature_tests.c.o   -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_4e2da.dir/feature_tests.c.o   -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.c
 Linking C executable cmTC_4e2da
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e2da.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e2da.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_4e2da.dir/feature_tests.c.o  -o cmTC_4e2da 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -215,29 +215,29 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_a20c2/fast"
 /usr/bin/make -f CMakeFiles/cmTC_a20c2.dir/build.make CMakeFiles/cmTC_a20c2.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_a20c2.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_a20c2.dir/testCXXCompiler.cxx.o -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+/usr/bin/c++     -o CMakeFiles/cmTC_a20c2.dir/testCXXCompiler.cxx.o -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
 Linking CXX executable cmTC_a20c2
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20c2.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20c2.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_a20c2.dir/testCXXCompiler.cxx.o  -o cmTC_a20c2 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_58c7e/fast"
 /usr/bin/make -f CMakeFiles/cmTC_58c7e.dir/build.make CMakeFiles/cmTC_58c7e.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o -c /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+/usr/bin/c++     -o CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o -c /home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
 Linking CXX executable cmTC_58c7e
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c7e.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c7e.dir/link.txt --verbose=1
 /usr/bin/c++      -v CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_58c7e 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
@@ -253,20 +253,20 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/..
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58c7e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
  /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKhcKis.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58c7e /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58c7e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command:"/usr/bin/make" "cmTC_58c7e/fast"]
   ignore line: [/usr/bin/make -f CMakeFiles/cmTC_58c7e.dir/build.make CMakeFiles/cmTC_58c7e.dir/build]
-  ignore line: [make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp']
   ignore line: [Building CXX object CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o -c /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o -c /home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Linking CXX executable cmTC_58c7e]
-  ignore line: [/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c7e.dir/link.txt --verbose=1]
+  ignore line: [/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c7e.dir/link.txt --verbose=1]
   ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_58c7e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_58c7e ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
@@ -342,17 +342,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_dd84c/fast"
 /usr/bin/make -f CMakeFiles/cmTC_dd84c.dir/build.make CMakeFiles/cmTC_dd84c.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_dd84c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_dd84c.dir/feature_tests.cxx.o -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_dd84c.dir/feature_tests.cxx.o -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
 Linking CXX executable cmTC_dd84c
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd84c.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd84c.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_dd84c.dir/feature_tests.cxx.o  -o cmTC_dd84c 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -415,17 +415,17 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_1deea/fast"
 /usr/bin/make -f CMakeFiles/cmTC_1deea.dir/build.make CMakeFiles/cmTC_1deea.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_1deea.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_1deea.dir/feature_tests.cxx.o -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_1deea.dir/feature_tests.cxx.o -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
 Linking CXX executable cmTC_1deea
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1deea.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1deea.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_1deea.dir/feature_tests.cxx.o  -o cmTC_1deea 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -488,17 +488,17 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_7f0bc/fast"
 /usr/bin/make -f CMakeFiles/cmTC_7f0bc.dir/build.make CMakeFiles/cmTC_7f0bc.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_7f0bc.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_7f0bc.dir/feature_tests.cxx.o -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_7f0bc.dir/feature_tests.cxx.o -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
 Linking CXX executable cmTC_7f0bc
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f0bc.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f0bc.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_7f0bc.dir/feature_tests.cxx.o  -o cmTC_7f0bc 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -561,17 +561,17 @@ make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_f70a6/fast"
 /usr/bin/make -f CMakeFiles/cmTC_f70a6.dir/build.make CMakeFiles/cmTC_f70a6.dir/build
-make[1]: Entering directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Entering directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_f70a6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_f70a6.dir/feature_tests.cxx.o -c /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_f70a6.dir/feature_tests.cxx.o -c /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/feature_tests.cxx
 Linking CXX executable cmTC_f70a6
-/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f70a6.dir/link.txt --verbose=1
+/home/marcelo/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f70a6.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_f70a6.dir/feature_tests.cxx.o  -o cmTC_f70a6 
-make[1]: Leaving directory '/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

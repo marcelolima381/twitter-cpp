@@ -1,3 +1,3 @@
-/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir
+/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir
