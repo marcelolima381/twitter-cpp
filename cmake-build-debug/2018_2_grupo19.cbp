@@ -96,6 +96,12 @@
 		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp">
+			<Option target="2018_2_grupo19"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp">
+			<Option target="2018_2_grupo19"/>
+		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>

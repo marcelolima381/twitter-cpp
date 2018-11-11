@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o"
   "/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
+  "/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o"
   "/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o"
   "/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o"
   "/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp" "/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o"

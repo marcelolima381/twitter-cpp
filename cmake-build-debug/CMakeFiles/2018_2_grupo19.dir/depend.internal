@@ -8,6 +8,14 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o
+ /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp
+ /home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp

@@ -177,6 +177,33 @@ Interface/Feed.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s
 .PHONY : Interface/Feed.cpp.s
 
+Interface/ListComments.o: Interface/ListComments.cpp.o
+
+.PHONY : Interface/ListComments.o
+
+# target to build an object file
+Interface/ListComments.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o
+.PHONY : Interface/ListComments.cpp.o
+
+Interface/ListComments.i: Interface/ListComments.cpp.i
+
+.PHONY : Interface/ListComments.i
+
+# target to preprocess a source file
+Interface/ListComments.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.i
+.PHONY : Interface/ListComments.cpp.i
+
+Interface/ListComments.s: Interface/ListComments.cpp.s
+
+.PHONY : Interface/ListComments.s
+
+# target to generate assembly for a file
+Interface/ListComments.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.s
+.PHONY : Interface/ListComments.cpp.s
+
 Interface/Login.o: Interface/Login.cpp.o
 
 .PHONY : Interface/Login.o
@@ -516,6 +543,9 @@ help:
 	@echo "... Interface/Feed.o"
 	@echo "... Interface/Feed.i"
 	@echo "... Interface/Feed.s"
+	@echo "... Interface/ListComments.o"
+	@echo "... Interface/ListComments.i"
+	@echo "... Interface/ListComments.s"
 	@echo "... Interface/Login.o"
 	@echo "... Interface/Login.i"
 	@echo "... Interface/Login.s"
