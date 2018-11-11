@@ -13,6 +13,14 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/Tweet.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/Users.hpp
 
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/AbstractInterface.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/Feed.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/ListComments.cpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/ListComments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Sessao/Session.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/Users.hpp
+
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/AbstractInterface.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Feed.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Login.cpp

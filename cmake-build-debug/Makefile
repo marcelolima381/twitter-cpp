@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/Projects/2018-2-grupo19
+CMAKE_SOURCE_DIR = /home/pedro/CLionProjects/2018-2-grupo19
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/Projects/2018-2-grupo19/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ Interface/Feed.s: Interface/Feed.cpp.s
 Interface/Feed.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.s
 .PHONY : Interface/Feed.cpp.s
+
+Interface/ListComments.o: Interface/ListComments.cpp.o
+
+.PHONY : Interface/ListComments.o
+
+# target to build an object file
+Interface/ListComments.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o
+.PHONY : Interface/ListComments.cpp.o
+
+Interface/ListComments.i: Interface/ListComments.cpp.i
+
+.PHONY : Interface/ListComments.i
+
+# target to preprocess a source file
+Interface/ListComments.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.i
+.PHONY : Interface/ListComments.cpp.i
+
+Interface/ListComments.s: Interface/ListComments.cpp.s
+
+.PHONY : Interface/ListComments.s
+
+# target to generate assembly for a file
+Interface/ListComments.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.s
+.PHONY : Interface/ListComments.cpp.s
 
 Interface/Login.o: Interface/Login.cpp.o
 
@@ -516,6 +543,9 @@ help:
 	@echo "... Interface/Feed.o"
 	@echo "... Interface/Feed.i"
 	@echo "... Interface/Feed.s"
+	@echo "... Interface/ListComments.o"
+	@echo "... Interface/ListComments.i"
+	@echo "... Interface/ListComments.s"
 	@echo "... Interface/Login.o"
 	@echo "... Interface/Login.i"
 	@echo "... Interface/Login.s"
