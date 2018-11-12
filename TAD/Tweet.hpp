@@ -40,7 +40,7 @@ public:
 
 	void setComments(const vector<Comments> &comments);
 
-	std::vector<Tweet> carregarTweets(int user_id);
+	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
 
     void avancarTweet(int index);
 

@@ -19,6 +19,8 @@ CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/ListCom
 CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Interface/ListComments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../Sessao/Session.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/Comments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/Tweet.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/Users.hpp
 
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/AbstractInterface.hpp

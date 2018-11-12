@@ -18,7 +18,7 @@ Feed::Feed() : AbstractInterface("Feed") {}
 void Feed::exibir() {
     int opcao;
     Tweet *tweet = new Tweet();
-    tweets = tweet->carregarTweets(Session::getUsuarioLogado()->getId());
+    tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
     index = 0;
     exibirTweet(tweets.at(index));
     do {
