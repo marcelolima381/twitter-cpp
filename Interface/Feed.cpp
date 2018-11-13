@@ -11,6 +11,7 @@
 #define AVANCAR 1
 #define RETROCEDER 2
 #define PERFIL 3
+#define COMENTARIOS 4
 #define SAIR 0
 
 Feed::Feed() : AbstractInterface("Feed") {}
@@ -23,7 +24,7 @@ void Feed::exibir() {
     exibirTweet(tweets.at(index));
     do {
         std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2- Retroceder" << std::endl
-                  << "3 - Meu Perfil" << std::endl << "0 - Sair" << std::endl;
+                  << "3 - Meu Perfil" << std::endl << "4 - Ver Comentários" << std::endl << "0 - Sair" << std::endl;
         std::cin >> opcao;
         this->processarEntrada(opcao);
         system("clear");
@@ -45,6 +46,10 @@ void Feed::processarEntrada(int opcao) {
 //            entrarPerfil();
             break;
 
+        case COMENTARIOS:
+            entrarComentarios();
+            break;
+
         case SAIR:
 //            sair();
             break;
@@ -53,6 +58,16 @@ void Feed::processarEntrada(int opcao) {
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
     }
 }
+
+void Feed::entrarComentarios() {
+    ListComments *listComments = new ListComments(ObterTweetPeloIndice());
+    listComments->exibir();
+}
+
+Tweet* Feed::ObterTweetPeloIndice()
+{
+    return &tweets.at(index);
+};
 
 void Feed::exibirTweet(Tweet tweet) {
     std::cout << "Funcionou!" << std::endl;

@@ -7,6 +7,7 @@ CMakeFiles/2018_2_grupo19.dir/Interface/AbstractInterface.cpp.o: ../Interface/Ab
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/AbstractInterface.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Feed.cpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Feed.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/ListComments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Sessao/Session.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/AbstractConnection.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/Comments.hpp
@@ -25,6 +26,7 @@ CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o: ../TAD/Users.hpp
 
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/AbstractInterface.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Feed.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/ListComments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Login.cpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Interface/Login.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../Sessao/Session.hpp

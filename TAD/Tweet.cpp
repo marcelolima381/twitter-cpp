@@ -4,7 +4,7 @@
 
 #include "Tweet.hpp"
 
-int Tweet::getId() const {
+int Tweet::getId() {
     return id;
 }
 
@@ -12,23 +12,23 @@ void Tweet::setId(int id) {
     Tweet::id = id;
 }
 
-const std::string &Tweet::getDetails() const {
+std::string Tweet::getDetails() {
     return details;
 }
 
-void Tweet::setDetails(const std::string &details) {
+void Tweet::setDetails(std::string details) {
     Tweet::details = details;
 }
 
-const std::string &Tweet::getDescription() const {
+std::string Tweet::getDescription() {
     return description;
 }
 
-void Tweet::setDescription(const std::string &description) {
+void Tweet::setDescription(std::string description) {
     Tweet::description = description;
 }
 
-Users * Tweet::getUser() const {
+Users * Tweet::getUser() {
 	return user;
 }
 
@@ -36,11 +36,11 @@ void Tweet::setUser(Users *user) {
 	Tweet::user = user;
 }
 
-const vector<Comments> &Tweet::getComments() const {
+vector<Comments> Tweet::getComments() {
 	return comments;
 }
 
-void Tweet::setComments(const vector<Comments> &comments) {
+void Tweet::setComments(vector<Comments> comments) {
 	Tweet::comments = comments;
 }
 

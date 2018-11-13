@@ -20,25 +20,25 @@ private:
     Users *user;
 
 public:
-    int getId() const;
+    int getId();
 
     void setId(int id);
 
-    const std::string &getDetails() const;
+    std::string getDetails();
 
-    void setDetails(const std::string &details);
+    void setDetails(std::string details);
 
-    const std::string &getDescription() const;
+    std::string getDescription();
 
-    void setDescription(const std::string &description);
+    void setDescription(std::string description);
 
-	Users * getUser() const;
+	Users* getUser();
 
 	void setUser(Users *user);
 
-	const vector<Comments> &getComments() const;
+	vector<Comments> getComments();
 
-	void setComments(const vector<Comments> &comments);
+	void setComments(vector<Comments> comments);
 
 	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
 

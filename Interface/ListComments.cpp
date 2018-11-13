@@ -6,10 +6,12 @@
 #include "Feed.hpp"
 #include "../TAD/Users.hpp"
 #include "../Sessao/Session.hpp"
-ListComments::ListComments(int idTweet) : AbstractInterface("Comentarios") {
-    this->idTweet = idTweet;
+ListComments::ListComments(Tweet *tweet) : AbstractInterface("Comentarios") {
+    this->tweet = tweet;
 }
 void ListComments::exibir() {
+    exibirComentarios();
+
     int opcao;
     do {
         std::cout << "Escolha a opção" << std::endl << "1 - Comentar"  << std::endl << "0 - Sair" << std::endl;
@@ -26,5 +28,12 @@ void ListComments::processarEntrada(int opcao) {
             return;
         default:
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
+    }
+}
+
+void ListComments::exibirComentarios() {
+
+    for (int i = 0; i < tweet->getComments().size(); i++) {
+        std::cout << tweet->getComments().at(i).getDescription()  << std::endl;
     }
 }
