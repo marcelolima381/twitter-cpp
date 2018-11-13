@@ -34,6 +34,6 @@ void ListComments::processarEntrada(int opcao) {
 void ListComments::exibirComentarios() {
 
     for (int i = 0; i < tweet->getComments().size(); i++) {
-        std::cout << tweet->getComments().at(i).getDescription()  << std::endl;
+        std::cout << tweet->getComments().at(i).getUser()->getProfile()+": "+ tweet->getComments().at(i).getDescription()  << std::endl;
     }
 }

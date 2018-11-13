@@ -42,7 +42,7 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 		abrirConexao();
 		stmt = con->createStatement();
 //        Query SQL
-		res = stmt->executeQuery("select c.id,description,tweets_id,users_id, u.profile from comments c inner join users u on u.id = c.users_id where tweets_id=" + std::to_string(tweet_id));
+		res = stmt->executeQuery("select c.id,description,tweets_id,users_id, u.profile from comments c inner join users u on u.id = c.users_id where tweets_id=" + std::to_string(tweet_id)+" order by c.id desc1");
 		std::vector<Comments> comments;
 		while (res->next()) {
 			Comments *comment = new Comments();
@@ -52,6 +52,7 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 			comment->setTweets_id(res->getInt("tweets_id"));
 			user->setId(res->getInt("users_id"));
 			user->setProfile(res->getString("profile"));
+			comment->setUser(user);
 			comments.push_back(*comment);
 		}
 		fecharConexao();
