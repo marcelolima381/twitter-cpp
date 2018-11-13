@@ -70,3 +70,23 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 	}
 }
 
+
+void Comments::inserirComentario(std::string comentario, int idUsuario, int idTweet) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+        stmt->execute("insert into comments (description,tweets_id,users_id) values('"+comentario+"',"+std::to_string(idTweet)+","+ std::to_string(idUsuario) +")");
+        fecharConexao();
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
+}
+

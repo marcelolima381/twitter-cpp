@@ -11,20 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421a49c8-1ca9-493e-9656-5027c904d50c" name="Default Changelist" comment="correção da query de obter tweets e comentarios">
+    <list default="true" id="421a49c8-1ca9-493e-9656-5027c904d50c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/Feed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Feed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/Feed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Feed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/ListComments.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/ListComments.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/ListComments.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/ListComments.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAD/Tweet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TAD/Tweet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAD/Tweet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/TAD/Tweet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAD/Comments.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TAD/Comments.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAD/Comments.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/TAD/Comments.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/2018_2_grupo19" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2018_2_grupo19" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,9 +88,9 @@
           <entry key="Build All (disassembly)" value="5" />
           <entry key="Makefile" value="1" />
           <entry key="cmake" value="1" />
-          <entry key="cpp" value="15" />
+          <entry key="cpp" value="16" />
           <entry key="h" value="3" />
-          <entry key="hpp" value="12" />
+          <entry key="hpp" value="13" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -104,22 +99,22 @@
           <entry key="CMakeCache.txt" value="1" />
           <entry key="CMakeLists.txt" value="4" />
           <entry key="Disassembly" value="5" />
-          <entry key="ObjectiveC" value="30" />
+          <entry key="ObjectiveC" value="32" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="653" />
-          <entry key="hpp" value="245" />
-          <entry key="txt" value="85" />
+          <entry key="cpp" value="864" />
+          <entry key="hpp" value="249" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeCache.txt" value="17" />
-          <entry key="ObjectiveC" value="898" />
-          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="ObjectiveC" value="1113" />
+          <entry key="PLAIN_TEXT" value="91" />
         </counts>
       </usages-collector>
     </session>
@@ -129,8 +124,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="31">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1095">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -145,22 +149,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interface/Feed.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding>
-                <element signature="e#115#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TAD/Tweet.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#117#136#0" expanded="true" />
               </folding>
@@ -177,13 +169,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interface/ListComments.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TAD/Comments.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="e#123#142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,23 +214,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="104">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
               <folding>
                 <element signature="e#58#81#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="41" selection-start-line="41" selection-end-line="41" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -275,8 +270,6 @@
         <option value="$PROJECT_DIR$/Interface/AbstractInterface.hpp" />
         <option value="$PROJECT_DIR$/Interface/Login.cpp" />
         <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
-        <option value="$PROJECT_DIR$/TAD/Comments.hpp" />
-        <option value="$PROJECT_DIR$/TAD/Comments.cpp" />
         <option value="$PROJECT_DIR$/Interface/AbstractInterface.cpp" />
         <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
         <option value="$PROJECT_DIR$/Interface/Comments.cpp" />
@@ -288,6 +281,8 @@
         <option value="$PROJECT_DIR$/TAD/Tweet.cpp" />
         <option value="$PROJECT_DIR$/TAD/Tweet.hpp" />
         <option value="$PROJECT_DIR$/Interface/ListComments.cpp" />
+        <option value="$PROJECT_DIR$/TAD/Comments.hpp" />
+        <option value="$PROJECT_DIR$/TAD/Comments.cpp" />
       </list>
     </option>
   </component>
@@ -409,7 +404,7 @@
       <workItem from="1541801383485" duration="2067000" />
       <workItem from="1541803895657" duration="5465000" />
       <workItem from="1541961707274" duration="408000" />
-      <workItem from="1542069341433" duration="3419000" />
+      <workItem from="1542069341433" duration="4291000" />
     </task>
     <task id="LOCAL-00001" summary="build do projeto">
       <created>1541948761783</created>
@@ -425,11 +420,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541992730306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fazendo comentarios">
+      <created>1542072825323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542072825324</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fazendo comentarios [2]">
+      <created>1542073098454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542073098454</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32107000" />
+    <option name="totallyTimeSpent" value="32979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -440,7 +449,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49401435" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,7 +459,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5059856" side_tool="true" weight="0.39967373" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49960095" weight="0.32952693" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49082202" weight="0.26427406" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49082202" visible="true" weight="0.26427406" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -487,7 +496,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="correção da query de obter tweets e comentarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="correção da query de obter tweets e comentarios" />
+    <MESSAGE value="fazendo comentarios" />
+    <MESSAGE value="fazendo comentarios [2]" />
+    <option name="LAST_COMMIT_MESSAGE" value="fazendo comentarios [2]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -699,16 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/Comments.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-          <folding>
-            <element signature="e#123#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -741,13 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="110" column="38" lean-forward="true" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -788,16 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#58#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -812,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TAD/Tweet.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -829,19 +806,53 @@
     <entry file="file://$PROJECT_DIR$/TAD/Tweet.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#117#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Interface/ListComments.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1095">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAD/Comments.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#123#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding>
+            <element signature="e#58#81#0" expanded="true" />
           </folding>
         </state>
       </provider>

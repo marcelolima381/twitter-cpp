@@ -25,7 +25,7 @@ public:
     const std::string &getDescription() const;
 
     void setDescription(const std::string &description);
-
+	void inserirComentario(std::string comentario, int idUsuario, int idTweet);
     int getTweets_id() const;
 
     void setTweets_id(int tweets_id);
