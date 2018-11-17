@@ -71,6 +71,8 @@ Tweet* Feed::ObterTweetPeloIndice()
 
 void Feed::exibirTweet(Tweet tweet) {
     std::cout << "Funcionou!" << std::endl;
+    std::cout << tweet.getUser()->getProfile() << std::endl;
+    std::cout << tweet.getDescription() << std::endl;
 }
 
 
