@@ -12,11 +12,12 @@ ListComments::ListComments(Tweet *tweet) : AbstractInterface("Comentarios") {
 }
 
 void ListComments::exibir() {
-    exibirComentarios();
 
     int opcao;
     do {
+        exibirComentarios();
         std::cout << "Escolha a opção" << std::endl << "1 - Comentar" << std::endl << "0 - Sair" << std::endl;
+        cin.ignore();
         std::cin >> opcao;
         this->processarEntrada(opcao);
         system("clear");
@@ -40,7 +41,8 @@ void ListComments::comentar() {
 
     Comments *comments = new Comments();
     cout << "Digite o comentário:" << endl;
-    cin >> texto;
+    cin.ignore();
+    getline(cin, texto);
 
     comments->inserirComentario(texto, Session::getUsuarioLogado()->getId(), this->tweet->getId());
 }
