@@ -38,17 +38,6 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o
-<<<<<<< HEAD
-=======
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
@@ -59,11 +48,11 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
->>>>>>> master
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
  /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp
@@ -93,6 +82,7 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+ /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.cpp
  /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o

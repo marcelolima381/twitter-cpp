@@ -63,6 +63,30 @@ void Pesquisa::pesquisarHashTag() {
     cout<<"Digite o que pesquisa:"<<std::endl;
     cin.ignore();
     getline(cin, pesquisa);
+
+    Tweet *tweet = new Tweet();
+
+    if(pesquisa[0]!='#')
+        pesquisa = '#'+pesquisa;
+
+    tweetsPesquisados = tweet->pesquisarPorHashtag(pesquisa);
+    exibirTweetsPesquisados();
+}
+
+
+void Pesquisa::exibirTweetsPesquisados() {
+    if(tweetsPesquisados.size()>0) {
+        for (unsigned long i = 0; i < tweetsPesquisados.size(); ++i) {
+            cout << "ID: " << setw(3) << left << std::to_string(tweetsPesquisados.at(i).getId()) <<
+                 "Profile: " << setw(20) << left << tweetsPesquisados.at(i).getUser()->getProfile()<< std::endl <<
+                 "Tweet: " << tweetsPesquisados.at(i).getDescription() << std::endl << std::endl;
+        }
+
+    }
+    else{
+        cout<< "Não foram encontrados tweets com a hashtag informada." <<std::endl;
+    }
+
 }
 
 void Pesquisa::exibirUsuariosPesquisados() {
