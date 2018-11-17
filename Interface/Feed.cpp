@@ -34,6 +34,7 @@ void Feed::exibir() {
 
 void Feed::processarEntrada(int opcao) {
     Tweet *tweet = new Tweet();
+    bool flag;
     switch (opcao) {
         case AVANCAR:
             tweet->avancarTweet(index);
@@ -49,10 +50,6 @@ void Feed::processarEntrada(int opcao) {
 
         case COMENTARIOS:
             entrarComentarios();
-            break;
-
-        case SAIR:
-//            sair();
             break;
 
         default:
@@ -76,7 +73,7 @@ void Feed::exibirTweet(Tweet tweet) {
     std::cout << tweet.getDescription() << std::endl;
 }
 
-void Feed::entrarPerfil() {
+bool Feed::entrarPerfil() {
     Perfil *perfil = new Perfil();
     perfil->exibir();
 }

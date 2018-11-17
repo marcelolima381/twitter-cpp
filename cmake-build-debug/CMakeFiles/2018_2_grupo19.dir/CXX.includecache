@@ -10,6 +10,20 @@
 iostream
 -
 
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.cpp
+Feed.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+../TAD/Users.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+../Sessao/Session.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+../TAD/Tweet.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+Perfil.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+vector
+-
+
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
 AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
@@ -17,18 +31,6 @@ ListComments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 ../TAD/Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
-
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp
-iostream
--
-ListComments.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
-Feed.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
-../TAD/Users.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-../Sessao/Session.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 AbstractInterface.hpp
@@ -37,6 +39,22 @@ AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 ../TAD/Comments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp
+Perfil.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+../TAD/Tweet.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+../Sessao/Session.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+ListComments.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+AbstractInterface.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Users.hpp

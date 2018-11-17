@@ -24,7 +24,7 @@ public:
 	void exibirTweet(Tweet tweet);
 	void entrarComentarios();
 
-	void entrarPerfil();
+	bool entrarPerfil();
 };
 
 

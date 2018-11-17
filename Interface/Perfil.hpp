@@ -20,6 +20,10 @@ public:
 private:
     unsigned long index;
     vector<Tweet> tweets;
+
+    Tweet* ObterTweetPeloIndice();
+    void entrarComentarios();
+    void exibirTweet(Tweet tweet);
 };
 
 

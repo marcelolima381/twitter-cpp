@@ -42,9 +42,11 @@ public:
 
 	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
 
-    void avancarTweet(int index);
+	std::vector<Tweet> carregarTweetsUsuarioLogado(int user_id);
 
-    void retrocederTweet(int index);
+    void avancarTweet(unsigned long index);
+
+    void retrocederTweet(unsigned long index);
 };
 
 
