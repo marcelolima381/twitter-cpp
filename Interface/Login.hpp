@@ -13,6 +13,7 @@ public:
     Login();
 
     void exibir() override;
+
 private:
 
     void processarEntrada(int opcao) override;

@@ -49,7 +49,7 @@ void Login::logar() {
     std::cin >> senha;
     Users *user = new Users();
 
-    cout<<"Validando login..."<<std::endl;
+    cout << "Validando login..." << std::endl;
     bool flag = user->validarLogin(conta, senha);
     if (flag) {
         Session::setUsuarioLogado(user);
@@ -90,7 +90,7 @@ void Login::criarConta() {
 
     retornoCriacao = user->criarConta(account, password, profile, name, city, age);
 
-    cout<<"Usuario "+profile+" criado!" << std::endl;
+    cout << "Usuario " + profile + " criado!" << std::endl;
 }
 
 void Login::redirecionarParaFeed() {

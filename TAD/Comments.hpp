@@ -15,7 +15,7 @@ private:
     int id;
     std::string description;
     int tweets_id;
-  	Users *user;
+    Users *user;
 
 public:
     int getId() const;
@@ -25,15 +25,18 @@ public:
     const std::string &getDescription() const;
 
     void setDescription(const std::string &description);
-	void inserirComentario(std::string comentario, int idUsuario, int idTweet);
+
+    void inserirComentario(std::string comentario, int idUsuario, int idTweet);
+
     int getTweets_id() const;
 
     void setTweets_id(int tweets_id);
 
-  Users *getUser() const;
-  void setUser(Users *user);
+    Users *getUser() const;
 
-  vector<Comments> carregarComments(int tweet_id);
+    void setUser(Users *user);
+
+    vector<Comments> carregarComments(int tweet_id);
 };
 
 

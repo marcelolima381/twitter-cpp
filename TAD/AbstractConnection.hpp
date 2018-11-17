@@ -31,6 +31,7 @@ protected:
     sql::ResultSet *res;
 
     void abrirConexao();
+
     void fecharConexao();
 };
 

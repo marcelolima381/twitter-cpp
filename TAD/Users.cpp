@@ -61,7 +61,7 @@ void Users::setCity(const std::string &city) {
     Users::city = city;
 }
 
-Users * Users::buscarUsuario(int user_id) {
+Users *Users::buscarUsuario(int user_id) {
     try {
         abrirConexao();
         stmt = con->createStatement();
@@ -137,8 +137,9 @@ string Users::criarConta(string account, string password, string profile, string
         stmt = con->createStatement();
 //        Query SQL
         stmt->execute("INSERT INTO users (account, password, profile, name, age, city) VALUES "
-                                 "('" + account + "','" + password + "', '" + profile + "', '" + name + "', " + std::to_string(age) +
-                                 ", '"+ city + "')");
+                      "('" + account + "','" + password + "', '" + profile + "', '" + name + "', " +
+                      std::to_string(age) +
+                      ", '" + city + "')");
         fecharConexao();
         this->setAccount(account);
         this->setPassword(password);
@@ -168,7 +169,9 @@ void Users::seguirUsuario(int id1, int id2) {
     try {
         abrirConexao();
         stmt = con->createStatement();
-        stmt->execute("insert into followee(follower,following) values ("+std::to_string(id1)+","+std::to_string(id2)+")");
+        stmt->execute(
+                "insert into followee(follower,following) values (" + std::to_string(id1) + "," + std::to_string(id2) +
+                ")");
         fecharConexao();
     } catch (sql::SQLException &e) {
         cout << "# ERR: SQLException in " << __FILE__;
@@ -189,7 +192,9 @@ std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
         abrirConexao();
         stmt = con->createStatement();
 //        Query SQL
-        res = stmt->executeQuery("select  id, profile, name from users where profile like '%"+pesquisa+"%' or account like '%"+pesquisa+"%' or name like '%"+pesquisa+"%'");
+        res = stmt->executeQuery(
+                "select  id, profile, name from users where profile like '%" + pesquisa + "%' or account like '%" +
+                pesquisa + "%' or name like '%" + pesquisa + "%'");
         std::vector<Users> usuarios;
         while (res->next()) {
             Users *user = new Users();
@@ -221,7 +226,8 @@ void Users::editarCampo(string coluna, string valor) {
         abrirConexao();
         stmt = con->createStatement();
 //        Query SQL
-        stmt->execute("UPDATE users t SET t."+ coluna + " = '" + valor + "' WHERE t.id = " + std::to_string(Session::getUsuarioLogado()->getId()));
+        stmt->execute("UPDATE users t SET t." + coluna + " = '" + valor + "' WHERE t.id = " +
+                      std::to_string(Session::getUsuarioLogado()->getId()));
         fecharConexao();
     } catch (sql::SQLException &e) {
         cout << "# ERR: SQLException in " << __FILE__;

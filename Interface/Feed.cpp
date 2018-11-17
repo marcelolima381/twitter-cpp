@@ -23,7 +23,7 @@
 Feed::Feed() : AbstractInterface("Feed") {}
 
 void Feed::exibir() {
-    int opcao=0;
+    int opcao = 0;
     Tweet *tweet = new Tweet();
     cout << "Carregando..." << std::endl;
     tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
@@ -92,8 +92,9 @@ void Feed::processarEntrada(int opcao) {
 
         case VER_CURTIDAS:
             users = ObterTweetPeloIndice()->verCurtidas(ObterTweetPeloIndice()->getId());
-            for(int i = 0; i < users.size(); i++) {
-                std::cout << "Perfil: " << users.at(i).getProfile() << std::endl << "Nome: " << users.at(i).getName() << std::endl << std::endl;
+            for (int i = 0; i < users.size(); i++) {
+                std::cout << "Perfil: " << users.at(i).getProfile() << std::endl << "Nome: " << users.at(i).getName()
+                          << std::endl << std::endl;
             }
             break;
 

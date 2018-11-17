@@ -46,7 +46,7 @@ void ListComments::comentar() {
     getline(cin, texto);
 
     comments->inserirComentario(texto, Session::getUsuarioLogado()->getId(), this->tweet->getId());
-    delete(comments);
+    delete (comments);
 }
 
 void ListComments::exibirComentarios() {
@@ -57,8 +57,8 @@ void ListComments::exibirComentarios() {
 
     for (int i = 0; i < listComments.size(); i++) {
         std::cout << listComments.at(i).getUser()->getProfile() + ": " +
-                listComments.at(i).getDescription() << std::endl;
+                     listComments.at(i).getDescription() << std::endl;
     }
 
-    delete(comments);
+    delete (comments);
 }

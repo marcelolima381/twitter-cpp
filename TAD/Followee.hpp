@@ -28,5 +28,4 @@ public:
 };
 
 
-
 #endif //INC_2018_2_GRUPO19_FOLLOWEE_HPP

@@ -6,12 +6,12 @@
 
 #include "Session.hpp"
 
-Users* Session::getUsuarioLogado() {
+Users *Session::getUsuarioLogado() {
     return Session::usuario;
 }
 
-void Session::setUsuarioLogado(Users* users) {
+void Session::setUsuarioLogado(Users *users) {
     Session::usuario = users;
 }
 
-Users* Session::usuario = nullptr;
+Users *Session::usuario = nullptr;

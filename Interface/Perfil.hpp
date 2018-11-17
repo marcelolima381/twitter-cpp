@@ -15,16 +15,21 @@ public:
     Perfil();
 
     void exibir() override;
+
     void processarEntrada(int opcao) override;
 
 private:
     unsigned long index;
     vector<Tweet> tweets;
 
-    Tweet* ObterTweetPeloIndice();
+    Tweet *ObterTweetPeloIndice();
+
     void entrarComentarios();
+
     void exibirTweet(Tweet tweet);
+
     void avancarTweet();
+
     void retrocederTweet();
 
     void editarPerfil();

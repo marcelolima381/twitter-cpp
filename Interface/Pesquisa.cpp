@@ -16,10 +16,11 @@ Pesquisa::Pesquisa() : AbstractInterface("Pesquisa") {}
 
 void Pesquisa::exibir() {
 
-    int opcao=0;
+    int opcao = 0;
     do {
-        std::cout << std::endl << "Escolha a opção:" << std::endl << "1 - Pesquisar hashtag" << std::endl << "2 - Pesquisar Usuários"
-        << std::endl << "0 - Sair" << std::endl;
+        std::cout << std::endl << "Escolha a opção:" << std::endl << "1 - Pesquisar hashtag" << std::endl
+                  << "2 - Pesquisar Usuários"
+                  << std::endl << "0 - Sair" << std::endl;
         std::cin >> opcao;
         this->processarEntrada(opcao);
         system("clear");
@@ -47,7 +48,7 @@ void Pesquisa::processarEntrada(int opcao) {
 void Pesquisa::pesquisarUsuario() {
     std::string pesquisa;
 
-    cout<<"Digite o que pesquisa:"<<std::endl;
+    cout << "Digite o que pesquisa:" << std::endl;
     cin.ignore();
     getline(cin, pesquisa);
 
@@ -60,14 +61,14 @@ void Pesquisa::pesquisarUsuario() {
 void Pesquisa::pesquisarHashTag() {
     std::string pesquisa;
 
-    cout<<"Digite o que pesquisa:"<<std::endl;
+    cout << "Digite o que pesquisa:" << std::endl;
     cin.ignore();
     getline(cin, pesquisa);
 
     Tweet *tweet = new Tweet();
 
-    if(pesquisa[0]!='#')
-        pesquisa = '#'+pesquisa;
+    if (pesquisa[0] != '#')
+        pesquisa = '#' + pesquisa;
 
     tweetsPesquisados = tweet->pesquisarPorHashtag(pesquisa);
     exibirTweetsPesquisados();
@@ -75,48 +76,43 @@ void Pesquisa::pesquisarHashTag() {
 
 
 void Pesquisa::exibirTweetsPesquisados() {
-    if(tweetsPesquisados.size()>0) {
+    if (tweetsPesquisados.size() > 0) {
         for (unsigned long i = 0; i < tweetsPesquisados.size(); ++i) {
             cout << "ID: " << setw(3) << left << std::to_string(tweetsPesquisados.at(i).getId()) <<
-                 "Profile: " << setw(20) << left << tweetsPesquisados.at(i).getUser()->getProfile()<< std::endl <<
+                 "Profile: " << setw(20) << left << tweetsPesquisados.at(i).getUser()->getProfile() << std::endl <<
                  "Tweet: " << tweetsPesquisados.at(i).getDescription() << std::endl << std::endl;
         }
 
-    }
-    else{
-        cout<< "Não foram encontrados tweets com a hashtag informada." <<std::endl;
+    } else {
+        cout << "Não foram encontrados tweets com a hashtag informada." << std::endl;
     }
 
 }
 
 void Pesquisa::exibirUsuariosPesquisados() {
-    if(usuariosPesquisados.size()>0) {
+    if (usuariosPesquisados.size() > 0) {
         for (unsigned long i = 0; i < usuariosPesquisados.size(); ++i) {
             cout << "ID: " << setw(3) << left << std::to_string(usuariosPesquisados.at(i).getId()) <<
                  "Profile: " << setw(20) << left << usuariosPesquisados.at(i).getProfile() <<
                  " Nome: " << setw(30) << left << usuariosPesquisados.at(i).getName() << std::endl;
         }
         associarUsuario();
-    }
-    else{
-        cout<< "Não foram encontrados usuários." <<std::endl;
+    } else {
+        cout << "Não foram encontrados usuários." << std::endl;
     }
 
 }
 
-void Pesquisa::associarUsuario()
-{
+void Pesquisa::associarUsuario() {
     int id;
 
-    do
-    {
-        cout<<std::endl<<"Digite o ID do usuário para segui-lo, ou digite 0 para voltar."<<std::endl;
-        cin>>id;
+    do {
+        cout << std::endl << "Digite o ID do usuário para segui-lo, ou digite 0 para voltar." << std::endl;
+        cin >> id;
 
-        if(id!=0)
-        {
+        if (id != 0) {
             for (unsigned long i = 0; i < usuariosPesquisados.size(); ++i) {
-                if(usuariosPesquisados.at(i).getId()==id) {
+                if (usuariosPesquisados.at(i).getId() == id) {
                     Users *user = new Users();
 
                     user->seguirUsuario(Session::getUsuarioLogado()->getId(), id);
@@ -125,8 +121,8 @@ void Pesquisa::associarUsuario()
                     return;
                 }
             }
-            cout << "ID não encontrado."<<std::endl;
+            cout << "ID não encontrado." << std::endl;
         }
 
-    }while(id!=0);
+    } while (id != 0);
 }

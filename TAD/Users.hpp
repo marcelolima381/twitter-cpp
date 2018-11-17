@@ -48,7 +48,7 @@ public:
 
     void setCity(const std::string &city);
 
-    Users * buscarUsuario(int user_id);
+    Users *buscarUsuario(int user_id);
 
     bool validarLogin(std::string conta, std::string senha);
 
@@ -57,6 +57,7 @@ public:
     void editarCampo(string coluna, string valor);
 
     std::vector<Users> pesquisarUsuarios(string pesquisa);
+
     void seguirUsuario(int id1, int id2);
 };
 

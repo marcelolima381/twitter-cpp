@@ -11,11 +11,12 @@
 class Session {
 
 private:
-    static Users* usuario;
+    static Users *usuario;
 
 public:
-    static Users* getUsuarioLogado();
-    static void setUsuarioLogado(Users* users);
+    static Users *getUsuarioLogado();
+
+    static void setUsuarioLogado(Users *users);
 
 };
 

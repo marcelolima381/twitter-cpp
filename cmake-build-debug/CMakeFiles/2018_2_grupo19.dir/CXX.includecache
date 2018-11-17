@@ -84,13 +84,9 @@ Pesquisa.hpp
 ../Sessao/Session.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ListComments.hpp
-<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
-=======
-/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 iomanip
 -
->>>>>>> master
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp
 AbstractInterface.hpp
@@ -99,12 +95,6 @@ AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 ../TAD/Users.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-
-/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
-utility
--
-Session.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Users.hpp
@@ -146,12 +136,6 @@ Users.hpp
 Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.cpp
-Comments.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
-vector
--
-
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 iostream
 -
@@ -161,10 +145,6 @@ AbstractConnection.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp
-Tweet.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 =======
@@ -207,4 +187,10 @@ vector
 -
 AbstractConnection.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+
+/home/marcelo/CLionProjects/2018-2-grupo19/main.cpp
+iostream
+-
+Interface/Login.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Login.hpp
 

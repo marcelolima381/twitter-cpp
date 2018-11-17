@@ -27,19 +27,19 @@ public:
 
     void setDescription(std::string description);
 
-	Users* getUser();
+    Users *getUser();
 
-	void setUser(Users *user);
+    void setUser(Users *user);
 
-	vector<Comments> getComments();
+    vector<Comments> getComments();
 
-	void setComments(vector<Comments> comments);
+    void setComments(vector<Comments> comments);
 
-	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
+    std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
 
-	std::vector<Tweet> carregarTweetsUsuarioLogado(int user_id);
+    std::vector<Tweet> carregarTweetsUsuarioLogado(int user_id);
 
-	std::vector<Tweet> pesquisarPorHashtag(string hashtag);
+    std::vector<Tweet> pesquisarPorHashtag(string hashtag);
 
     void avancarTweet(unsigned long index);
 

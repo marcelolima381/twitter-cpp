@@ -15,21 +15,27 @@ public:
 
     void exibir() override;
 
- private:
-  	std::vector<Tweet> tweets;
-	unsigned long index;
+private:
+    std::vector<Tweet> tweets;
+    unsigned long index;
 
-	Tweet* ObterTweetPeloIndice();
-	void processarEntrada(int opcao) override;
-	void exibirTweet(Tweet tweet);
-	void entrarComentarios();
+    Tweet *ObterTweetPeloIndice();
 
-	void entrarPerfil();
-	void entrarPesquisa();
-	void avancarTweet();
-	void retrocederTweet();
+    void processarEntrada(int opcao) override;
 
-	void tweetar();
+    void exibirTweet(Tweet tweet);
+
+    void entrarComentarios();
+
+    void entrarPerfil();
+
+    void entrarPesquisa();
+
+    void avancarTweet();
+
+    void retrocederTweet();
+
+    void tweetar();
 };
 
 
