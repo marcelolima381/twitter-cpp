@@ -40,6 +40,9 @@ void Perfil::exibir() {
         std::cin >> opcao;
         this->processarEntrada(opcao);
         system("clear");
+        if (opcao == 3) {
+            opcao = 0;
+        }
     } while (opcao != 0);
 }
 
@@ -62,6 +65,7 @@ void Perfil::processarEntrada(int opcao) {
             break;
 
         case FEED:
+            return;
             break;
 
         case COMENTARIOS:
