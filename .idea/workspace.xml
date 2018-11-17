@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="421a49c8-1ca9-493e-9656-5027c904d50c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/ListComments.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/ListComments.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/ListComments.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/ListComments.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAD/Comments.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TAD/Comments.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/2018_2_grupo19" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2018_2_grupo19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +84,7 @@
           <entry key="Build All (disassembly)" value="8" />
           <entry key="Makefile" value="1" />
           <entry key="cmake" value="1" />
-          <entry key="cpp" value="18" />
+          <entry key="cpp" value="19" />
           <entry key="h" value="3" />
           <entry key="hpp" value="13" />
           <entry key="txt" value="4" />
@@ -97,73 +95,48 @@
           <entry key="CMakeCache.txt" value="1" />
           <entry key="CMakeLists.txt" value="4" />
           <entry key="Disassembly" value="8" />
-          <entry key="ObjectiveC" value="34" />
+          <entry key="ObjectiveC" value="35" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1065" />
+          <entry key="cpp" value="1137" />
           <entry key="hpp" value="258" />
-          <entry key="txt" value="165" />
+          <entry key="txt" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeCache.txt" value="17" />
-          <entry key="ObjectiveC" value="1323" />
-          <entry key="PLAIN_TEXT" value="148" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="115857129">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cpp" value="8" />
-          <entry key="gitignore" value="1" />
-          <entry key="h" value="1" />
-          <entry key="hpp" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="ObjectiveC" value="13" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cpp" value="123" />
-          <entry key="gitignore" value="67" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="ObjectiveC" value="123" />
-          <entry key="PLAIN_TEXT" value="67" />
+          <entry key="ObjectiveC" value="1395" />
+          <entry key="PLAIN_TEXT" value="181" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="465">
+              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interface/Feed.hpp">
+        <entry file="file://$PROJECT_DIR$/Interface/Login.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -190,10 +163,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TAD/Tweet.cpp">
+        <entry file="file://$PROJECT_DIR$/Interface/ListComments.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="-75">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
@@ -202,12 +175,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
+        <entry file="file://$PROJECT_DIR$/TAD/Comments.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-75">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#58#81#0" expanded="true" />
+                <element signature="e#123#142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,11 +207,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="44" column="209" selection-start-line="44" selection-start-column="209" selection-end-line="44" selection-end-column="209" />
+            <state relative-caret-position="182">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#58#81#0" expanded="true" />
               </folding>
@@ -255,7 +228,6 @@
       <find>std::std::</find>
       <find>exibirPerfil</find>
       <find>marcelo</find>
-      <find>desc1</find>
     </findStrings>
     <replaceStrings>
       <replace>std::cout</replace>
@@ -290,7 +262,9 @@
         <option value="$PROJECT_DIR$/Interface/Login.hpp" />
         <option value="$PROJECT_DIR$/Interface/AbstractInterface.hpp" />
         <option value="$PROJECT_DIR$/Interface/Login.cpp" />
+        <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
         <option value="$PROJECT_DIR$/Interface/AbstractInterface.cpp" />
+        <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
         <option value="$PROJECT_DIR$/Interface/Comments.cpp" />
         <option value="$PROJECT_DIR$/Interface/Comments.hpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
@@ -300,12 +274,8 @@
         <option value="$PROJECT_DIR$/TAD/Tweet.hpp" />
         <option value="$PROJECT_DIR$/TAD/Comments.hpp" />
         <option value="$PROJECT_DIR$/Interface/ListComments.hpp" />
-        <option value="$PROJECT_DIR$/Interface/ListComments.cpp" />
         <option value="$PROJECT_DIR$/TAD/Comments.cpp" />
-        <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
-        <option value="$PROJECT_DIR$/TAD/AbstractConnection.cpp" />
-        <option value="$PROJECT_DIR$/Interface/Feed.cpp" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Interface/ListComments.cpp" />
       </list>
     </option>
   </component>
@@ -344,6 +314,21 @@
               <item name="2018-2-grupo19" type="462c0819:PsiDirectoryNode" />
               <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="2018_2_grupo19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-2-grupo19" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018_2_grupo19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-2-grupo19" type="462c0819:PsiDirectoryNode" />
+              <item name="Sessao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018_2_grupo19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-2-grupo19" type="462c0819:PsiDirectoryNode" />
+              <item name="TAD" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -352,7 +337,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../twitter-cpp" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -414,7 +399,7 @@
       <workItem from="1541961707274" duration="408000" />
       <workItem from="1542069341433" duration="4389000" />
       <workItem from="1542286179572" duration="1234000" />
-      <workItem from="1542462750390" duration="713000" />
+      <workItem from="1542462750390" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="build do projeto">
       <created>1541948761783</created>
@@ -451,26 +436,48 @@
       <option name="project" value="LOCAL" />
       <updated>1542073692094</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="correção sql">
+      <created>1542470699903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542470699903</updated>
+    </task>
+    <task id="LOCAL-00007" summary="inserindo comentarios">
+      <created>1542472735531</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542472735531</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35024000" />
+    <option name="totallyTimeSpent" value="37089000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23144454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23144454" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49401435" visible="true" weight="0.39967373" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49401435" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972974" />
@@ -516,30 +523,27 @@
     <MESSAGE value="fazendo comentarios" />
     <MESSAGE value="fazendo comentarios [2]" />
     <MESSAGE value="Criando função de banco de dados de inserir comentario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando função de banco de dados de inserir comentario" />
+    <MESSAGE value="correção sql" />
+    <MESSAGE value="inserindo comentarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserindo comentarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Interface/Feed.cpp</url>
-          <line>62</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Interface/ListComments.cpp</url>
-          <line>50</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Interface/ListComments.cpp</url>
-          <line>44</line>
+          <line>46</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Interface/Feed.cpp</url>
+          <url>file://$PROJECT_DIR$/TAD/Comments.cpp</url>
+          <line>75</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Interface/ListComments.cpp</url>
           <line>21</line>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -686,6 +690,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/AbstractInterface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TAD/AbstractConnection.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -693,14 +704,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/Comments.hpp" />
-    <entry file="file://$PROJECT_DIR$/Interface/Login.cpp">
+    <entry file="file://$PROJECT_DIR$/TAD/AbstractConnection.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/Comments.hpp" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -760,10 +771,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
+    <entry file="file://$PROJECT_DIR$/Interface/Feed.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="225">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="e#115#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,44 +815,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/ListComments.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TAD/Comments.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-75">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#123#142#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sessao/Session.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/AbstractConnection.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -849,20 +832,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
+    <entry file="file://$PROJECT_DIR$/Sessao/Session.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAD/Users.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/Login.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="44" column="209" selection-start-line="44" selection-start-column="209" selection-end-line="44" selection-end-column="209" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAD/Comments.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#58#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Interface/ListComments.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="-75">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interface/Feed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
