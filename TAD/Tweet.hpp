@@ -39,6 +39,8 @@ public:
 
 	std::vector<Tweet> carregarTweetsUsuarioLogado(int user_id);
 
+	std::vector<Tweet> pesquisarPorHashtag(string hashtag);
+
     void avancarTweet(unsigned long index);
 
     void retrocederTweet(unsigned long index);

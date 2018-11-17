@@ -6,6 +6,7 @@
 #define INC_2018_2_GRUPO19_USERS_HPP
 
 #include <iostream>
+#include <vector>
 #include "AbstractConnection.hpp"
 
 class Users : public AbstractConnection {
@@ -54,6 +55,9 @@ public:
     string criarConta(string basicString, string string1, string string2, string string3, string string4, int i);
 
     void editarCampo(string coluna, string valor);
+
+    std::vector<Users> pesquisarUsuarios(string pesquisa);
+    void seguirUsuario(int id1, int id2);
 };
 
 #endif //INC_2018_2_GRUPO19_USERS_HPP

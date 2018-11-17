@@ -36,6 +36,39 @@ void Tweet::setComments(vector<Comments> comments) {
 	Tweet::comments = comments;
 }
 
+vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
+	try {
+		abrirConexao();
+		stmt = con->createStatement();
+//        Query SQL
+		res = stmt->executeQuery("select t.id tweetID, t.description, u.id as idUsuario, u.profile, (select count(1) from comments c1 where c1.tweets_id = t.id) NumeroComentarios from   tweets t inner join users u on u.id = t.users_id where t.description like '%" + hashtag +  " %' order by t.id desc");
+		std::vector<Tweet> tweets;
+		while (res->next()) {
+			Tweet *tweet = new Tweet();
+			Users *user = new Users();
+			Comments *comment = new Comments();
+			tweet->setId(res->getInt("tweetID"));
+			tweet->setDescription(res->getString("description"));
+			user->setProfile(res->getString("profile"));
+			user->setId(res->getInt("idUsuario"));
+			tweet->setUser(user);
+			tweets.push_back(*tweet);
+		}
+		fecharConexao();
+		return tweets;
+	} catch (sql::SQLException &e) {
+		cout << "# ERR: SQLException in " << __FILE__;
+		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+		cout << "# ERR: " << e.what();
+		cout << " (MySQL error code: " << e.getErrorCode();
+		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		fecharConexao();
+	} catch (std::exception e) {
+		cout << "# ERR: " << e.what();
+		fecharConexao();
+	}
+}
+
 vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 	try {
 		abrirConexao();

@@ -57,9 +57,20 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Tweet.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Users.hpp
 
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../Interface/AbstractInterface.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../Interface/ListComments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../Interface/Pesquisa.cpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../Interface/Pesquisa.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../Sessao/Session.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Comments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Tweet.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o: ../TAD/Users.hpp
+
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../Sessao/Session.cpp
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../Sessao/Session.hpp
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../TAD/Users.hpp
 
 CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o: ../TAD/AbstractConnection.cpp
@@ -90,6 +101,7 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o: ../TAD/Tweets_likes.hpp
 
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o: ../Sessao/Session.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o: ../TAD/Users.cpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o: ../TAD/Users.hpp
 

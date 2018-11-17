@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+>>>>>>> master
 iostream
 -
 
@@ -94,7 +98,13 @@ Pesquisa.hpp
 ../Sessao/Session.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ListComments.hpp
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+iomanip
+-
+>>>>>>> master
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp
 AbstractInterface.hpp
@@ -123,7 +133,12 @@ cppconn/resultset.h
 -
 cppconn/statement.h
 -
+<<<<<<< HEAD
 
+=======
+-
+<<<<<<< HEAD
+>>>>>>> master
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 iostream
 -
@@ -134,11 +149,15 @@ AbstractConnection.hpp
 Users.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp
 Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+>>>>>>> master
 iostream
 -
 vector
@@ -146,13 +165,35 @@ vector
 AbstractConnection.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 Comments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+>>>>>>> master
 
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 iostream
 -
+vector
+-
 AbstractConnection.hpp
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+Comments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+iostream
+-
+vector
+-
+AbstractConnection.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+>>>>>>> master
 
