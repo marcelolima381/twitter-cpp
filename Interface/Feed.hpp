@@ -25,7 +25,7 @@ public:
 	void entrarComentarios();
 
 	void entrarPerfil();
-
+	void entrarPesquisa();
 	void avancarTweet();
 
 	void retrocederTweet();

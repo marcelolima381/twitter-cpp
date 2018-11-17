@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/49/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/49/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/CLionProjects/2018-2-grupo19
+CMAKE_SOURCE_DIR = /home/pedro/CLionProjects/2018-2-grupo19
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/49/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/49/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/pedro/Desktop/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles /home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -257,6 +257,33 @@ Interface/Perfil.s: Interface/Perfil.cpp.s
 Interface/Perfil.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.s
 .PHONY : Interface/Perfil.cpp.s
+
+Interface/Pesquisa.o: Interface/Pesquisa.cpp.o
+
+.PHONY : Interface/Pesquisa.o
+
+# target to build an object file
+Interface/Pesquisa.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o
+.PHONY : Interface/Pesquisa.cpp.o
+
+Interface/Pesquisa.i: Interface/Pesquisa.cpp.i
+
+.PHONY : Interface/Pesquisa.i
+
+# target to preprocess a source file
+Interface/Pesquisa.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.i
+.PHONY : Interface/Pesquisa.cpp.i
+
+Interface/Pesquisa.s: Interface/Pesquisa.cpp.s
+
+.PHONY : Interface/Pesquisa.s
+
+# target to generate assembly for a file
+Interface/Pesquisa.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.s
+.PHONY : Interface/Pesquisa.cpp.s
 
 Sessao/Session.o: Sessao/Session.cpp.o
 
@@ -579,6 +606,9 @@ help:
 	@echo "... Interface/Perfil.o"
 	@echo "... Interface/Perfil.i"
 	@echo "... Interface/Perfil.s"
+	@echo "... Interface/Pesquisa.o"
+	@echo "... Interface/Pesquisa.i"
+	@echo "... Interface/Pesquisa.s"
 	@echo "... Sessao/Session.o"
 	@echo "... Sessao/Session.i"
 	@echo "... Sessao/Session.s"

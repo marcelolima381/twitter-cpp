@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o"
   "CMakeFiles/2018_2_grupo19.dir/Interface/ListComments.cpp.o"
   "CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o"
+  "CMakeFiles/2018_2_grupo19.dir/Interface/Pesquisa.cpp.o"
   "2018_2_grupo19.pdb"
   "2018_2_grupo19"
 )

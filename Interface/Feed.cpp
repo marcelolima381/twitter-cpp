@@ -7,6 +7,7 @@
 #include "../Sessao/Session.hpp"
 #include "../TAD/Tweet.hpp"
 #include "Perfil.hpp"
+#include "Pesquisa.hpp"
 #include <vector>
 
 #define AVANCAR 1
@@ -14,6 +15,7 @@
 #define PERFIL 3
 #define COMENTARIOS 4
 #define TWEETAR 5
+#define PESQUISAR 6
 #define SAIR 0
 
 Feed::Feed() : AbstractInterface("Feed") {}
@@ -76,6 +78,10 @@ void Feed::processarEntrada(int opcao) {
             entrarComentarios();
             break;
 
+        case PESQUISAR:
+            entrarPesquisa();
+            break;
+
         default:
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
     }
@@ -104,6 +110,11 @@ void Feed::exibirTweet(Tweet tweet) {
 void Feed::entrarPerfil() {
     Perfil *perfil = new Perfil();
     perfil->exibir();
+}
+
+void Feed::entrarPesquisa() {
+    Pesquisa *pesquisa = new Pesquisa();
+    pesquisa->exibir();
 }
 
 void Feed::avancarTweet() {
