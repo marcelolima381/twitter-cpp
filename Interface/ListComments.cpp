@@ -17,7 +17,8 @@ void ListComments::exibir() {
     do {
         exibirComentarios();
         std::cout << "Escolha a opção" << std::endl << "1 - Comentar" << std::endl << "0 - Sair" << std::endl;
-        cin.ignore();
+//        cin.ignore();
+//        cin.get();
         std::cin >> opcao;
         this->processarEntrada(opcao);
         system("clear");
