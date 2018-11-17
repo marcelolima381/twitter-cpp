@@ -10,10 +10,14 @@
 AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
 
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
 iostream
 -
 
+=======
+<<<<<<< HEAD
+>>>>>>> master
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.cpp
 Feed.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
@@ -83,10 +87,54 @@ ListComments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+<<<<<<< HEAD
 AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
 ../TAD/Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+=======
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp
+Feed.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+../TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+../Sessao/Session.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+Perfil.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+vector
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+ListComments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+>>>>>>> master
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+<<<<<<< HEAD
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+../TAD/Comments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+>>>>>>> master
+>>>>>>> master
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
 utility
