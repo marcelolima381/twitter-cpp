@@ -24,7 +24,12 @@ public:
 	void exibirTweet(Tweet tweet);
 	void entrarComentarios();
 
-	bool entrarPerfil();
+	void entrarPerfil();
+
+	void avancarTweet();
+
+	void retrocederTweet();
+
 };
 
 
