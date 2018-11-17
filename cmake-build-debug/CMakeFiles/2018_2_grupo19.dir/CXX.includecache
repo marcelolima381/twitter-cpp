@@ -6,13 +6,51 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+../TAD/Comments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Pesquisa.cpp
+Pesquisa.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+../Sessao/Session.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+ListComments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+../TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+../TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+>>>>>>> master
 stdlib.h
 -
 iostream
 -
 mysql_connection.h
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/mysql_connection.h
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/mysql_connection.h
 cppconn/driver.h
 -
 cppconn/exception.h
@@ -22,30 +60,39 @@ cppconn/resultset.h
 cppconn/statement.h
 -
 
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+>>>>>>> master
 iostream
 -
 vector
 -
 AbstractConnection.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp
 Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+>>>>>>> master
 
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 iostream
 -
 vector
 -
 AbstractConnection.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 Comments.hpp
+<<<<<<< HEAD
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
@@ -53,4 +100,13 @@ iostream
 -
 AbstractConnection.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+=======
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+iostream
+-
+AbstractConnection.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+>>>>>>> master
 
