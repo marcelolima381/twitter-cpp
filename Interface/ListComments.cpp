@@ -45,12 +45,19 @@ void ListComments::comentar() {
     getline(cin, texto);
 
     comments->inserirComentario(texto, Session::getUsuarioLogado()->getId(), this->tweet->getId());
+    delete(comments);
 }
 
 void ListComments::exibirComentarios() {
 
-    for (int i = 0; i < tweet->getComments().size(); i++) {
-        std::cout << tweet->getComments().at(i).getUser()->getProfile() + ": " +
-                     tweet->getComments().at(i).getDescription() << std::endl;
+    Comments *comments = new Comments();
+
+    vector<Comments> listComments = comments->carregarComments(this->tweet->getId());
+
+    for (int i = 0; i < listComments.size(); i++) {
+        std::cout << listComments.at(i).getUser()->getProfile() + ": " +
+                listComments.at(i).getDescription() << std::endl;
     }
+
+    delete(comments);
 }

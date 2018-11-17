@@ -61,7 +61,6 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 			user->setProfile(res->getString("profile"));
 			user->setId(res->getInt("idUsuario"));
 			tweet->setUser(user);
-			tweet->setComments(comment->carregarComments(tweet->getId()));
 			tweets.push_back(*tweet);
 		}
 		fecharConexao();

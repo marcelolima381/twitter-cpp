@@ -33,7 +33,7 @@ public:
   Users *getUser() const;
   void setUser(Users *user);
 
-  vector<Comments> carregarComments(int i);
+  vector<Comments> carregarComments(int tweet_id);
 };
 
 

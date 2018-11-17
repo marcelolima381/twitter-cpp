@@ -6,8 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+
 /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
 iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp
+Feed.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+../TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+../Sessao/Session.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+../TAD/Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+vector
 -
 
 /home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
@@ -38,9 +54,35 @@ AbstractInterface.hpp
 ../TAD/Comments.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.cpp
+iostream
+-
+Login.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.hpp
+../TAD/Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+../Sessao/Session.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+Feed.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.hpp
+AbstractInterface.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
+utility
+-
+Session.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
+
 /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Users.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp
+AbstractConnection.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 stdlib.h
@@ -58,6 +100,12 @@ cppconn/resultset.h
 cppconn/statement.h
 -
 
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.cpp
+Comments.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+vector
+-
+
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 iostream
 -
@@ -67,6 +115,34 @@ AbstractConnection.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
 Users.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp
+Comments_likes.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments_likes.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments_likes.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Followee.cpp
+Followee.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Followee.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Followee.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Hashtags.cpp
+Hashtags.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Hashtags.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Hashtags.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp
+Tweet.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 iostream
@@ -80,9 +156,35 @@ Users.hpp
 Comments.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
 
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp
+Tweets_likes.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.cpp
+Users.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
+
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 iostream
 -
 AbstractConnection.hpp
 /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Usertags.cpp
+Usertags.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Usertags.hpp
+
+/home/pedro/CLionProjects/2018-2-grupo19/TAD/Usertags.hpp
+iostream
+-
+
+/home/pedro/CLionProjects/2018-2-grupo19/main.cpp
+iostream
+-
+Interface/Login.hpp
+/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.hpp
 
