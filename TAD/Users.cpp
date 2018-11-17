@@ -3,6 +3,7 @@
 //
 
 #include "Users.hpp"
+#include "../Sessao/Session.hpp"
 
 int Users::getId() const {
     return id;
@@ -58,6 +59,42 @@ const std::string &Users::getCity() const {
 
 void Users::setCity(const std::string &city) {
     Users::city = city;
+}
+
+Users * Users::buscarUsuario(int user_id) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+//        Query SQL
+        res = stmt->executeQuery("SELECT * FROM users WHERE id='" + std::to_string(user_id) + "'");
+        res->next();
+        Users *user = new Users();
+        if (res->rowsCount()) {
+            user->setId(res->getInt("id"));
+            user->setAccount(res->getString("account"));
+            user->setPassword(res->getString("password"));
+            user->setProfile(res->getString("profile"));
+            user->setName(res->getString("name"));
+            user->setAge(res->getInt("age"));
+            user->setCity(res->getString("city"));
+            fecharConexao();
+            return user;
+        } else {
+            fecharConexao();
+            cout << "Usuário não encontrado" << std::endl;
+            throw std::exception();
+        }
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
 }
 
 bool Users::validarLogin(std::string conta, std::string senha) {
@@ -123,5 +160,25 @@ string Users::criarConta(string account, string password, string profile, string
         cout << "# ERR: " << e.what();
         fecharConexao();
         return "Ocorreu um erro ao criar o usuario";
+    }
+}
+
+void Users::editarCampo(string coluna, string valor) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+//        Query SQL
+        stmt->execute("UPDATE users t SET t."+ coluna + " = '" + valor + "' WHERE t.id = " + std::to_string(Session::getUsuarioLogado()->getId()));
+        fecharConexao();
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        //cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
     }
 }

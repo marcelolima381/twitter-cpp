@@ -44,6 +44,10 @@ public:
     void retrocederTweet(unsigned long index);
 
     void criarTweet(string texto_tweet, int user_id);
+
+    void curtirTweet(int tweet_id, int user_id);
+
+    std::vector<Users> verCurtidas(int tweet_id);
 };
 
 

@@ -47,9 +47,13 @@ public:
 
     void setCity(const std::string &city);
 
+    Users * buscarUsuario(int user_id);
+
     bool validarLogin(std::string conta, std::string senha);
 
     string criarConta(string basicString, string string1, string string2, string string3, string string4, int i);
+
+    void editarCampo(string coluna, string valor);
 };
 
 #endif //INC_2018_2_GRUPO19_USERS_HPP

@@ -16,6 +16,8 @@
 #define COMENTARIOS 4
 #define TWEETAR 5
 #define PESQUISAR 6
+#define CURTIR 7
+#define VER_CURTIDAS 8
 #define SAIR 0
 
 Feed::Feed() : AbstractInterface("Feed") {}
@@ -35,7 +37,8 @@ void Feed::exibir() {
             exibirTweet(tweets.at(this->index));
             std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2- Retroceder" << std::endl
                       << "3 - Meu Perfil" << std::endl << "4 - Ver Comentários" << std::endl << "5 - Tweetar" <<
-                      std::endl << "6 - Pesquisar" << std::endl << "0 - Sair" << std::endl;
+                      std::endl << "6 - Pesquisar" << std::endl << "7 - Curtir" << std::endl << "8 - Ver quem curtiu"
+                      << std::endl << "0 - Sair" << std::endl;
         }
         std::cin >> opcao;
         system("clear");
@@ -44,7 +47,7 @@ void Feed::exibir() {
 }
 
 void Feed::processarEntrada(int opcao) {
-
+    vector<Users> users;
     switch (opcao) {
         case AVANCAR:
             if (tweets.size() == 0) {
@@ -80,6 +83,18 @@ void Feed::processarEntrada(int opcao) {
 
         case PESQUISAR:
             entrarPesquisa();
+            break;
+
+        case CURTIR:
+            ObterTweetPeloIndice()->curtirTweet(ObterTweetPeloIndice()->getId(), Session::getUsuarioLogado()->getId());
+            std::cout << "Tweet curtido com sucesso!" << std::endl;
+            break;
+
+        case VER_CURTIDAS:
+            users = ObterTweetPeloIndice()->verCurtidas(ObterTweetPeloIndice()->getId());
+            for(int i = 0; i < users.size(); i++) {
+                std::cout << "Perfil: " << users.at(i).getProfile() << std::endl << "Nome: " << users.at(i).getName() << std::endl << std::endl;
+            }
             break;
 
         default:
@@ -139,10 +154,11 @@ void Feed::tweetar() {
     system("clear");
     std::cout << "Escreva o tweet: " << std::endl;
     cin.ignore();
-    getline(cin,texto);
+    getline(cin, texto);
     Tweet *tweet = new Tweet();
     tweet->criarTweet(texto, Session::getUsuarioLogado()->getId());
 }
+
 
 
 

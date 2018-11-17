@@ -24,6 +24,10 @@ private:
     Tweet* ObterTweetPeloIndice();
     void entrarComentarios();
     void exibirTweet(Tweet tweet);
+    void avancarTweet();
+    void retrocederTweet();
+
+    void editarPerfil();
 };
 
 

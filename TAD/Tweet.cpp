@@ -131,5 +131,55 @@ void Tweet::criarTweet(string texto_tweet, int user_id) {
 	}
 }
 
+void Tweet::curtirTweet(int tweet_id, int user_id) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+//        Query SQL
+        stmt->execute("INSERT INTO tweets_likes (tweets_id, users_id) VALUES (" + std::to_string(tweet_id) + ", " + std::to_string(user_id) + ")");
+        fecharConexao();
+
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        //cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
+}
+
+vector<Users> Tweet::verCurtidas(int tweet_id) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+//        Query SQL
+        res = stmt->executeQuery("select u.id, u.profile, u.name from tweets t join tweets_likes t2 on t.id = t2.tweets_id join users u on t2.users_id = u.id where t.id = "+ std::to_string(tweet_id) + ";");
+        std::vector<Users> users;
+        while (res->next()) {
+            Users *user = new Users();
+            user->setId(res->getInt("id"));
+            user->setProfile(res->getString("profile"));
+            user->setName(res->getString("name"));
+            users.push_back(*user);
+        }
+        fecharConexao();
+        return users;
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
+}
+
 
 
