@@ -37,32 +37,6 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
- /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp
- /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-<<<<<<< HEAD
-=======
-=======
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp
- /home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
- /home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp
->>>>>>> master
->>>>>>> master
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
  /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp

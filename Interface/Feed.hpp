@@ -30,6 +30,7 @@ public:
 
 	void retrocederTweet();
 
+	void tweetar();
 };
 
 

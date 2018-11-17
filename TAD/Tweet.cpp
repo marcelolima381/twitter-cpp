@@ -12,14 +12,6 @@ void Tweet::setId(int id) {
     Tweet::id = id;
 }
 
-std::string Tweet::getDetails() {
-    return details;
-}
-
-void Tweet::setDetails(std::string details) {
-    Tweet::details = details;
-}
-
 std::string Tweet::getDescription() {
     return description;
 }
@@ -49,14 +41,13 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 		abrirConexao();
 		stmt = con->createStatement();
 //        Query SQL
-		res = stmt->executeQuery("select t.id tweetID, t.details, t.description, u.id as idUsuario, u.profile,(select count(1) from comments c1 where c1.tweets_id = t.id) NumeroComentarios from followee f inner join tweets t on t.users_id = f.following inner join users u on u.id = t.users_id where f.follower = " + std::to_string(user_id) +  " order by t.id desc");
+		res = stmt->executeQuery("select t.id tweetID, t.description, u.id as idUsuario, u.profile,(select count(1) from comments c1 where c1.tweets_id = t.id) NumeroComentarios from followee f inner join tweets t on t.users_id = f.following inner join users u on u.id = t.users_id where f.follower = " + std::to_string(user_id) +  " order by t.id desc");
 		std::vector<Tweet> tweets;
 		while (res->next()) {
 			Tweet *tweet = new Tweet();
 			Users *user = new Users();
 			Comments *comment = new Comments();
 			tweet->setId(res->getInt("tweetID"));
-			tweet->setDetails(res->getString("details"));
 			tweet->setDescription(res->getString("description"));
 			user->setProfile(res->getString("profile"));
 			user->setId(res->getInt("idUsuario"));
@@ -83,14 +74,13 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
 		abrirConexao();
 		stmt = con->createStatement();
 //        Query SQL
-		res = stmt->executeQuery("select t.id tweetID, t.details, t.description, u.id as idUsuario, u.profile, (select count(1) from comments c1 where c1.tweets_id = t.id) NumeroComentarios from   tweets t inner join users u on u.id = t.users_id where u.id = " + std::to_string(user_id) +  " order by t.id desc;");
+		res = stmt->executeQuery("select t.id tweetID, t.description, u.id as idUsuario, u.profile, (select count(1) from comments c1 where c1.tweets_id = t.id) NumeroComentarios from   tweets t inner join users u on u.id = t.users_id where u.id = " + std::to_string(user_id) +  " order by t.id desc;");
 		std::vector<Tweet> tweets;
 		while (res->next()) {
 			Tweet *tweet = new Tweet();
 			Users *user = new Users();
 			Comments *comment = new Comments();
 			tweet->setId(res->getInt("tweetID"));
-			tweet->setDetails(res->getString("details"));
 			tweet->setDescription(res->getString("description"));
 			user->setProfile(res->getString("profile"));
 			user->setId(res->getInt("idUsuario"));
@@ -118,6 +108,27 @@ void Tweet::avancarTweet(unsigned long index) {
 
 void Tweet::retrocederTweet(unsigned long index) {
 
+}
+
+void Tweet::criarTweet(string texto_tweet, int user_id) {
+	try {
+		abrirConexao();
+		stmt = con->createStatement();
+//        Query SQL
+		stmt->execute("insert into tweets (users_id, description, data) values ('" + std::to_string(user_id) + "','" + texto_tweet + "',now())");
+		fecharConexao();
+
+	} catch (sql::SQLException &e) {
+		cout << "# ERR: SQLException in " << __FILE__;
+		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+		cout << "# ERR: " << e.what();
+		cout << " (MySQL error code: " << e.getErrorCode();
+		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		fecharConexao();
+	} catch (std::exception e) {
+		cout << "# ERR: " << e.what();
+		fecharConexao();
+	}
 }
 
 

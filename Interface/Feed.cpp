@@ -73,7 +73,7 @@ void Feed::processarEntrada(int opcao) {
             break;
 
         case TWEETAR:
-            entrarComentarios();
+            tweetar();
             break;
 
         default:
@@ -121,6 +121,16 @@ void Feed::retrocederTweet() {
         std::cout << "Não é possível retroceder mais." << std::endl;
     } else
         this->index--;
+}
+
+void Feed::tweetar() {
+    string texto;
+    system("clear");
+    std::cout << "Escreva o tweet: " << std::endl;
+    cin.ignore();
+    getline(cin,texto);
+    Tweet *tweet = new Tweet();
+    tweet->criarTweet(texto, Session::getUsuarioLogado()->getId());
 }
 
 

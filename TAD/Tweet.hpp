@@ -15,7 +15,6 @@ class Tweet : public AbstractConnection {
 private:
     int id;
     std::vector<Comments> comments;
-    std::string details;
     std::string description;
     Users *user;
 
@@ -23,10 +22,6 @@ public:
     int getId();
 
     void setId(int id);
-
-    std::string getDetails();
-
-    void setDetails(std::string details);
 
     std::string getDescription();
 
@@ -47,6 +42,8 @@ public:
     void avancarTweet(unsigned long index);
 
     void retrocederTweet(unsigned long index);
+
+    void criarTweet(string texto_tweet, int user_id);
 };
 
 
