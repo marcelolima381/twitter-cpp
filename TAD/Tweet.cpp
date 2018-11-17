@@ -77,14 +77,3 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 		fecharConexao();
 	}
 }
-
-void Tweet::avancarTweet(int index) {
-
-}
-
-void Tweet::retrocederTweet(int index) {
-
-}
-
-
-

@@ -41,10 +41,6 @@ public:
 	void setComments(vector<Comments> comments);
 
 	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
-
-    void avancarTweet(int index);
-
-    void retrocederTweet(int index);
 };
 
 

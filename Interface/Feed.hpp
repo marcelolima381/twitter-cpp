@@ -25,6 +25,11 @@ public:
 	void entrarComentarios();
 
 	void entrarPerfil();
+
+	void avancarTweet();
+
+	void retrocederTweet();
+
 };
 
 

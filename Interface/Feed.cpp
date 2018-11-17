@@ -13,6 +13,7 @@
 #define RETROCEDER 2
 #define PERFIL 3
 #define COMENTARIOS 4
+#define TWEETAR 5
 #define SAIR 0
 
 Feed::Feed() : AbstractInterface("Feed") {}
@@ -20,27 +21,43 @@ Feed::Feed() : AbstractInterface("Feed") {}
 void Feed::exibir() {
     int opcao;
     Tweet *tweet = new Tweet();
+    cout << "Carregando..." << std::endl;
     tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
-    index = 0;
-    exibirTweet(tweets.at(index));
+    this->index = 0;
+
     do {
-        std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2- Retroceder" << std::endl
-                  << "3 - Meu Perfil" << std::endl << "4 - Ver Comentários" << std::endl << "0 - Sair" << std::endl;
+        if (tweets.size() == 0) {
+            std::cout << "Escolha a opção:" << std::endl << "3 - Meu Perfil" << std::endl << "5 - Tweetar" <<
+                      std::endl << "6 - Pesquisar" << std::endl << "0 - Sair" << std::endl;
+        } else {
+            exibirTweet(tweets.at(this->index));
+            std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2- Retroceder" << std::endl
+                      << "3 - Meu Perfil" << std::endl << "4 - Ver Comentários" << std::endl << "5 - Tweetar" <<
+                      std::endl << "6 - Pesquisar" << std::endl << "0 - Sair" << std::endl;
+        }
         std::cin >> opcao;
-        this->processarEntrada(opcao);
         system("clear");
+        this->processarEntrada(opcao);
     } while (opcao != 0);
 }
 
 void Feed::processarEntrada(int opcao) {
-    Tweet *tweet = new Tweet();
+
     switch (opcao) {
         case AVANCAR:
-            tweet->avancarTweet(index);
+            if (tweets.size() == 0) {
+                std::cout << "Opção inválida. Você não tem tweets para exibir. Tente seguir alguém." << std::endl;
+            } else {
+                avancarTweet();
+            }
             break;
 
         case RETROCEDER:
-            tweet->retrocederTweet(index);
+            if (tweets.size() == 0) {
+                std::cout << "Opção inválida. Você não tem tweets para exibir. Tente seguir alguém." << std::endl;
+            } else {
+                retrocederTweet();
+            }
             break;
 
         case PERFIL:
@@ -48,6 +65,14 @@ void Feed::processarEntrada(int opcao) {
             break;
 
         case COMENTARIOS:
+            if (tweets.size() == 0) {
+                std::cout << "Opção inválida. Você não tem tweets para exibir. Tente seguir alguém." << std::endl;
+            } else {
+                entrarComentarios();
+            }
+            break;
+
+        case TWEETAR:
             entrarComentarios();
             break;
 
@@ -61,24 +86,46 @@ void Feed::processarEntrada(int opcao) {
 }
 
 void Feed::entrarComentarios() {
-    ListComments *listComments = new ListComments(ObterTweetPeloIndice());
-    listComments->exibir();
+
+    if (tweets.size() == 0) {
+        cout << "Você não tem tweets a serem exibidos.";
+    } else {
+        ListComments *listComments = new ListComments(ObterTweetPeloIndice());
+        listComments->exibir();
+    }
 }
 
-Tweet* Feed::ObterTweetPeloIndice()
-{
+Tweet *Feed::ObterTweetPeloIndice() {
     return &tweets.at(index);
 };
 
 void Feed::exibirTweet(Tweet tweet) {
-    std::cout << "Funcionou!" << std::endl;
-    std::cout << tweet.getUser()->getProfile() << std::endl;
-    std::cout << tweet.getDescription() << std::endl;
+    std::cout << "Tweet " + std::to_string((index + 1)) + " de " + std::to_string(tweets.size()) << std::endl;
+    std::cout << std::endl << tweet.getUser()->getProfile() << ":" << std::endl;
+    std::cout << tweet.getDescription() << std::endl << std::endl;
 }
 
 void Feed::entrarPerfil() {
     Perfil *perfil = new Perfil();
     perfil->exibir();
 }
+
+void Feed::avancarTweet() {
+
+    if (this->index + 1 >= tweets.size()) {
+        system("clear");
+        std::cout << "Não é possível avançar mais." << std::endl;
+    } else
+        this->index++;
+}
+
+void Feed::retrocederTweet() {
+    if (this->index <= 0) {
+        system("clear");
+        std::cout << "Não é possível retroceder mais." << std::endl;
+    } else
+        this->index--;
+}
+
 
 

@@ -49,6 +49,7 @@ void Login::logar() {
     std::cin >> senha;
     Users *user = new Users();
 
+    cout<<"Validando login..."<<std::endl;
     bool flag = user->validarLogin(conta, senha);
     if (flag) {
         Session::setUsuarioLogado(user);
@@ -67,26 +68,29 @@ void Login::criarConta() {
 
     std::cout << "Insira os dados da sua nova conta." << std::endl;
     std::cout << "Apelido: ";
-    std::cin >> profile;
+    cin.ignore();
+    getline(cin, profile);
     std::cout << "Senha: ";
+    cin.ignore();
     std::cin >> password;
     std::cout << "Email: ";
+    cin.ignore();
     std::cin >> account;
     std::cout << "Nome: ";
-    std::cin >> name;
+    cin.ignore();
+    getline(cin, name);
     std::cout << "Idade: ";
+    cin.ignore();
     std::cin >> age;
     std::cout << "Cidade: ";
-    std::cin >> city;
+    cin.ignore();
+    getline(cin, city);
+
     Users *user = new Users();
 
     retornoCriacao = user->criarConta(account, password, profile, name, city, age);
 
-    if (retornoCriacao == "") {
-        Session::setUsuarioLogado(user);
-        Feed *feed = new Feed();
-        feed->exibir();
-    }
+    cout<<"Usuario "+profile+" criado!" << std::endl;
 }
 
 void Login::redirecionarParaFeed() {
