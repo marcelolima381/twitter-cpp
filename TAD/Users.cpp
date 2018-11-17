@@ -125,3 +125,56 @@ string Users::criarConta(string account, string password, string profile, string
         return "Ocorreu um erro ao criar o usuario";
     }
 }
+
+
+void Users::seguirUsuario(int id1, int id2) {
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+        stmt->execute("insert into followee(follower,following) values ("+std::to_string(id1)+","+std::to_string(id2)+")");
+        fecharConexao();
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        //cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
+}
+
+std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
+
+    try {
+        abrirConexao();
+        stmt = con->createStatement();
+//        Query SQL
+        res = stmt->executeQuery("select  id, profile, name from users where profile like '%"+pesquisa+"%' or account like '%"+pesquisa+"%' or name like '%"+pesquisa+"%'");
+        std::vector<Users> usuarios;
+        while (res->next()) {
+            Users *user = new Users();
+            user->setId(res->getInt("id"));
+            user->setProfile(res->getString("profile"));
+            user->setName(res->getString("name"));
+
+            usuarios.push_back(*user);
+        }
+        fecharConexao();
+        return usuarios;
+    } catch (sql::SQLException &e) {
+        cout << "# ERR: SQLException in " << __FILE__;
+        cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+        cout << "# ERR: " << e.what();
+        cout << " (MySQL error code: " << e.getErrorCode();
+        cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+        fecharConexao();
+    } catch (std::exception e) {
+        cout << "# ERR: " << e.what();
+        fecharConexao();
+    }
+
+    return vector<Users>();
+}

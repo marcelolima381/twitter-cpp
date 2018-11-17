@@ -18,7 +18,11 @@ public:
     void processarEntrada(int opcao) override;
 
 private:
-
+    std::vector<Users> usuariosPesquisados;
+    void pesquisarHashTag();
+    void pesquisarUsuario();
+    void exibirUsuariosPesquisados();
+    void associarUsuario();
 };
 
 

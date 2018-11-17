@@ -21,7 +21,7 @@
 Feed::Feed() : AbstractInterface("Feed") {}
 
 void Feed::exibir() {
-    int opcao;
+    int opcao=0;
     Tweet *tweet = new Tweet();
     cout << "Carregando..." << std::endl;
     tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
