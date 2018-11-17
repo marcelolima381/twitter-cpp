@@ -14,5 +14,6 @@ private:
     Tweet *tweet;
     void processarEntrada(int opcao) override;
     void exibirComentarios();
+    void comentar();
 };
 #endif //INC_2018_2_GRUPO19_COMMENTS_HPP
