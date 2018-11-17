@@ -23,6 +23,8 @@ public:
 	void processarEntrada(int opcao) override;
 	void exibirTweet(Tweet tweet);
 	void entrarComentarios();
+
+	void entrarPerfil();
 };
 
 

@@ -19,6 +19,8 @@ Feed.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
+Perfil.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
 vector
 -
 
@@ -37,6 +39,12 @@ AbstractInterface.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 ../TAD/Comments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
+
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp
+AbstractInterface.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
+../TAD/Tweet.hpp
+/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 ../TAD/Users.hpp

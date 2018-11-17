@@ -231,6 +231,33 @@ Interface/Login.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.s
 .PHONY : Interface/Login.cpp.s
 
+Interface/Perfil.o: Interface/Perfil.cpp.o
+
+.PHONY : Interface/Perfil.o
+
+# target to build an object file
+Interface/Perfil.cpp.o:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o
+.PHONY : Interface/Perfil.cpp.o
+
+Interface/Perfil.i: Interface/Perfil.cpp.i
+
+.PHONY : Interface/Perfil.i
+
+# target to preprocess a source file
+Interface/Perfil.cpp.i:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.i
+.PHONY : Interface/Perfil.cpp.i
+
+Interface/Perfil.s: Interface/Perfil.cpp.s
+
+.PHONY : Interface/Perfil.s
+
+# target to generate assembly for a file
+Interface/Perfil.cpp.s:
+	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.s
+.PHONY : Interface/Perfil.cpp.s
+
 Sessao/Session.o: Sessao/Session.cpp.o
 
 .PHONY : Sessao/Session.o
@@ -549,6 +576,9 @@ help:
 	@echo "... Interface/Login.o"
 	@echo "... Interface/Login.i"
 	@echo "... Interface/Login.s"
+	@echo "... Interface/Perfil.o"
+	@echo "... Interface/Perfil.i"
+	@echo "... Interface/Perfil.s"
 	@echo "... Sessao/Session.o"
 	@echo "... Sessao/Session.i"
 	@echo "... Sessao/Session.s"

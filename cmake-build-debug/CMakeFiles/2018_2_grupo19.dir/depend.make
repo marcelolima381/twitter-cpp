@@ -8,6 +8,7 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/AbstractInterfa
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Feed.cpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Feed.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/ListComments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Interface/Perfil.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../Sessao/Session.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/AbstractConnection.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Feed.cpp.o: ../TAD/Comments.hpp
@@ -34,6 +35,15 @@ CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../TAD/AbstractConnection.h
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../TAD/Tweet.hpp
 CMakeFiles/2018_2_grupo19.dir/Interface/Login.cpp.o: ../TAD/Users.hpp
+
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../Interface/AbstractInterface.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../Interface/Perfil.cpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../Interface/Perfil.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../Sessao/Session.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../TAD/AbstractConnection.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../TAD/Comments.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../TAD/Tweet.hpp
+CMakeFiles/2018_2_grupo19.dir/Interface/Perfil.cpp.o: ../TAD/Users.hpp
 
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../Sessao/Session.cpp
 CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o: ../Sessao/Session.hpp

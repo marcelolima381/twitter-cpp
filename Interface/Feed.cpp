@@ -6,6 +6,7 @@
 #include "../TAD/Users.hpp"
 #include "../Sessao/Session.hpp"
 #include "../TAD/Tweet.hpp"
+#include "Perfil.hpp"
 #include <vector>
 
 #define AVANCAR 1
@@ -43,7 +44,7 @@ void Feed::processarEntrada(int opcao) {
             break;
 
         case PERFIL:
-//            entrarPerfil();
+            entrarPerfil();
             break;
 
         case COMENTARIOS:
@@ -73,6 +74,11 @@ void Feed::exibirTweet(Tweet tweet) {
     std::cout << "Funcionou!" << std::endl;
     std::cout << tweet.getUser()->getProfile() << std::endl;
     std::cout << tweet.getDescription() << std::endl;
+}
+
+void Feed::entrarPerfil() {
+    Perfil *perfil = new Perfil();
+    perfil->exibir();
 }
 
 
