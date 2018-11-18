@@ -1,6 +1,8 @@
-//
-// Created by marcelo on 02/11/18.
-//
+/**
+ * @file Feed.cpp
+ * @author Marcelo
+ * @brief Feed
+ */
 
 #include "Feed.hpp"
 #include "../TAD/Users.hpp"
@@ -20,8 +22,14 @@
 #define VER_CURTIDAS 8
 #define SAIR 0
 
+/**
+ * Construtor
+ */
 Feed::Feed() : AbstractInterface("Feed") {}
 
+/**
+ * @brief Exibe o menu de opções do Feed
+ */
 void Feed::exibir() {
     int opcao = 0;
     Tweet *tweet = new Tweet();
@@ -46,6 +54,10 @@ void Feed::exibir() {
     } while (opcao != 0);
 }
 
+/**
+ * @brief Processa a entrada do menu
+ * @param opcao
+ */
 void Feed::processarEntrada(int opcao) {
     vector<Users> users;
     switch (opcao) {
@@ -103,6 +115,9 @@ void Feed::processarEntrada(int opcao) {
     }
 }
 
+/**
+ * @brief Manipula os comentários de um Tweet. Caso não haja um Tweet, uma mensagem é exibida.
+ */
 void Feed::entrarComentarios() {
 
     if (tweets.size() == 0) {
@@ -113,26 +128,44 @@ void Feed::entrarComentarios() {
     }
 }
 
+/**
+ * @brief Os Tweets são exibidos um a um. O controle de navegação entre os Tweets é feito por um índice.
+ *        Através desse índice a função retorna o respectivo Tweet
+ * @return Tweet
+ */
 Tweet *Feed::ObterTweetPeloIndice() {
     return &tweets.at(index);
 };
 
+/**
+ * @brief Responsável por imprimir os Tweets no Feed do usuário
+ * @param tweet
+ */
 void Feed::exibirTweet(Tweet tweet) {
     std::cout << "Tweet " + std::to_string((index + 1)) + " de " + std::to_string(tweets.size()) << std::endl;
     std::cout << std::endl << tweet.getUser()->getProfile() << ":" << std::endl;
     std::cout << tweet.getDescription() << std::endl << std::endl;
 }
 
+/**
+ * @brief Faz a transição de interface do Feed para o Perfil
+ */
 void Feed::entrarPerfil() {
     Perfil *perfil = new Perfil();
     perfil->exibir();
 }
 
+/**
+ * @brief Faz a transição de interface do Feed para a Pesquisa
+ */
 void Feed::entrarPesquisa() {
     Pesquisa *pesquisa = new Pesquisa();
     pesquisa->exibir();
 }
 
+/**
+ * @brief Avança um Tweet pelo sistema de índice
+ */
 void Feed::avancarTweet() {
 
     if (this->index + 1 >= tweets.size()) {
@@ -142,6 +175,9 @@ void Feed::avancarTweet() {
         this->index++;
 }
 
+/**
+ * @brief Retrocede um Tweet pelo sistema de índice
+ */
 void Feed::retrocederTweet() {
     if (this->index <= 0) {
         system("clear");
@@ -150,6 +186,9 @@ void Feed::retrocederTweet() {
         this->index--;
 }
 
+/**
+ * @brief Lê um novo tweet
+ */
 void Feed::tweetar() {
     string texto;
     system("clear");

@@ -7,10 +7,17 @@
 #include "../TAD/Users.hpp"
 #include "../Sessao/Session.hpp"
 
+/**
+ * Construtor
+ * @param tweet
+ */
 ListComments::ListComments(Tweet *tweet) : AbstractInterface("Comentarios") {
     this->tweet = tweet;
 }
 
+/**
+ * @brief Exibe o menu de opções do Comentário de um Tweet
+ */
 void ListComments::exibir() {
 
     int opcao;
@@ -25,6 +32,10 @@ void ListComments::exibir() {
     } while (opcao != 0);
 }
 
+/**
+ * @brief Processa a entrada do menu
+ * @param opcao
+ */
 void ListComments::processarEntrada(int opcao) {
     switch (opcao) {
         case 1:
@@ -37,6 +48,9 @@ void ListComments::processarEntrada(int opcao) {
     }
 }
 
+/**
+ * @brief Lê um novo comentário
+ */
 void ListComments::comentar() {
     std::string texto;
 
@@ -49,6 +63,9 @@ void ListComments::comentar() {
     delete (comments);
 }
 
+/**
+ * @brief Imprime os comentários do Tweet atual
+ */
 void ListComments::exibirComentarios() {
 
     Comments *comments = new Comments();
