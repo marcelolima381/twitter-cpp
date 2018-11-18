@@ -52,8 +52,6 @@ CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp
  /home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp
@@ -62,7 +60,6 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.cpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp
