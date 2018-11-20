@@ -35,7 +35,12 @@ vector<Comments> Tweet::getComments() {
 void Tweet::setComments(vector<Comments> comments) {
     Tweet::comments = comments;
 }
-
+/**
+ * @brief Pesquisa no banco de dados tweets que possuam a hashtag do parametro no seu texto, os armazena em um vetor em
+ *        ordem decrescente de  acordo seus id's e retorna esse vetor.
+ * @param hashtag
+ * @return vector<Tweet>
+ */
 vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
     try {
         abrirConexao();
@@ -70,7 +75,12 @@ vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Busca no banco de dados os tweets de todos os usuarios seguidos pelo usuário que possui a id passada como
+ *        parâmetro, os armazena em um vetor em ordem decrescente de  acordo seus id's e retorna esse vetor.
+ * @param user_id
+ * @return vector<Tweet>
+ */
 vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
     try {
         abrirConexao();
@@ -105,7 +115,12 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Busca no banco de dados todos os tweets que sejam do usuário que possua o id passado como parâmetro,
+ *        os armazena em um vetor em ordem decrescente de  acordo seus id's e retorna esse vetor.
+ * @param user_id
+ * @return vector<Tweet>
+ */
 vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
     try {
         abrirConexao();
@@ -140,15 +155,28 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Pega o tweet em um vector de tweets que sucede o tweet com aquele index, printando um aviso na tela caso não
+ *        haja tweets posteriores a aquele index
+ * @param index
+ */
 void Tweet::avancarTweet(unsigned long index) {
 
 }
-
+/**
+ * @brief Pega o tweet em um vector de tweets que antecede o tweet com aquele index, printando um aviso na tela caso não
+ *        haja tweets anteriores a aquele index
+ * @param index
+ */
 void Tweet::retrocederTweet(unsigned long index) {
 
 }
-
+/**
+ * @brief Adiciona ao banco de dados um tweet, armazenando seu texto passado e usuário que tweetou, que são
+ *        passados como parâmetro
+ * @param texto_tweet
+ * @param user_id
+ */
 void Tweet::criarTweet(string texto_tweet, int user_id) {
     try {
         abrirConexao();
@@ -170,7 +198,11 @@ void Tweet::criarTweet(string texto_tweet, int user_id) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Adiciona ao banco de dados um "like", com o id do tweet curtido e o id do usuário que curtiu
+ * @param tweet_id
+ * @param user_id
+ */
 void Tweet::curtirTweet(int tweet_id, int user_id) {
     try {
         abrirConexao();
@@ -192,7 +224,12 @@ void Tweet::curtirTweet(int tweet_id, int user_id) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Busca no banco de dados todos os "likes" que possuam o id do tweet passado como parâmetro, pega o id do
+ *        usuário de cada "like", resgata os dados de cada usuário, os armazena em um vector e o retorna
+ * @param tweet_id
+ * @return vector<Users>
+ */
 vector<Users> Tweet::verCurtidas(int tweet_id) {
     try {
         abrirConexao();

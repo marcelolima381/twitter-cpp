@@ -36,7 +36,11 @@ Users *Comments::getUser() const {
 void Comments::setUser(Users *user) {
     Comments::user = user;
 }
-
+/**
+ * @brief Recolhe no banco de dados todos os comentários do tweet que possui o id correspondete com o parâmetro
+ * @param tweet_id
+ * @return vector<Coments>
+ */
 std::vector<Comments> Comments::carregarComments(int tweet_id) {
     try {
         abrirConexao();
@@ -72,7 +76,12 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
     }
 }
 
-
+/**
+ * @brief Adiciona no banco de dados um novo comentário junto com o id de quem comentou e o id do tweet comentado
+ * @param comentario
+ * @param idUsuario
+ * @param idTweet
+ */
 void Comments::inserirComentario(std::string comentario, int idUsuario, int idTweet) {
     try {
         abrirConexao();

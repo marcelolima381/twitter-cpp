@@ -3,7 +3,9 @@
 //
 
 #include "AbstractConnection.hpp"
-
+/**
+ * @brief Abre conexão com o banco de dados nas classes que herdam de AbstractConnetcion
+ */
 void AbstractConnection::abrirConexao() {
 //        Criando conexão
     driver = get_driver_instance();
@@ -12,7 +14,9 @@ void AbstractConnection::abrirConexao() {
 //        Escolhendo o database
     con->setSchema("twittercpp");
 }
-
+/**
+ * @brief Fecha conexão com o banco de dados nas classes que herdam de AbstractConnetcion
+ */
 void AbstractConnection::fecharConexao() {
     delete res;
     delete stmt;

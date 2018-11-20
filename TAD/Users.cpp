@@ -60,7 +60,11 @@ const std::string &Users::getCity() const {
 void Users::setCity(const std::string &city) {
     Users::city = city;
 }
-
+/**
+ * @brief Busca no banco de dados o usuário com o id passado como parâmetro e armazena seus dados em um objeto users
+ * @param user_id
+ * @return *Users
+ */
 Users *Users::buscarUsuario(int user_id) {
     try {
         abrirConexao();
@@ -96,7 +100,12 @@ Users *Users::buscarUsuario(int user_id) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Busca no banco de dados se há algum usuário que possui a conta e a senha passada como parâmetro
+ * @param conta
+ * @param senha
+ * @return Bool
+ */
 bool Users::validarLogin(std::string conta, std::string senha) {
     try {
         abrirConexao();
@@ -130,7 +139,16 @@ bool Users::validarLogin(std::string conta, std::string senha) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Adiciona no banco de dados um novo usuário com os dados passados como parâmetro
+ * @param account
+ * @param password
+ * @param profile
+ * @param name
+ * @param city
+ * @param age
+ * @return string
+ */
 string Users::criarConta(string account, string password, string profile, string name, string city, int age) {
     try {
         abrirConexao();
@@ -164,7 +182,11 @@ string Users::criarConta(string account, string password, string profile, string
     }
 }
 
-
+/**
+ * @brief Adiciona no banco de dados o id da dupla: seguidor e quem ele deseja seguir, paddados por paraâmetro
+ * @param id1
+ * @param id2
+ */
 void Users::seguirUsuario(int id1, int id2) {
     try {
         abrirConexao();
@@ -185,7 +207,12 @@ void Users::seguirUsuario(int id1, int id2) {
         fecharConexao();
     }
 }
-
+/**
+ * @brief Pesquisa no banco de dados usuários que possuam uma conta, ou nome, ou profile de acordo com o que foi
+ *        pesquisado, que é passado como parâmetro
+ * @param pesquisa
+ * @return vector<Users>
+ */
 std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
 
     try {
@@ -220,7 +247,12 @@ std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
 
     return vector<Users>();
 }
-
+/**
+ * @brief Receb como parâmetro o campo que se deseja editar e a nova informação que se deseja inserir e atualiza o
+ *        banco de dados
+ * @param coluna
+ * @param valor
+ */
 void Users::editarCampo(string coluna, string valor) {
     try {
         abrirConexao();
