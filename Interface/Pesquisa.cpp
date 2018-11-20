@@ -11,9 +11,13 @@
 #define HASHTAG 1
 #define USUARIOS 2
 #define SAIR 0
-
+/**
+ * @brief Construtor
+ */
 Pesquisa::Pesquisa() : AbstractInterface("Pesquisa") {}
-
+/**
+ * Exibe um menu para escolha de modo de pesquisa
+ */
 void Pesquisa::exibir() {
 
     int opcao = 0;
@@ -26,7 +30,10 @@ void Pesquisa::exibir() {
         system("clear");
     } while (opcao != 0);
 }
-
+/**
+ * @brief Processa a entrada recebida pelo menu de modo de pesquisa
+ * @param opcao
+ */
 void Pesquisa::processarEntrada(int opcao) {
     switch (opcao) {
         case HASHTAG:
@@ -44,7 +51,9 @@ void Pesquisa::processarEntrada(int opcao) {
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
     }
 }
-
+/**
+ * @brief Realiza a pesquisa por um usuário
+ */
 void Pesquisa::pesquisarUsuario() {
     std::string pesquisa;
 
@@ -57,7 +66,9 @@ void Pesquisa::pesquisarUsuario() {
     usuariosPesquisados = user->pesquisarUsuarios(pesquisa);
     exibirUsuariosPesquisados();
 }
-
+/**
+ * @brief Realiza a pesquisa por uma hastag
+ */
 void Pesquisa::pesquisarHashTag() {
     std::string pesquisa;
 
@@ -74,7 +85,9 @@ void Pesquisa::pesquisarHashTag() {
     exibirTweetsPesquisados();
 }
 
-
+/**
+ * @brief Exibe tweets pesquisados
+ */
 void Pesquisa::exibirTweetsPesquisados() {
     if (tweetsPesquisados.size() > 0) {
         for (unsigned long i = 0; i < tweetsPesquisados.size(); ++i) {
@@ -88,7 +101,9 @@ void Pesquisa::exibirTweetsPesquisados() {
     }
 
 }
-
+/**
+ * @brief Exibe usuários pesquisados
+ */
 void Pesquisa::exibirUsuariosPesquisados() {
     if (usuariosPesquisados.size() > 0) {
         for (unsigned long i = 0; i < usuariosPesquisados.size(); ++i) {
@@ -102,7 +117,9 @@ void Pesquisa::exibirUsuariosPesquisados() {
     }
 
 }
-
+/**
+ * @brief Possibilita um usuário poder seguir outro
+ */
 void Pesquisa::associarUsuario() {
     int id;
 

@@ -13,9 +13,13 @@
 #define COMENTARIOS 4
 #define SAIR 0
 #define EDITAR_PERFIL 5
-
+/**
+ * @brief Construtor
+ */
 Perfil::Perfil() : AbstractInterface("Perfil") {}
-
+/**
+ * @brief Exibe o conteúdo do perfil do usuário logado
+ */
 void Perfil::exibir() {
     int opcao;
     Users *user = new Users();
@@ -45,7 +49,10 @@ void Perfil::exibir() {
         }
     } while (opcao != 0);
 }
-
+/**
+ * @brief Processa a entrada recebida no menu do Perfil
+ * @param opcao
+ */
 void Perfil::processarEntrada(int opcao) {
     switch (opcao) {
         case AVANCAR:
@@ -80,22 +87,32 @@ void Perfil::processarEntrada(int opcao) {
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
     }
 }
-
+/**
+ *@brief Rebece comentários e mostra os comentários atuais
+ */
 void Perfil::entrarComentarios() {
     ListComments *listComments = new ListComments(ObterTweetPeloIndice());
     listComments->exibir();
 }
-
+/**
+ * @brief Mostra um tweet em determinado índice
+ * @return Tweet
+ */
 Tweet *Perfil::ObterTweetPeloIndice() {
     return &tweets.at(index);
 };
-
+/**
+ * @brief Mostra a posição de um tweet, o autor e o texto contido nele
+ * @param tweet
+ */
 void Perfil::exibirTweet(Tweet tweet) {
     std::cout << "Tweet " + std::to_string((index + 1)) + " de " + std::to_string(tweets.size()) << std::endl;
     std::cout << std::endl << tweet.getUser()->getProfile() << ":" << std::endl;
     std::cout << tweet.getDescription() << std::endl << std::endl;
 }
-
+/**
+ * @brief Avança para o próximo tweet
+ */
 void Perfil::avancarTweet() {
 
     if (this->index + 1 >= tweets.size()) {
@@ -104,7 +121,9 @@ void Perfil::avancarTweet() {
     } else
         this->index++;
 }
-
+/**
+ * @brief Retrocede para o tweet anterior
+ */
 void Perfil::retrocederTweet() {
     if (this->index <= 0) {
         system("clear");
@@ -112,7 +131,9 @@ void Perfil::retrocederTweet() {
     } else
         this->index--;
 }
-
+/**
+ * @brief Permite o usuário alterar dados em seu perfil
+ */
 void Perfil::editarPerfil() {
     Users *user = new Users();
     int opcao;

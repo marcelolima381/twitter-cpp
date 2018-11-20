@@ -11,8 +11,15 @@
 #include <unistd.h>
 #include <stdio.h>
 
+/**
+ * Construtor
+ */
 Login::Login() : AbstractInterface("Twitter") {}
 
+/**
+ * @brief Auxilia na manipulação de caracteres recebidos como entrada na senha do usuário
+ * @return int
+ */
 int getch() {
     int ch;
     struct termios t_old, t_new;
@@ -28,6 +35,12 @@ int getch() {
     return ch;
 }
 
+/**
+ * @brief Retorna a string correspondente à senha do usuário e faz com que
+ * suas entradas apareçam como '*' na tela
+ * @param prompt, show_asterisk
+ * @return string
+ */
 string getpass(const char *prompt, bool show_asterisk = true) {
     const char BACKSPACE = 127;
     const char RETURN = 10;
@@ -54,7 +67,9 @@ string getpass(const char *prompt, bool show_asterisk = true) {
     return password;
 }
 
-
+/**
+ * @brief Exibe o menu de login
+ */
 void Login::exibir() {
     int opcao;
     do {
@@ -66,7 +81,10 @@ void Login::exibir() {
         system("clear");
     } while (opcao != 0);
 }
-
+/**
+ * @brief Processa a entrada do login
+ * @param opcao
+ */
 void Login::processarEntrada(int opcao) {
     switch (opcao) {
         case 1:
@@ -84,7 +102,9 @@ void Login::processarEntrada(int opcao) {
             std::cout << "Opção inválida!. Digite outra opção." << std::endl;
     }
 }
-
+/**
+ * @brief Realiza e verifica o lozin de um usuário
+ */
 void Login::logar() {
     std::string conta, senha;
     std::cout << "Login: ";
@@ -105,7 +125,9 @@ void Login::logar() {
 
 
 }
-
+/**
+ * @brief Realiza a criação de uma nova conta de usuário
+ */
 void Login::criarConta() {
     std::string account, password, profile, name, city, retornoCriacao;
     int age;
@@ -136,7 +158,9 @@ void Login::criarConta() {
 
     cout << "Usuario " + profile + " criado!" << std::endl;
 }
-
+/**
+ * @brief Redireciona o usuário para seu feed
+ */
 void Login::redirecionarParaFeed() {
 
 }
