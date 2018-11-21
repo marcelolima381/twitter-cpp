@@ -11,7 +11,7 @@ class AbstractInterface {
  private:
 	std::string titulo;
  public:
-	AbstractInterface(const std::string &titulo);
+	explicit AbstractInterface(const std::string &titulo);
 
 	virtual void exibir() = 0;
 

@@ -54,11 +54,12 @@ void ListComments::exibir() {
  * @param opcao
  */
 void ListComments::processarEntrada(int opcao) {
+	system("clear");
 	switch (opcao) {
 		case 1:comentar();
 			break;
 		case 0:return;
-		default:std::cout << "Opção inválida!. Digite outra opção." << std::endl;
+		default:__throw_bad_function_call();
 	}
 }
 
@@ -68,7 +69,7 @@ void ListComments::processarEntrada(int opcao) {
 void ListComments::comentar() {
 	std::string texto;
 
-	Comments *comments = new Comments();
+	auto *comments = new Comments();
 	cout << "Digite o comentário:" << endl;
 	cin.ignore();
 	getline(cin, texto);
@@ -82,13 +83,13 @@ void ListComments::comentar() {
  */
 void ListComments::exibirComentarios() {
 
-	Comments *comments = new Comments();
+	auto *comments = new Comments();
 
 	vector<Comments> listComments = comments->carregarComments(this->tweet->getId());
 
-	for (int i = 0; i < listComments.size(); i++) {
-		std::cout << listComments.at(i).getUser()->getProfile() + ": " +
-			listComments.at(i).getDescription() << std::endl;
+	for (auto &listComment : listComments) {
+		std::cout << listComment.getUser()->getProfile() + ": " +
+			listComment.getDescription() << std::endl;
 	}
 
 	delete (comments);

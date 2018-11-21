@@ -57,7 +57,7 @@ void Pesquisa::pesquisarUsuario() {
 	cin.ignore();
 	getline(cin, pesquisa);
 
-	Users *user = new Users();
+	auto *user = new Users();
 
 	usuariosPesquisados = user->pesquisarUsuarios(pesquisa);
 	exibirUsuariosPesquisados();
@@ -72,7 +72,7 @@ void Pesquisa::pesquisarHashTag() {
 	cin.ignore();
 	getline(cin, pesquisa);
 
-	Tweet *tweet = new Tweet();
+	auto *tweet = new Tweet();
 
 	if (pesquisa[0] != '#')
 		pesquisa = '#' + pesquisa;
@@ -85,11 +85,11 @@ void Pesquisa::pesquisarHashTag() {
  * @brief Exibe tweets pesquisados
  */
 void Pesquisa::exibirTweetsPesquisados() {
-	if (tweetsPesquisados.size() > 0) {
-		for (unsigned long i = 0; i < tweetsPesquisados.size(); ++i) {
-			cout << "ID: " << setw(3) << left << std::to_string(tweetsPesquisados.at(i).getId()) <<
-				 "Profile: " << setw(20) << left << tweetsPesquisados.at(i).getUser()->getProfile() << std::endl <<
-				 "Tweet: " << tweetsPesquisados.at(i).getDescription() << std::endl << std::endl;
+	if (!tweetsPesquisados.empty()) {
+		for (auto &tweetsPesquisado : tweetsPesquisados) {
+			cout << "ID: " << setw(3) << left << std::to_string(tweetsPesquisado.getId()) <<
+				 "Profile: " << setw(20) << left << tweetsPesquisado.getUser()->getProfile() << std::endl <<
+				 "Tweet: " << tweetsPesquisado.getDescription() << std::endl << std::endl;
 		}
 
 	} else {
@@ -101,11 +101,11 @@ void Pesquisa::exibirTweetsPesquisados() {
  * @brief Exibe usuários pesquisados
  */
 void Pesquisa::exibirUsuariosPesquisados() {
-	if (usuariosPesquisados.size() > 0) {
-		for (unsigned long i = 0; i < usuariosPesquisados.size(); ++i) {
-			cout << "ID: " << setw(3) << left << std::to_string(usuariosPesquisados.at(i).getId()) <<
-				 "Profile: " << setw(20) << left << usuariosPesquisados.at(i).getProfile() <<
-				 " Nome: " << setw(30) << left << usuariosPesquisados.at(i).getName() << std::endl;
+	if (!usuariosPesquisados.empty()) {
+		for (auto &usuariosPesquisado : usuariosPesquisados) {
+			cout << "ID: " << setw(3) << left << std::to_string(usuariosPesquisado.getId()) <<
+				 "Profile: " << setw(20) << left << usuariosPesquisado.getProfile() <<
+				 " Nome: " << setw(30) << left << usuariosPesquisado.getName() << std::endl;
 		}
 		associarUsuario();
 	} else {
@@ -124,13 +124,13 @@ void Pesquisa::associarUsuario() {
 		cin >> id;
 
 		if (id != 0) {
-			for (unsigned long i = 0; i < usuariosPesquisados.size(); ++i) {
-				if (usuariosPesquisados.at(i).getId() == id) {
-					Users *user = new Users();
+			for (auto &usuariosPesquisado : usuariosPesquisados) {
+				if (usuariosPesquisado.getId() == id) {
+					auto *user = new Users();
 
 					user->seguirUsuario(Session::getUsuarioLogado()->getId(), id);
 
-					cout << "Você agora segue o usuário: " << usuariosPesquisados.at(i).getProfile();
+					cout << "Você agora segue o usuário: " << usuariosPesquisado.getProfile();
 					return;
 				}
 			}

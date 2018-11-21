@@ -24,12 +24,12 @@ Perfil::Perfil() : AbstractInterface("Perfil") {}
  */
 void Perfil::exibir() {
 	int opcao;
-	Users *user = new Users();
+//	auto *user = new Users();
 	std::cout << "Perfil: " << Session::getUsuarioLogado()->getProfile() << std::endl << "Nome: "
 			  << Session::getUsuarioLogado()->getName() << std::endl << "Cidade: "
 			  << Session::getUsuarioLogado()->getCity() << std::endl << "Idade: "
 			  << Session::getUsuarioLogado()->getAge() << std::endl;
-	Tweet *tweet = new Tweet();
+	auto *tweet = new Tweet();
 	tweets = tweet->carregarTweetsUsuarioLogado(Session::getUsuarioLogado()->getId());
 	index = 0;
 	do {
@@ -39,7 +39,7 @@ void Perfil::exibir() {
 					  << std::endl;
 		} else {
 			exibirTweet(tweets.at(this->index));
-			std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2- Retroceder" << std::endl
+			std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2 - Retroceder" << std::endl
 					  << "3 - Feed" << std::endl << "4 - Ver Comentários" << std::endl << "5 - Editar perfil"
 					  << std::endl;
 		}
@@ -115,7 +115,7 @@ void Perfil::processarEntrada(int opcao) {
  *@brief Rebece comentários e mostra os comentários atuais
  */
 void Perfil::entrarComentarios() {
-	ListComments *listComments = new ListComments(ObterTweetPeloIndice());
+	auto *listComments = new ListComments(ObterTweetPeloIndice());
 	listComments->exibir();
 }
 /**
@@ -159,7 +159,7 @@ void Perfil::retrocederTweet() {
  * @brief Permite o usuário alterar dados em seu perfil
  */
 void Perfil::editarPerfil() {
-	Users *user = new Users();
+	auto *user = new Users();
 	int opcao;
 	string nome, cidade, senha;
 	int idade;

@@ -14,7 +14,7 @@
 #include "Feed.hpp"
 #include <termios.h>
 #include <unistd.h>
-#include <stdio.h>
+#include <cstdio>
 #include <climits> // for INT_MAX limits
 
 /**
@@ -28,7 +28,7 @@ Login::Login() : AbstractInterface("Twitter") {}
  */
 int getch() {
 	int ch;
-	struct termios t_old, t_new;
+	struct termios t_old{}, t_new{};
 
 	tcgetattr(STDIN_FILENO, &t_old);
 	t_new = t_old;
@@ -129,14 +129,14 @@ void Login::logar() {
 	std::cin >> conta;
 	cin.ignore();
 	senha = getpass("Senha: ", true);
-	Users *user = new Users();
+	auto *user = new Users();
 
 	cout << "Validando login..." << std::endl;
 	bool flag = user->validarLogin(conta, senha);
 	if (flag) {
 		system("clear");
 		Session::setUsuarioLogado(user);
-		Feed *feed = new Feed();
+		auto *feed = new Feed();
 		feed->exibir();
 	} else {
 		__throw_invalid_argument("Login e/ou senha inválidos");
@@ -168,7 +168,7 @@ void Login::criarConta() {
 	cin.ignore();
 	getline(cin, city);
 
-	Users *user = new Users();
+	auto *user = new Users();
 
 	retornoCriacao = user->criarConta(account, password, profile, name, city, age);
 

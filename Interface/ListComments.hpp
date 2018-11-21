@@ -10,7 +10,7 @@
 
 class ListComments : public AbstractInterface {
  public:
-	ListComments(Tweet *tweet);
+	explicit ListComments(Tweet *tweet);
 
 	void exibir() override;
 

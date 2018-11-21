@@ -28,14 +28,14 @@ Feed::Feed() : AbstractInterface("Feed") {}
  */
 void Feed::exibir() {
 	int opcao = 0;
-	Tweet *tweet = new Tweet();
-	cout << "Carregando..." << std::endl;
-	tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
-	this->index = 0;
-	system("clear");
-	std::cout << std::endl << "\033[1;36mOlá, " << Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
-			  << std::endl;
+	auto *tweet = new Tweet();
 	do {
+		cout << "Carregando..." << std::endl;
+		tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
+		this->index = 0;
+		system("clear");
+		std::cout << std::endl << "\033[1;36mOlá, " << Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
+				  << std::endl;
 		if (tweets.empty()) {
 			std::cout << "Escolha a opção:" << std::endl << "3 - Meu Perfil" << std::endl << "5 - Tweetar" <<
 					  std::endl << "6 - Pesquisar" << std::endl << "0 - Sair" << std::endl;
@@ -151,10 +151,10 @@ void Feed::processarEntrada(int opcao) {
  */
 void Feed::entrarComentarios() {
 
-	if (tweets.size() == 0) {
+	if (tweets.empty()) {
 		cout << "Você não tem tweets a serem exibidos.";
 	} else {
-		ListComments *listComments = new ListComments(ObterTweetPeloIndice());
+		auto *listComments = new ListComments(ObterTweetPeloIndice());
 		listComments->exibir();
 	}
 }
@@ -182,7 +182,7 @@ void Feed::exibirTweet(Tweet tweet) {
  * @brief Faz a transição de interface do Feed para o Perfil
  */
 void Feed::entrarPerfil() {
-	Perfil *perfil = new Perfil();
+	auto *perfil = new Perfil();
 	perfil->exibir();
 }
 
@@ -190,7 +190,7 @@ void Feed::entrarPerfil() {
  * @brief Faz a transição de interface do Feed para a Pesquisa
  */
 void Feed::entrarPesquisa() {
-	Pesquisa *pesquisa = new Pesquisa();
+	auto *pesquisa = new Pesquisa();
 	pesquisa->exibir();
 }
 
@@ -226,7 +226,7 @@ void Feed::tweetar() {
 	std::cout << "Escreva o tweet: " << std::endl;
 	cin.ignore();
 	getline(cin, texto);
-	Tweet *tweet = new Tweet();
+	auto *tweet = new Tweet();
 	tweet->criarTweet(texto, Session::getUsuarioLogado()->getId());
 }
 
