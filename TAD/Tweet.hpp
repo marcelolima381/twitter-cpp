@@ -41,10 +41,6 @@ class Tweet : public AbstractConnection {
 
 	std::vector<Tweet> pesquisarPorHashtag(string hashtag);
 
-	void avancarTweet(unsigned long index);
-
-	void retrocederTweet(unsigned long index);
-
 	void criarTweet(string texto_tweet, int user_id);
 
 	void curtirTweet(int tweet_id, int user_id);

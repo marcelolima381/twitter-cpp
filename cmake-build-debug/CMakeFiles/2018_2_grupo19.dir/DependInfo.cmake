@@ -13,13 +13,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/Sessao/Session.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/AbstractConnection.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o"
-  "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o"
-  "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Followee.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o"
-  "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Hashtags.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o"
-  "/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Usertags.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o"
   "/home/marcelo/CLionProjects/2018-2-grupo19/main.cpp" "/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/CMakeFiles/2018_2_grupo19.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

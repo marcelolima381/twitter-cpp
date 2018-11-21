@@ -138,24 +138,6 @@
 		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.hpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Followee.cpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Followee.hpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Hashtags.cpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Hashtags.hpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
 		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
@@ -172,12 +154,6 @@
 			<Option target="2018_2_grupo19"/>
 		</Unit>
 		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Usertags.cpp">
-			<Option target="2018_2_grupo19"/>
-		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Usertags.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
 		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/main.cpp">

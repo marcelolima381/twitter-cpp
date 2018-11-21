@@ -29,10 +29,10 @@ Feed::Feed() : AbstractInterface("Feed") {}
 void Feed::exibir() {
 	int opcao = 0;
 	auto *tweet = new Tweet();
+	this->index = 0;
 	do {
 		cout << "Carregando..." << std::endl;
 		tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
-		this->index = 0;
 		system("clear");
 		std::cout << std::endl << "\033[1;36mOlá, " << Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
 				  << std::endl;

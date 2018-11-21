@@ -6,7 +6,7 @@
 #define INC_2018_2_GRUPO19_ABSTRACTCONNECTION_HPP
 
 /* Standard C++ includes */
-#include <stdlib.h>
+#include <cstdlib>
 #include <iostream>
 
 /*

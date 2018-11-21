@@ -72,7 +72,7 @@ Users *Users::buscarUsuario(int user_id) {
 //        Query SQL
 		res = stmt->executeQuery("SELECT * FROM users WHERE id='" + std::to_string(user_id) + "'");
 		res->next();
-		Users *user = new Users();
+		auto *user = new Users();
 		if (res->rowsCount()) {
 			user->setId(res->getInt("id"));
 			user->setAccount(res->getString("account"));
@@ -224,7 +224,7 @@ std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
 				pesquisa + "%' or name like '%" + pesquisa + "%'");
 		std::vector<Users> usuarios;
 		while (res->next()) {
-			Users *user = new Users();
+			auto *user = new Users();
 			user->setId(res->getInt("id"));
 			user->setProfile(res->getString("profile"));
 			user->setName(res->getString("name"));

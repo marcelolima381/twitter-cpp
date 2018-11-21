@@ -52,8 +52,8 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 					std::to_string(tweet_id) + " order by c.id desc");
 		std::vector<Comments> comments;
 		while (res->next()) {
-			Comments *comment = new Comments();
-			Users *user = new Users();
+			auto *comment = new Comments();
+			auto *user = new Users();
 			comment->setId(res->getInt("id"));
 			comment->setDescription(res->getString("description"));
 			comment->setTweets_id(res->getInt("tweets_id"));
@@ -71,7 +71,7 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
@@ -97,7 +97,7 @@ void Comments::inserirComentario(std::string comentario, int idUsuario, int idTw
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}

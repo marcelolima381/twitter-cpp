@@ -61,15 +61,6 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o: ../TAD/Comments.cpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o: ../TAD/Users.hpp
 
-CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o: ../TAD/Comments_likes.cpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o: ../TAD/Comments_likes.hpp
-
-CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o: ../TAD/Followee.cpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o: ../TAD/Followee.hpp
-
-CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o: ../TAD/Hashtags.cpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o: ../TAD/Hashtags.hpp
-
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o: ../TAD/AbstractConnection.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o: ../TAD/Comments.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o: ../TAD/Tweet.cpp
@@ -79,9 +70,6 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o: ../TAD/Users.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o: ../TAD/Tweets_likes.cpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o: ../TAD/Tweets_likes.hpp
 
-
-CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o: ../TAD/Usertags.cpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o: ../TAD/Usertags.hpp
 
 CMakeFiles/2018_2_grupo19.dir/main.cpp.o: ../Interface/AbstractInterface.hpp
 CMakeFiles/2018_2_grupo19.dir/main.cpp.o: ../Interface/Login.hpp

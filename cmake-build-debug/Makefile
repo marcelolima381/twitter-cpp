@@ -366,87 +366,6 @@ TAD/Comments.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.s
 .PHONY : TAD/Comments.cpp.s
 
-TAD/Comments_likes.o: TAD/Comments_likes.cpp.o
-
-.PHONY : TAD/Comments_likes.o
-
-# target to build an object file
-TAD/Comments_likes.cpp.o:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o
-.PHONY : TAD/Comments_likes.cpp.o
-
-TAD/Comments_likes.i: TAD/Comments_likes.cpp.i
-
-.PHONY : TAD/Comments_likes.i
-
-# target to preprocess a source file
-TAD/Comments_likes.cpp.i:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.i
-.PHONY : TAD/Comments_likes.cpp.i
-
-TAD/Comments_likes.s: TAD/Comments_likes.cpp.s
-
-.PHONY : TAD/Comments_likes.s
-
-# target to generate assembly for a file
-TAD/Comments_likes.cpp.s:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.s
-.PHONY : TAD/Comments_likes.cpp.s
-
-TAD/Followee.o: TAD/Followee.cpp.o
-
-.PHONY : TAD/Followee.o
-
-# target to build an object file
-TAD/Followee.cpp.o:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o
-.PHONY : TAD/Followee.cpp.o
-
-TAD/Followee.i: TAD/Followee.cpp.i
-
-.PHONY : TAD/Followee.i
-
-# target to preprocess a source file
-TAD/Followee.cpp.i:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.i
-.PHONY : TAD/Followee.cpp.i
-
-TAD/Followee.s: TAD/Followee.cpp.s
-
-.PHONY : TAD/Followee.s
-
-# target to generate assembly for a file
-TAD/Followee.cpp.s:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.s
-.PHONY : TAD/Followee.cpp.s
-
-TAD/Hashtags.o: TAD/Hashtags.cpp.o
-
-.PHONY : TAD/Hashtags.o
-
-# target to build an object file
-TAD/Hashtags.cpp.o:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o
-.PHONY : TAD/Hashtags.cpp.o
-
-TAD/Hashtags.i: TAD/Hashtags.cpp.i
-
-.PHONY : TAD/Hashtags.i
-
-# target to preprocess a source file
-TAD/Hashtags.cpp.i:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.i
-.PHONY : TAD/Hashtags.cpp.i
-
-TAD/Hashtags.s: TAD/Hashtags.cpp.s
-
-.PHONY : TAD/Hashtags.s
-
-# target to generate assembly for a file
-TAD/Hashtags.cpp.s:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.s
-.PHONY : TAD/Hashtags.cpp.s
-
 TAD/Tweet.o: TAD/Tweet.cpp.o
 
 .PHONY : TAD/Tweet.o
@@ -528,33 +447,6 @@ TAD/Users.cpp.s:
 	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.s
 .PHONY : TAD/Users.cpp.s
 
-TAD/Usertags.o: TAD/Usertags.cpp.o
-
-.PHONY : TAD/Usertags.o
-
-# target to build an object file
-TAD/Usertags.cpp.o:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o
-.PHONY : TAD/Usertags.cpp.o
-
-TAD/Usertags.i: TAD/Usertags.cpp.i
-
-.PHONY : TAD/Usertags.i
-
-# target to preprocess a source file
-TAD/Usertags.cpp.i:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.i
-.PHONY : TAD/Usertags.cpp.i
-
-TAD/Usertags.s: TAD/Usertags.cpp.s
-
-.PHONY : TAD/Usertags.s
-
-# target to generate assembly for a file
-TAD/Usertags.cpp.s:
-	$(MAKE) -f CMakeFiles/2018_2_grupo19.dir/build.make CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.s
-.PHONY : TAD/Usertags.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -618,15 +510,6 @@ help:
 	@echo "... TAD/Comments.o"
 	@echo "... TAD/Comments.i"
 	@echo "... TAD/Comments.s"
-	@echo "... TAD/Comments_likes.o"
-	@echo "... TAD/Comments_likes.i"
-	@echo "... TAD/Comments_likes.s"
-	@echo "... TAD/Followee.o"
-	@echo "... TAD/Followee.i"
-	@echo "... TAD/Followee.s"
-	@echo "... TAD/Hashtags.o"
-	@echo "... TAD/Hashtags.i"
-	@echo "... TAD/Hashtags.s"
 	@echo "... TAD/Tweet.o"
 	@echo "... TAD/Tweet.i"
 	@echo "... TAD/Tweet.s"
@@ -636,9 +519,6 @@ help:
 	@echo "... TAD/Users.o"
 	@echo "... TAD/Users.i"
 	@echo "... TAD/Users.s"
-	@echo "... TAD/Usertags.o"
-	@echo "... TAD/Usertags.i"
-	@echo "... TAD/Usertags.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

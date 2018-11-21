@@ -3,7 +3,7 @@
 //
 
 #include "Tweet.hpp"
-
+#include <utility>
 int Tweet::getId() {
 	return id;
 }
@@ -17,7 +17,7 @@ std::string Tweet::getDescription() {
 }
 
 void Tweet::setDescription(std::string description) {
-	Tweet::description = description;
+	Tweet::description = std::move(description);
 }
 
 Users *Tweet::getUser() {
@@ -33,7 +33,7 @@ vector<Comments> Tweet::getComments() {
 }
 
 void Tweet::setComments(vector<Comments> comments) {
-	Tweet::comments = comments;
+	Tweet::comments = std::move(comments);
 }
 /**
  * @brief Pesquisa no banco de dados tweets que possuam a hashtag do parametro no seu texto, os armazena em um vetor em
@@ -52,9 +52,8 @@ vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
 					hashtag + " %' order by t.id desc");
 		std::vector<Tweet> tweets;
 		while (res->next()) {
-			Tweet *tweet = new Tweet();
-			Users *user = new Users();
-			Comments *comment = new Comments();
+			auto *tweet = new Tweet();
+			auto *user = new Users();
 			tweet->setId(res->getInt("tweetID"));
 			tweet->setDescription(res->getString("description"));
 			user->setProfile(res->getString("profile"));
@@ -71,7 +70,7 @@ vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
@@ -93,9 +92,9 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 					std::to_string(user_id) + " order by t.id desc");
 		std::vector<Tweet> tweets;
 		while (res->next()) {
-			Tweet *tweet = new Tweet();
-			Users *user = new Users();
-			Comments *comment = new Comments();
+			auto *tweet = new Tweet();
+			auto *user = new Users();
+//			auto *comment = new Comments();
 			tweet->setId(res->getInt("tweetID"));
 			tweet->setDescription(res->getString("description"));
 			user->setProfile(res->getString("profile"));
@@ -112,7 +111,7 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
@@ -134,9 +133,8 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
 					std::to_string(user_id) + " order by t.id desc;");
 		std::vector<Tweet> tweets;
 		while (res->next()) {
-			Tweet *tweet = new Tweet();
-			Users *user = new Users();
-			Comments *comment = new Comments();
+			auto *tweet = new Tweet();
+			auto *user = new Users();
 			tweet->setId(res->getInt("tweetID"));
 			tweet->setDescription(res->getString("description"));
 			user->setProfile(res->getString("profile"));
@@ -153,27 +151,12 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
-/**
- * @brief Pega o tweet em um vector de tweets que sucede o tweet com aquele index, printando um aviso na tela caso não
- *        haja tweets posteriores a aquele index
- * @param index
- */
-void Tweet::avancarTweet(unsigned long index) {
 
-}
-/**
- * @brief Pega o tweet em um vector de tweets que antecede o tweet com aquele index, printando um aviso na tela caso não
- *        haja tweets anteriores a aquele index
- * @param index
- */
-void Tweet::retrocederTweet(unsigned long index) {
-
-}
 /**
  * @brief Adiciona ao banco de dados um tweet, armazenando seu texto passado e usuário que tweetou, que são
  *        passados como parâmetro
@@ -196,7 +179,7 @@ void Tweet::criarTweet(string texto_tweet, int user_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
@@ -222,7 +205,7 @@ void Tweet::curtirTweet(int tweet_id, int user_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
@@ -244,7 +227,7 @@ vector<Users> Tweet::verCurtidas(int tweet_id) {
 					std::to_string(tweet_id) + ";");
 		std::vector<Users> users;
 		while (res->next()) {
-			Users *user = new Users();
+			auto *user = new Users();
 			user->setId(res->getInt("id"));
 			user->setProfile(res->getString("profile"));
 			user->setName(res->getString("name"));
@@ -259,7 +242,7 @@ vector<Users> Tweet::verCurtidas(int tweet_id) {
 		cout << " (MySQL error code: " << e.getErrorCode();
 		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
 		fecharConexao();
-	} catch (std::exception e) {
+	} catch (std::exception &e) {
 		cout << "# ERR: " << e.what();
 		fecharConexao();
 	}

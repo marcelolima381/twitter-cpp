@@ -61,15 +61,6 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Comments.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.cpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Comments_likes.cpp.o
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.cpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments_likes.hpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Followee.cpp.o
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Followee.cpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Followee.hpp
-CMakeFiles/2018_2_grupo19.dir/TAD/Hashtags.cpp.o
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Hashtags.cpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Hashtags.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Tweet.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp
@@ -80,9 +71,6 @@ CMakeFiles/2018_2_grupo19.dir/TAD/Tweets_likes.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp
  /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp
 CMakeFiles/2018_2_grupo19.dir/TAD/Users.cpp.o
-CMakeFiles/2018_2_grupo19.dir/TAD/Usertags.cpp.o
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Usertags.cpp
- /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Usertags.hpp
 CMakeFiles/2018_2_grupo19.dir/main.cpp.o
  /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
  /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Login.hpp
