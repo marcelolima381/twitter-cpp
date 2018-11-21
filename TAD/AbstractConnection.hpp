@@ -24,16 +24,15 @@
 using namespace std;
 
 class AbstractConnection {
-protected:
-    sql::Driver *driver;
-    sql::Connection *con;
-    sql::Statement *stmt;
-    sql::ResultSet *res;
+ protected:
+	sql::Driver *driver;
+	sql::Connection *con;
+	sql::Statement *stmt;
+	sql::ResultSet *res;
 
-    void abrirConexao();
+	void abrirConexao();
 
-    void fecharConexao();
+	void fecharConexao();
 };
-
 
 #endif //INC_2018_2_GRUPO19_ABSTRACTCONNECTION_HPP

@@ -9,8 +9,8 @@
  * @param titulo
  */
 AbstractInterface::AbstractInterface(const std::string &titulo) : titulo(titulo) {
-    system("clear");
-    std::cout << "\b" << titulo << std::endl;
+	system("clear");
+	std::cout << "\b" << titulo << std::endl;
 }
 
 /**
@@ -18,5 +18,5 @@ AbstractInterface::AbstractInterface(const std::string &titulo) : titulo(titulo)
  * @return titulo
  */
 const std::string &AbstractInterface::getTitulo() const {
-    return titulo;
+	return titulo;
 }

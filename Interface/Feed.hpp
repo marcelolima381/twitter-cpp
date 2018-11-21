@@ -10,33 +10,32 @@
 #include "../TAD/Tweet.hpp"
 
 class Feed : public AbstractInterface {
-public:
-    Feed();
+ public:
+	Feed();
 
-    void exibir() override;
+	void exibir() override;
 
-private:
-    std::vector<Tweet> tweets;
-    unsigned long index;
+ private:
+	std::vector<Tweet> tweets;
+	unsigned long index;
 
-    Tweet *ObterTweetPeloIndice();
+	Tweet *ObterTweetPeloIndice();
 
-    void processarEntrada(int opcao) override;
+	void processarEntrada(int opcao) override;
 
-    void exibirTweet(Tweet tweet);
+	void exibirTweet(Tweet tweet);
 
-    void entrarComentarios();
+	void entrarComentarios();
 
-    void entrarPerfil();
+	void entrarPerfil();
 
-    void entrarPesquisa();
+	void entrarPesquisa();
 
-    void avancarTweet();
+	void avancarTweet();
 
-    void retrocederTweet();
+	void retrocederTweet();
 
-    void tweetar();
+	void tweetar();
 };
-
 
 #endif //INC_2018_2_GRUPO19_FEED_HPP

@@ -8,25 +8,24 @@
 #include <iostream>
 
 class Comments_likes {
-private:
-    int id;
-    int users_id;
-    int comments_id;
+ private:
+	int id;
+	int users_id;
+	int comments_id;
 
-public:
-    int getId() const;
+ public:
+	int getId() const;
 
-    void setId(int id);
+	void setId(int id);
 
-    int getUsers_id() const;
+	int getUsers_id() const;
 
-    void setUsers_id(int users_id);
+	void setUsers_id(int users_id);
 
-    int getComments_id() const;
+	int getComments_id() const;
 
-    void setComments_id(int comments_id);
+	void setComments_id(int comments_id);
 
 };
-
 
 #endif //INC_2018_2_GRUPO19_COMMENTS_LIKES_HPP

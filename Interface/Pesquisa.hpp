@@ -11,27 +11,26 @@
 
 class Pesquisa : public AbstractInterface {
 
-public:
-    Pesquisa();
+ public:
+	Pesquisa();
 
-    void exibir() override;
+	void exibir() override;
 
-    void processarEntrada(int opcao) override;
+	void processarEntrada(int opcao) override;
 
-private:
-    std::vector<Users> usuariosPesquisados;
-    std::vector<Tweet> tweetsPesquisados;
+ private:
+	std::vector<Users> usuariosPesquisados;
+	std::vector<Tweet> tweetsPesquisados;
 
-    void pesquisarHashTag();
+	void pesquisarHashTag();
 
-    void pesquisarUsuario();
+	void pesquisarUsuario();
 
-    void exibirUsuariosPesquisados();
+	void exibirUsuariosPesquisados();
 
-    void exibirTweetsPesquisados();
+	void exibirTweetsPesquisados();
 
-    void associarUsuario();
+	void associarUsuario();
 };
-
 
 #endif //INC_2018_2_GRUPO19_PESQUISA_HPP

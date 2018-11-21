@@ -5,25 +5,25 @@
 #include "Usertags.hpp"
 
 int Usertags::getId() const {
-    return id;
+	return id;
 }
 
 void Usertags::setId(int id) {
-    Usertags::id = id;
+	Usertags::id = id;
 }
 
 const std::string &Usertags::getName() const {
-    return name;
+	return name;
 }
 
 void Usertags::setName(const std::string &name) {
-    Usertags::name = name;
+	Usertags::name = name;
 }
 
 int Usertags::getTweets_id() const {
-    return tweets_id;
+	return tweets_id;
 }
 
 void Usertags::setTweets_id(int tweets_id) {
-    Usertags::tweets_id = tweets_id;
+	Usertags::tweets_id = tweets_id;
 }

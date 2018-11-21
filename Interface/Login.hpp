@@ -5,25 +5,23 @@
 #ifndef INC_2018_2_GRUPO19_LOGIN_HPP
 #define INC_2018_2_GRUPO19_LOGIN_HPP
 
-
 #include "AbstractInterface.hpp"
 
 class Login : public AbstractInterface {
-public:
-    Login();
+ public:
+	Login();
 
-    void exibir() override;
+	void exibir() override;
 
-private:
+ private:
 
-    void processarEntrada(int opcao) override;
+	void processarEntrada(int opcao) override;
 
-    void logar();
+	void logar();
 
-    void criarConta();
+	void criarConta();
 
-    void redirecionarParaFeed();
+	void redirecionarParaFeed();
 };
-
 
 #endif //INC_2018_2_GRUPO19_LOGIN_HPP

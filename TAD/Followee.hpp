@@ -5,27 +5,25 @@
 #ifndef INC_2018_2_GRUPO19_FOLLOWEE_HPP
 #define INC_2018_2_GRUPO19_FOLLOWEE_HPP
 
-
 #include <iostream>
 
 class Followee {
-    int id;
-    int follower;
-    int following;
+	int id;
+	int follower;
+	int following;
 
-public:
-    int getId() const;
+ public:
+	int getId() const;
 
-    void setId(int id);
+	void setId(int id);
 
-    int getFollower() const;
+	int getFollower() const;
 
-    void setFollower(int follower);
+	void setFollower(int follower);
 
-    int getFollowing() const;
+	int getFollowing() const;
 
-    void setFollowing(int following);
+	void setFollowing(int following);
 };
-
 
 #endif //INC_2018_2_GRUPO19_FOLLOWEE_HPP

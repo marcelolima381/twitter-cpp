@@ -9,19 +9,19 @@
 #include "../TAD/Comments.hpp"
 
 class ListComments : public AbstractInterface {
-public:
-    ListComments(Tweet *tweet);
+ public:
+	ListComments(Tweet *tweet);
 
-    void exibir() override;
+	void exibir() override;
 
-private:
-    Tweet *tweet;
+ private:
+	Tweet *tweet;
 
-    void processarEntrada(int opcao) override;
+	void processarEntrada(int opcao) override;
 
-    void exibirComentarios();
+	void exibirComentarios();
 
-    void comentar();
+	void comentar();
 };
 
 #endif //INC_2018_2_GRUPO19_COMMENTS_HPP

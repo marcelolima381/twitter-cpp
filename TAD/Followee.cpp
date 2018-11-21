@@ -5,25 +5,25 @@
 #include "Followee.hpp"
 
 int Followee::getId() const {
-    return id;
+	return id;
 }
 
 void Followee::setId(int id) {
-    Followee::id = id;
+	Followee::id = id;
 }
 
 int Followee::getFollower() const {
-    return follower;
+	return follower;
 }
 
 void Followee::setFollower(int follower) {
-    Followee::follower = follower;
+	Followee::follower = follower;
 }
 
 int Followee::getFollowing() const {
-    return following;
+	return following;
 }
 
 void Followee::setFollowing(int following) {
-    Followee::following = following;
+	Followee::following = following;
 }

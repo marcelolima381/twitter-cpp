@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp
-AbstractInterface.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
-
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp
 iostream
 -
@@ -29,6 +25,8 @@ Pesquisa.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp
 vector
 -
+climits
+-
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
 AbstractInterface.hpp
@@ -37,18 +35,6 @@ ListComments.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 ../TAD/Tweet.hpp
 /home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp
-
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp
-iostream
--
-ListComments.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
-Feed.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp
-../TAD/Users.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp
-../Sessao/Session.hpp
-/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp
 
 /home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp
 AbstractInterface.hpp

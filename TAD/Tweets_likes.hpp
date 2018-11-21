@@ -8,24 +8,23 @@
 #include <iostream>
 
 class Tweets_likes {
-private:
-    int id;
-    int tweets_id;
-    int users_id;
+ private:
+	int id;
+	int tweets_id;
+	int users_id;
 
-public:
-    int getId() const;
+ public:
+	int getId() const;
 
-    void setId(int id);
+	void setId(int id);
 
-    int getTweets_id() const;
+	int getTweets_id() const;
 
-    void setTweets_id(int tweets_id);
+	void setTweets_id(int tweets_id);
 
-    int getUsers_id() const;
+	int getUsers_id() const;
 
-    void setUsers_id(int users_id);
+	void setUsers_id(int users_id);
 };
-
 
 #endif //INC_2018_2_GRUPO19_TWEETS_LIKES_HPP

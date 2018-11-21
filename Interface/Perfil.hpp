@@ -5,35 +5,33 @@
 #ifndef INC_2018_2_GRUPO19_PERFIL_HPP
 #define INC_2018_2_GRUPO19_PERFIL_HPP
 
-
 #include "AbstractInterface.hpp"
 #include "../TAD/Tweet.hpp"
 
 class Perfil : public AbstractInterface {
 
-public:
-    Perfil();
+ public:
+	Perfil();
 
-    void exibir() override;
+	void exibir() override;
 
-    void processarEntrada(int opcao) override;
+	void processarEntrada(int opcao) override;
 
-private:
-    unsigned long index;
-    vector<Tweet> tweets;
+ private:
+	unsigned long index;
+	vector<Tweet> tweets;
 
-    Tweet *ObterTweetPeloIndice();
+	Tweet *ObterTweetPeloIndice();
 
-    void entrarComentarios();
+	void entrarComentarios();
 
-    void exibirTweet(Tweet tweet);
+	void exibirTweet(Tweet tweet);
 
-    void avancarTweet();
+	void avancarTweet();
 
-    void retrocederTweet();
+	void retrocederTweet();
 
-    void editarPerfil();
+	void editarPerfil();
 };
-
 
 #endif //INC_2018_2_GRUPO19_PERFIL_HPP
