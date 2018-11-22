@@ -8,7 +8,9 @@
 #include "AbstractInterface.hpp"
 #include "../TAD/Tweet.hpp"
 
-class Perfil : public AbstractInterface {
+namespace Interface {
+
+class Perfil : public Interface::AbstractInterface {
 
  public:
 	Perfil();
@@ -33,5 +35,7 @@ class Perfil : public AbstractInterface {
 
 	void editarPerfil();
 };
+
+}
 
 #endif //INC_2018_2_GRUPO19_PERFIL_HPP

@@ -9,7 +9,9 @@
 #include "../TAD/Tweet.hpp"
 #include "../TAD/Users.hpp"
 
-class Pesquisa : public AbstractInterface {
+namespace Interface {
+
+class Pesquisa : public Interface::AbstractInterface {
 
  public:
 	Pesquisa();
@@ -33,4 +35,5 @@ class Pesquisa : public AbstractInterface {
 	void associarUsuario();
 };
 
+}
 #endif //INC_2018_2_GRUPO19_PESQUISA_HPP

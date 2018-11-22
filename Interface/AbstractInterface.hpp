@@ -6,6 +6,7 @@
 #define INC_2018_2_GRUPO19_ABSTRACTINTERFACE_HPP
 
 #include <iostream>
+namespace Interface {
 
 class AbstractInterface {
  private:
@@ -20,4 +21,5 @@ class AbstractInterface {
 	const std::string &getTitulo() const;
 };
 
+}
 #endif //INC_2018_2_GRUPO19_ABSTRACTINTERFACE_HPP

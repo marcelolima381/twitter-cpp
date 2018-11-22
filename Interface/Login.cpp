@@ -17,6 +17,8 @@
 #include <cstdio>
 #include <climits> // for INT_MAX limits
 
+namespace Interface {
+
 /**
  * Construtor
  */
@@ -114,8 +116,7 @@ void Login::processarEntrada(int opcao) {
 		case CRIAR_CONTA:criarConta();
 			break;
 
-		case SAIR:
-			break;
+		case SAIR: break;
 
 		default:std::__throw_invalid_argument("Digite outra opção.");
 	}
@@ -174,9 +175,5 @@ void Login::criarConta() {
 
 	std::cout << "Usuario " + profile + " criado!" << std::endl;
 }
-/**
- * @brief Redireciona o usuário para seu feed
- */
-void Login::redirecionarParaFeed() {
 
 }

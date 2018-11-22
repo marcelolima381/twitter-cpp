@@ -11,11 +11,13 @@
 #include "../Sessao/Session.hpp"
 #include <climits> // for INT_MAX limits
 
+namespace Interface {
+
 /**
  * Construtor
  * @param tweet
  */
-ListComments::ListComments(TAD::Tweet *tweet) : AbstractInterface("Comentarios") {
+ListComments::ListComments(TAD::Tweet *tweet) : Interface::AbstractInterface("Comentarios") {
 	this->tweet = tweet;
 }
 
@@ -93,4 +95,6 @@ void ListComments::exibirComentarios() {
 	}
 
 	delete (comments);
+}
+
 }

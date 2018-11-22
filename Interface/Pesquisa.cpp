@@ -11,6 +11,9 @@
 #define HASHTAG 1
 #define USUARIOS 2
 #define SAIR 0
+
+namespace Interface {
+
 /**
  * @brief Construtor
  */
@@ -88,8 +91,9 @@ void Pesquisa::exibirTweetsPesquisados() {
 	if (!tweetsPesquisados.empty()) {
 		for (auto &tweetsPesquisado : tweetsPesquisados) {
 			std::cout << "ID: " << std::setw(3) << std::left << std::to_string(tweetsPesquisado.getId()) <<
-				 "Profile: " << std::setw(20) << std::left << tweetsPesquisado.getUser()->getProfile() << std::endl <<
-				 "Tweet: " << tweetsPesquisado.getDescription() << std::endl << std::endl;
+					  "Profile: " << std::setw(20) << std::left << tweetsPesquisado.getUser()->getProfile() << std::endl
+					  <<
+					  "Tweet: " << tweetsPesquisado.getDescription() << std::endl << std::endl;
 		}
 
 	} else {
@@ -104,8 +108,8 @@ void Pesquisa::exibirUsuariosPesquisados() {
 	if (!usuariosPesquisados.empty()) {
 		for (auto &usuariosPesquisado : usuariosPesquisados) {
 			std::cout << "ID: " << std::setw(3) << std::left << std::to_string(usuariosPesquisado.getId()) <<
-				 "Profile: " << std::setw(20) << std::left << usuariosPesquisado.getProfile() <<
-				 " Nome: " << std::setw(30) << std::left << usuariosPesquisado.getName() << std::endl;
+					  "Profile: " << std::setw(20) << std::left << usuariosPesquisado.getProfile() <<
+					  " Nome: " << std::setw(30) << std::left << usuariosPesquisado.getName() << std::endl;
 		}
 		associarUsuario();
 	} else {
@@ -138,4 +142,6 @@ void Pesquisa::associarUsuario() {
 		}
 
 	} while (id != 0);
+}
+
 }

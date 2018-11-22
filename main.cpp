@@ -2,7 +2,7 @@
 #include "Interface/Login.hpp"
 
 int main() {
-    Login *login = new Login();
+    auto *login = new Interface::Login();
     login->exibir();
     return 0;
 }

@@ -8,7 +8,9 @@
 #include "../TAD/Tweet.hpp"
 #include "../TAD/Comments.hpp"
 
-class ListComments : public AbstractInterface {
+namespace Interface {
+
+class ListComments : public Interface::AbstractInterface {
  public:
 	explicit ListComments(TAD::Tweet *tweet);
 
@@ -23,5 +25,7 @@ class ListComments : public AbstractInterface {
 
 	void comentar();
 };
+
+}
 
 #endif //INC_2018_2_GRUPO19_COMMENTS_HPP

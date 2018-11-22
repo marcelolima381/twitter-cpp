@@ -9,7 +9,9 @@
 #include "ListComments.hpp"
 #include "../TAD/Tweet.hpp"
 
-class Feed : public AbstractInterface {
+namespace Interface {
+
+class Feed : public Interface::AbstractInterface {
  public:
 	Feed();
 
@@ -38,4 +40,5 @@ class Feed : public AbstractInterface {
 	void tweetar();
 };
 
+}
 #endif //INC_2018_2_GRUPO19_FEED_HPP

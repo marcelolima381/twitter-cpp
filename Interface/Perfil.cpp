@@ -15,10 +15,14 @@
 #define SAIR 0
 #define EDITAR_PERFIL 5
 #define OPCAO_INVALIDA 400
+
+namespace Interface {
+
 /**
  * @brief Construtor
  */
 Perfil::Perfil() : AbstractInterface("Perfil") {}
+
 /**
  * @brief Exibe o conteúdo do perfil do usuário logado
  */
@@ -75,8 +79,8 @@ void Perfil::exibir() {
 void Perfil::processarEntrada(int opcao) {
 	switch (opcao) {
 		case AVANCAR:
+			system("clear");
 			if (tweets.empty()) {
-				system("clear)");
 				std::__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
 			} else {
 				avancarTweet();
@@ -84,16 +88,15 @@ void Perfil::processarEntrada(int opcao) {
 			break;
 
 		case RETROCEDER:
+			system("clear");
 			if (tweets.empty()) {
-				system("clear)");
 				std::__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
 			} else {
 				retrocederTweet();
 			}
 			break;
 
-		case FEED:
-			system("clear");
+		case FEED: system("clear");
 			return;
 
 		case COMENTARIOS:
@@ -166,15 +169,18 @@ void Perfil::editarPerfil() {
 	std::cout << "Qual dado do perfil você deseja editar?" << std::endl << "1 - Nome" << std::endl << "2 - Cidade"
 			  << std::endl << "3 - Idade" << std::endl << "4 - Senha" << std::endl;
 	std::cin >> opcao;
+	system("clear");
 	switch (opcao) {
 		case 1:std::cout << "Digite o novo nome" << std::endl;
-			std::cin >> nome;
+			std::cin.ignore();
+			getline(std::cin, nome);
 			user->editarCampo("name", nome);
 			Sessao::Session::getUsuarioLogado()->setName(nome);
 			break;
 
 		case 2:std::cout << "Digite a nova cidade" << std::endl;
-			std::cin >> cidade;
+			std::cin.ignore();
+			getline(std::cin, cidade);
 			user->editarCampo("city", cidade);
 			Sessao::Session::getUsuarioLogado()->setCity(cidade);
 			break;
@@ -185,13 +191,15 @@ void Perfil::editarPerfil() {
 			Sessao::Session::getUsuarioLogado()->setAge(idade);
 			break;
 
-		case 4:std::cout << "Digite o novo senha" << std::endl;
-			std::cin >> senha;
+		case 4:std::cout << "Digite a novo senha" << std::endl;
+			std::cin.ignore();
+			getline(std::cin, senha);
 			user->editarCampo("password", senha);
 			Sessao::Session::getUsuarioLogado()->setPassword(senha);
 			break;
 
-		default:
-			std::__throw_invalid_argument("Opção, inválida!");
+		default: std::__throw_invalid_argument("Opção, inválida!");
 	}
+}
+
 }

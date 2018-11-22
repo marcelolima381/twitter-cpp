@@ -7,7 +7,9 @@
 
 #include "AbstractInterface.hpp"
 
-class Login : public AbstractInterface {
+namespace Interface {
+
+class Login : public Interface::AbstractInterface {
  public:
 	Login();
 
@@ -20,8 +22,7 @@ class Login : public AbstractInterface {
 	void logar();
 
 	void criarConta();
-
-	void redirecionarParaFeed();
 };
 
+}
 #endif //INC_2018_2_GRUPO19_LOGIN_HPP

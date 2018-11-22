@@ -1,9 +1,6 @@
-/**
- * @file AbstractInterface.cpp
- * @author Marcelo
- * @brief Interface Abstrata
- */
 #include "AbstractInterface.hpp"
+namespace Interface {
+
 /**
  * Construtor
  * @param titulo
@@ -19,4 +16,6 @@ AbstractInterface::AbstractInterface(const std::string &titulo) : titulo(titulo)
  */
 const std::string &AbstractInterface::getTitulo() const {
 	return titulo;
+}
+
 }

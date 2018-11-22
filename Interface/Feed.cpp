@@ -18,6 +18,8 @@
 #define SAIR 0
 #define OPCAO_INVALIDA 400
 
+namespace Interface {
+
 /**
  * Construtor
  */
@@ -30,11 +32,12 @@ void Feed::exibir() {
 	int opcao = 0;
 	auto *tweet = new TAD::Tweet();
 	this->index = 0;
+	system("clear");
 	do {
-		std::cout << "Carregando..." << std::endl;
+//		std::cout << "Carregando..." << std::endl;
 		tweets = tweet->carregarTweetsUsuariosSeguidos(Sessao::Session::getUsuarioLogado()->getId());
-		system("clear");
-		std::cout << std::endl << "\033[1;36mOlá, " << Sessao::Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
+		std::cout << std::endl << "\033[1;36mOlá, " << Sessao::Session::getUsuarioLogado()->getName() << "\033[0m"
+				  << std::endl
 				  << std::endl;
 		if (tweets.empty()) {
 			std::cout << "Escolha a opção:" << std::endl << "3 - Meu Perfil" << std::endl << "5 - Tweetar" <<
@@ -137,8 +140,7 @@ void Feed::processarEntrada(int opcao) {
 
 			break;
 
-		case 0:
-			system("clear");
+		case 0: system("clear");
 			std::cout << std::endl;
 			break;
 
@@ -228,6 +230,8 @@ void Feed::tweetar() {
 	getline(std::cin, texto);
 	auto *tweet = new TAD::Tweet();
 	tweet->criarTweet(texto, Sessao::Session::getUsuarioLogado()->getId());
+}
+
 }
 
 
