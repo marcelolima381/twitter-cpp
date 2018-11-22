@@ -32,7 +32,7 @@ No nosso CRC, pensamos numa classe central que seria o Feed, responsável por fa
 e a correlação das outras classes, como Usuário e Tweet, onde o Feed demandaria as funções dessas classes, por exemplo 
 e assim elas iriam se complementando e trabalhando juntas. As classes “Menção”, que são as Userstags na modelagem, 
 Comentários e as Hashtags seriam classes menores apenas para complementar as funções do Tweet como conhecemos, sendo 
-criadas para fazer parte de uma classe, como uma de suas varíáveis ou como um de seus vetores principais.
+criadas para fazer parte de uma classe, como uma de suas variáveis ou como um de seus vetores principais.
 
 Identificamos que, para trabalharmos com uma grande quantidade de usuários, tweets, comentários, curtidas, que 
 demandavam uma grande quantidade de dados para serem armazenados e uma necessidade de organização e pesquisa mais 
