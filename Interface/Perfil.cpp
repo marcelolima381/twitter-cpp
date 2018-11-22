@@ -14,6 +14,8 @@
 #define COMENTARIOS 4
 #define SAIR 0
 #define EDITAR_PERFIL 5
+#define VER_SEGUIDORES 6
+#define VER_QUEM_EU_SIGO 7
 #define OPCAO_INVALIDA 400
 
 namespace Interface {
@@ -40,12 +42,12 @@ void Perfil::exibir() {
 		if (tweets.empty()) {
 //			std::cout << "Você não tem tweets para exibir" << std::endl;
 			std::cout << "Escolha a opção:" << std::endl << "3 - Feed" << std::endl << "5 - Editar perfil"
-					  << std::endl;
+					<< std::endl << "6 - Ver seguidores" << std::endl << "7 - Ver quem eu sigo" << std::endl;
 		} else {
 			exibirTweet(tweets.at(this->index));
 			std::cout << "Escolha a opção:" << std::endl << "1 - Avançar" << std::endl << "2 - Retroceder" << std::endl
 					  << "3 - Feed" << std::endl << "4 - Ver Comentários" << std::endl << "5 - Editar perfil"
-					  << std::endl;
+					<< std::endl << "6 - Ver seguidores" << std::endl << "7 - Ver quem eu sigo" << std::endl;
 		}
 		try {
 			std::cin >> opcao;
@@ -111,6 +113,12 @@ void Perfil::processarEntrada(int opcao) {
 		case EDITAR_PERFIL:editarPerfil();
 			break;
 
+		case VER_SEGUIDORES:
+			verSeguidores();
+			break;
+		case VER_QUEM_EU_SIGO:
+			verQuemEuSigo();
+			break;
 		default:std::__throw_invalid_argument("Opção inválida! Digite outra opção.");
 	}
 }
@@ -201,5 +209,88 @@ void Perfil::editarPerfil() {
 		default: std::__throw_invalid_argument("Opção, inválida!");
 	}
 }
+
+	void Perfil::verSeguidores() {
+		auto *user = new TAD::Users();
+		auto listaUsuarios = user->pesquisarSeguidores(Sessao::Session::getUsuarioLogado()->getId());
+
+		system("clear");
+		std::cout<<"Seguidores:"<<std::endl;
+		for (auto usuariosPesquisado : listaUsuarios) {
+			std::cout<<"ID: "<< usuariosPesquisado.getId() << " Nome: "<< usuariosPesquisado.getName() << std::endl;
+		}
+
+		int opcao = 0;
+
+		do {
+			std::cout<< std::endl<<"Digite o ID de um usuário para remover o seguidor ou digite 0 para voltar."<<std::endl;
+			std::cin >> opcao;
+
+			if(opcao!=0)
+			{
+				bool achou = false;
+				for (auto usuariosPesquisado : listaUsuarios) {
+					if(usuariosPesquisado.getId()==opcao)
+					{
+						achou = true;
+						user->excluirSeguirUsuario(opcao,Sessao::Session::getUsuarioLogado()->getId());
+						std::cout<<"Você deixou de seguir o usuário "+ usuariosPesquisado.getName();
+
+						listaUsuarios = user->pesquisarSeguidores(Sessao::Session::getUsuarioLogado()->getId());
+
+						for (auto usuariosPesquisado2 : listaUsuarios) {
+							std::cout<< std::endl<<"Seguidores:"<<std::endl;
+							std::cout<<"ID: "<< usuariosPesquisado2.getId() << " Nome: "<< usuariosPesquisado2.getName() << std::endl;
+						}
+					}
+				}
+				if(!achou)
+					std::cout<< std::endl<<"ID de usuário inválido."<<std::endl;
+			}
+
+		} while (opcao != 0);
+	}
+
+	void Perfil::verQuemEuSigo() {
+		auto *user = new TAD::Users();
+		auto listaUsuarios = user->pesquisarQuemUsuarioSegue(Sessao::Session::getUsuarioLogado()->getId());
+
+		system("clear");
+		std::cout<<"Quem eu sigo:"<<std::endl;
+		for (auto usuariosPesquisado : listaUsuarios) {
+			std::cout<<"ID: "<< usuariosPesquisado.getId() << " Nome: "<< usuariosPesquisado.getName() << std::endl;
+		}
+
+
+		int opcao = 0;
+
+		do {
+			std::cout<< std::endl<<"Digite o ID de um usuário para deixar de seguir ou digite 0 para voltar."<<std::endl;
+			std::cin >> opcao;
+
+			if(opcao!=0)
+			{
+				bool achou = false;
+				for (auto usuariosPesquisado : listaUsuarios) {
+					if(usuariosPesquisado.getId()==opcao)
+					{
+						achou = true;
+						user->excluirSeguirUsuario(Sessao::Session::getUsuarioLogado()->getId(),opcao);
+						std::cout<<"Você não segue mais o usuário "+ usuariosPesquisado.getName();
+
+						listaUsuarios = user->pesquisarQuemUsuarioSegue(Sessao::Session::getUsuarioLogado()->getId());
+
+						std::cout<< std::endl<<"Quem eu sigo:"<<std::endl;
+						for (auto usuariosPesquisado2 : listaUsuarios) {
+							std::cout<<"ID: "<< usuariosPesquisado2.getId() << " Nome: "<< usuariosPesquisado2.getName() << std::endl;
+						}
+					}
+				}
+				if(!achou)
+					std::cout<< std::endl<<"ID de usuário inválido."<<std::endl;
+			}
+
+		} while (opcao != 0);
+	}
 
 }

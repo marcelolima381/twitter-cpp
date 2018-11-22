@@ -34,6 +34,10 @@ class Perfil : public Interface::AbstractInterface {
 	void retrocederTweet();
 
 	void editarPerfil();
+
+	void verSeguidores();
+
+	void verQuemEuSigo();
 };
 
 }

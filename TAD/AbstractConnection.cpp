@@ -20,7 +20,9 @@ void AbstractConnection::abrirConexao() {
  * @brief Fecha conexão com o banco de dados nas classes que herdam de AbstractConnetcion
  */
 void AbstractConnection::fecharConexao() {
-	delete res;
+	if(res != NULL)
+		delete res;
+
 	delete stmt;
 	delete con;
 }

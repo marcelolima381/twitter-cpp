@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
+				<Option working_dir="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
+				<Option working_dir="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
+				<Option working_dir="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="2018_2_grupo19">
-				<Option output="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/2018_2_grupo19" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
+				<Option output="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/2018_2_grupo19" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 2018_2_grupo19"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 2018_2_grupo19"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="2018_2_grupo19/fast">
-				<Option output="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/2018_2_grupo19" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
+				<Option output="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/2018_2_grupo19" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,89 +77,89 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 2018_2_grupo19/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 2018_2_grupo19/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pedro/CLionProjects/2018-2-grupo19/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/AbstractInterface.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Feed.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Feed.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/ListComments.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Login.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Login.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Login.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Perfil.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Pesquisa.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Pesquisa.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Interface/Pesquisa.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/Sessao/Session.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/Sessao/Session.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/AbstractConnection.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Comments.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Comments.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweet.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Tweets_likes.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/TAD/Users.hpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/TAD/Users.hpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/main.cpp">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/main.cpp">
 			<Option target="2018_2_grupo19"/>
 		</Unit>
-		<Unit filename="/home/marcelo/CLionProjects/2018-2-grupo19/CMakeLists.txt">
+		<Unit filename="/home/pedro/CLionProjects/2018-2-grupo19/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

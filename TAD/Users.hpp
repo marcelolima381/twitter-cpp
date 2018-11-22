@@ -59,7 +59,12 @@ namespace TAD {
 
 	std::vector<Users> pesquisarUsuarios(std::string pesquisa);
 
+	std::vector<Users> pesquisarSeguidores(int id);
+
+	std::vector<Users> pesquisarQuemUsuarioSegue(int id);
+
 	void seguirUsuario(int id1, int id2);
+	void excluirSeguirUsuario(int id1, int id2);
 };
 }
 #endif //INC_2018_2_GRUPO19_USERS_HPP
