@@ -4,6 +4,7 @@
 
 #include "Users.hpp"
 #include "../Sessao/Session.hpp"
+namespace TAD {
 
 int Users::getId() const {
 	return id;
@@ -85,18 +86,18 @@ Users *Users::buscarUsuario(int user_id) {
 			return user;
 		} else {
 			fecharConexao();
-			cout << "Usuário não encontrado" << std::endl;
+			std::cout << "Usuário não encontrado" << std::endl;
 			throw std::exception();
 		}
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -128,14 +129,14 @@ bool Users::validarLogin(std::string conta, std::string senha) {
 			return false;
 		}
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -149,7 +150,7 @@ bool Users::validarLogin(std::string conta, std::string senha) {
  * @param age
  * @return string
  */
-string Users::criarConta(string account, string password, string profile, string name, string city, int age) {
+std::string Users::criarConta(std::string account, std::string password, std::string profile, std::string name, std::string city, int age) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -168,15 +169,15 @@ string Users::criarConta(string account, string password, string profile, string
 		return "";
 
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "# ERR: SQLException in " << __FILE__;
 		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 		return "Ocorreu um erro ao criar o usuario";
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 		return "Ocorreu um erro ao criar o usuario";
 	}
@@ -196,14 +197,14 @@ void Users::seguirUsuario(int id1, int id2) {
 				")");
 		fecharConexao();
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "# ERR: SQLException in " << __FILE__;
 		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -213,7 +214,7 @@ void Users::seguirUsuario(int id1, int id2) {
  * @param pesquisa
  * @return vector<Users>
  */
-std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
+std::vector<Users> Users::pesquisarUsuarios(std::string pesquisa) {
 
 	try {
 		abrirConexao();
@@ -234,18 +235,18 @@ std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
 		fecharConexao();
 		return usuarios;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 
-	return vector<Users>();
+	return std::vector<Users>();
 }
 /**
  * @brief Receb como parâmetro o campo que se deseja editar e a nova informação que se deseja inserir e atualiza o
@@ -253,23 +254,25 @@ std::vector<Users> Users::pesquisarUsuarios(string pesquisa) {
  * @param coluna
  * @param valor
  */
-void Users::editarCampo(string coluna, string valor) {
+void Users::editarCampo(std::string coluna, std::string valor) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
 //        Query SQL
 		stmt->execute("UPDATE users t SET t." + coluna + " = '" + valor + "' WHERE t.id = " +
-			std::to_string(Session::getUsuarioLogado()->getId()));
+			std::to_string(Sessao::Session::getUsuarioLogado()->getId()));
 		fecharConexao();
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "# ERR: SQLException in " << __FILE__;
 		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
-	} catch (std::exception e) {
-		cout << "# ERR: " << e.what();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
+}
+
 }

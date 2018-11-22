@@ -7,16 +7,19 @@
 
 #include "../TAD/Users.hpp"
 
+namespace Sessao {
 class Session {
 
  private:
-	static Users *usuario;
+	static TAD::Users *usuario;
 
  public:
-	static Users *getUsuarioLogado();
+	static TAD::Users *getUsuarioLogado();
 
-	static void setUsuarioLogado(Users *users);
+	static void setUsuarioLogado(TAD::Users *users);
 
 };
+
+}
 
 #endif //INC_2018_2_GRUPO19_SESSION_HPP

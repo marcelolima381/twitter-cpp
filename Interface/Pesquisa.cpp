@@ -53,11 +53,11 @@ void Pesquisa::processarEntrada(int opcao) {
 void Pesquisa::pesquisarUsuario() {
 	std::string pesquisa;
 
-	cout << "Digite o que pesquisa:" << std::endl;
-	cin.ignore();
-	getline(cin, pesquisa);
+	std::cout << "Digite o que pesquisa:" << std::endl;
+	std::cin.ignore();
+	getline(std::cin, pesquisa);
 
-	auto *user = new Users();
+	auto *user = new TAD::Users();
 
 	usuariosPesquisados = user->pesquisarUsuarios(pesquisa);
 	exibirUsuariosPesquisados();
@@ -68,11 +68,11 @@ void Pesquisa::pesquisarUsuario() {
 void Pesquisa::pesquisarHashTag() {
 	std::string pesquisa;
 
-	cout << "Digite o que pesquisa:" << std::endl;
-	cin.ignore();
-	getline(cin, pesquisa);
+	std::cout << "Digite o que pesquisa:" << std::endl;
+	std::cin.ignore();
+	getline(std::cin, pesquisa);
 
-	auto *tweet = new Tweet();
+	auto *tweet = new TAD::Tweet();
 
 	if (pesquisa[0] != '#')
 		pesquisa = '#' + pesquisa;
@@ -87,13 +87,13 @@ void Pesquisa::pesquisarHashTag() {
 void Pesquisa::exibirTweetsPesquisados() {
 	if (!tweetsPesquisados.empty()) {
 		for (auto &tweetsPesquisado : tweetsPesquisados) {
-			cout << "ID: " << setw(3) << left << std::to_string(tweetsPesquisado.getId()) <<
-				 "Profile: " << setw(20) << left << tweetsPesquisado.getUser()->getProfile() << std::endl <<
+			std::cout << "ID: " << std::setw(3) << std::left << std::to_string(tweetsPesquisado.getId()) <<
+				 "Profile: " << std::setw(20) << std::left << tweetsPesquisado.getUser()->getProfile() << std::endl <<
 				 "Tweet: " << tweetsPesquisado.getDescription() << std::endl << std::endl;
 		}
 
 	} else {
-		cout << "Não foram encontrados tweets com a hashtag informada." << std::endl;
+		std::cout << "Não foram encontrados tweets com a hashtag informada." << std::endl;
 	}
 
 }
@@ -103,13 +103,13 @@ void Pesquisa::exibirTweetsPesquisados() {
 void Pesquisa::exibirUsuariosPesquisados() {
 	if (!usuariosPesquisados.empty()) {
 		for (auto &usuariosPesquisado : usuariosPesquisados) {
-			cout << "ID: " << setw(3) << left << std::to_string(usuariosPesquisado.getId()) <<
-				 "Profile: " << setw(20) << left << usuariosPesquisado.getProfile() <<
-				 " Nome: " << setw(30) << left << usuariosPesquisado.getName() << std::endl;
+			std::cout << "ID: " << std::setw(3) << std::left << std::to_string(usuariosPesquisado.getId()) <<
+				 "Profile: " << std::setw(20) << std::left << usuariosPesquisado.getProfile() <<
+				 " Nome: " << std::setw(30) << std::left << usuariosPesquisado.getName() << std::endl;
 		}
 		associarUsuario();
 	} else {
-		cout << "Não foram encontrados usuários." << std::endl;
+		std::cout << "Não foram encontrados usuários." << std::endl;
 	}
 
 }
@@ -120,21 +120,21 @@ void Pesquisa::associarUsuario() {
 	int id;
 
 	do {
-		cout << std::endl << "Digite o ID do usuário para segui-lo, ou digite 0 para voltar." << std::endl;
-		cin >> id;
+		std::cout << std::endl << "Digite o ID do usuário para segui-lo, ou digite 0 para voltar." << std::endl;
+		std::cin >> id;
 
 		if (id != 0) {
 			for (auto &usuariosPesquisado : usuariosPesquisados) {
 				if (usuariosPesquisado.getId() == id) {
-					auto *user = new Users();
+					auto *user = new TAD::Users();
 
-					user->seguirUsuario(Session::getUsuarioLogado()->getId(), id);
+					user->seguirUsuario(Sessao::Session::getUsuarioLogado()->getId(), id);
 
-					cout << "Você agora segue o usuário: " << usuariosPesquisado.getProfile();
+					std::cout << "Você agora segue o usuário: " << usuariosPesquisado.getProfile();
 					return;
 				}
 			}
-			cout << "ID não encontrado." << std::endl;
+			std::cout << "ID não encontrado." << std::endl;
 		}
 
 	} while (id != 0);

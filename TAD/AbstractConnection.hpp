@@ -21,7 +21,7 @@
 #include <cppconn/resultset.h>
 #include <cppconn/statement.h>
 
-using namespace std;
+namespace TAD {
 
 class AbstractConnection {
  protected:
@@ -34,5 +34,8 @@ class AbstractConnection {
 
 	void fecharConexao();
 };
+
+}
+
 
 #endif //INC_2018_2_GRUPO19_ABSTRACTCONNECTION_HPP

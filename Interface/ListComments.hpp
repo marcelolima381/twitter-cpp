@@ -10,12 +10,12 @@
 
 class ListComments : public AbstractInterface {
  public:
-	explicit ListComments(Tweet *tweet);
+	explicit ListComments(TAD::Tweet *tweet);
 
 	void exibir() override;
 
  private:
-	Tweet *tweet;
+	TAD::Tweet *tweet;
 
 	void processarEntrada(int opcao) override;
 

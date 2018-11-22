@@ -19,13 +19,13 @@ class Perfil : public AbstractInterface {
 
  private:
 	unsigned long index;
-	vector<Tweet> tweets;
+	std::vector<TAD::Tweet> tweets;
 
-	Tweet *ObterTweetPeloIndice();
+	TAD::Tweet *ObterTweetPeloIndice();
 
 	void entrarComentarios();
 
-	void exibirTweet(Tweet tweet);
+	void exibirTweet(TAD::Tweet tweet);
 
 	void avancarTweet();
 

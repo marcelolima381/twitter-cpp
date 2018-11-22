@@ -10,8 +10,9 @@
 #include "AbstractConnection.hpp"
 #include "Users.hpp"
 #include "Comments.hpp"
+namespace TAD {
 
-class Tweet : public AbstractConnection {
+class Tweet : public TAD::AbstractConnection {
  private:
 	int id;
 	std::vector<Comments> comments;
@@ -31,21 +32,22 @@ class Tweet : public AbstractConnection {
 
 	void setUser(Users *user);
 
-	vector<Comments> getComments();
+	std::vector<Comments> getComments();
 
-	void setComments(vector<Comments> comments);
+	void setComments(std::vector<Comments> comments);
 
 	std::vector<Tweet> carregarTweetsUsuariosSeguidos(int user_id);
 
 	std::vector<Tweet> carregarTweetsUsuarioLogado(int user_id);
 
-	std::vector<Tweet> pesquisarPorHashtag(string hashtag);
+	std::vector<Tweet> pesquisarPorHashtag(std::string hashtag);
 
-	void criarTweet(string texto_tweet, int user_id);
+	void criarTweet(std::string texto_tweet, int user_id);
 
 	void curtirTweet(int tweet_id, int user_id);
 
 	std::vector<Users> verCurtidas(int tweet_id);
 };
 
+}
 #endif //INC_2018_2_GRUPO19_TWEET_HPP

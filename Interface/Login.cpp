@@ -47,11 +47,11 @@ int getch() {
  * @param prompt, show_asterisk
  * @return string
  */
-string getpass(const char *prompt, bool show_asterisk = true) {
+std::string getpass(const char *prompt, bool show_asterisk = true) {
 	const char BACKSPACE = 127;
 	const char RETURN = 10;
 
-	string password;
+	std::string password;
 	unsigned char ch = 0;
 
 	std::cout << prompt;
@@ -60,7 +60,7 @@ string getpass(const char *prompt, bool show_asterisk = true) {
 		if (ch == BACKSPACE) {
 			if (password.length() != 0) {
 				if (show_asterisk)
-					cout << "\b \b";
+					std::cout << "\b \b";
 				password.resize(password.length() - 1);
 			}
 		} else {
@@ -83,18 +83,18 @@ void Login::exibir() {
 				  << "0 - Sair" << std::endl;
 		try {
 			std::cin >> opcao;
-			while (cin.fail()) {
-				cin.clear();
-				cin.ignore(INT_MAX, '\n');
+			while (std::cin.fail()) {
+				std::cin.clear();
+				std::cin.ignore(INT_MAX, '\n');
 				opcao = OPCAO_INVALIDA;
-				__throw_bad_function_call();
+				std::__throw_bad_function_call();
 			}
 			this->processarEntrada(opcao);
-		} catch (invalid_argument &e) {
+		} catch (std::invalid_argument &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;31mArgumento inválido: " << e.what() << std::endl
 					  << "Tente novamente.\033[0m" << std::endl << std::endl;
-		} catch (bad_function_call &e) {
+		} catch (std::bad_function_call &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;33mErro. Escolha uma opção válida do menu.\033[0m" << std::endl
 					  << std::endl;
@@ -117,7 +117,7 @@ void Login::processarEntrada(int opcao) {
 		case SAIR:
 			break;
 
-		default:__throw_invalid_argument("Digite outra opção.");
+		default:std::__throw_invalid_argument("Digite outra opção.");
 	}
 }
 /**
@@ -127,19 +127,19 @@ void Login::logar() {
 	std::string conta, senha;
 	std::cout << "Login: ";
 	std::cin >> conta;
-	cin.ignore();
+	std::cin.ignore();
 	senha = getpass("Senha: ", true);
-	auto *user = new Users();
+	auto *user = new TAD::Users();
 
-	cout << "Validando login..." << std::endl;
+	std::cout << "Validando login..." << std::endl;
 	bool flag = user->validarLogin(conta, senha);
 	if (flag) {
 		system("clear");
-		Session::setUsuarioLogado(user);
+		Sessao::Session::setUsuarioLogado(user);
 		auto *feed = new Feed();
 		feed->exibir();
 	} else {
-		__throw_invalid_argument("Login e/ou senha inválidos");
+		std::__throw_invalid_argument("Login e/ou senha inválidos");
 	}
 
 }
@@ -152,27 +152,27 @@ void Login::criarConta() {
 
 	std::cout << "Insira os dados da sua nova conta." << std::endl;
 	std::cout << "Apelido: ";
-	cin.ignore();
-	getline(cin, profile);
+	std::cin.ignore();
+	getline(std::cin, profile);
 	password = getpass("Senha: ", true);
 	std::cout << "Email: ";
 //	cin.ignore();
-	getline(cin, account);
+	getline(std::cin, account);
 	std::cout << "Nome: ";
 //	cin.ignore();
-	getline(cin, name);
+	getline(std::cin, name);
 	std::cout << "Idade: ";
-	cin.ignore();
+	std::cin.ignore();
 	std::cin >> age;
 	std::cout << "Cidade: ";
-	cin.ignore();
-	getline(cin, city);
+	std::cin.ignore();
+	getline(std::cin, city);
 
-	auto *user = new Users();
+	auto *user = new TAD::Users();
 
 	retornoCriacao = user->criarConta(account, password, profile, name, city, age);
 
-	cout << "Usuario " + profile + " criado!" << std::endl;
+	std::cout << "Usuario " + profile + " criado!" << std::endl;
 }
 /**
  * @brief Redireciona o usuário para seu feed

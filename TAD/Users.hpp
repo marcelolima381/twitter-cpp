@@ -8,8 +8,9 @@
 #include <iostream>
 #include <vector>
 #include "AbstractConnection.hpp"
+namespace TAD {
 
-class Users : public AbstractConnection {
+ class Users : public TAD::AbstractConnection {
  private:
 	int id;
 	std::string account;
@@ -52,13 +53,13 @@ class Users : public AbstractConnection {
 
 	bool validarLogin(std::string conta, std::string senha);
 
-	string criarConta(string basicString, string string1, string string2, string string3, string string4, int i);
+ 	std::string criarConta(std::string account, std::string password, std::string profile, std::string name, std::string city, int age);
 
-	void editarCampo(string coluna, string valor);
+	void editarCampo(std::string coluna, std::string valor);
 
-	std::vector<Users> pesquisarUsuarios(string pesquisa);
+	std::vector<Users> pesquisarUsuarios(std::string pesquisa);
 
 	void seguirUsuario(int id1, int id2);
 };
-
+}
 #endif //INC_2018_2_GRUPO19_USERS_HPP

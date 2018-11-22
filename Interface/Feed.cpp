@@ -28,13 +28,13 @@ Feed::Feed() : AbstractInterface("Feed") {}
  */
 void Feed::exibir() {
 	int opcao = 0;
-	auto *tweet = new Tweet();
+	auto *tweet = new TAD::Tweet();
 	this->index = 0;
 	do {
-		cout << "Carregando..." << std::endl;
-		tweets = tweet->carregarTweetsUsuariosSeguidos(Session::getUsuarioLogado()->getId());
+		std::cout << "Carregando..." << std::endl;
+		tweets = tweet->carregarTweetsUsuariosSeguidos(Sessao::Session::getUsuarioLogado()->getId());
 		system("clear");
-		std::cout << std::endl << "\033[1;36mOlá, " << Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
+		std::cout << std::endl << "\033[1;36mOlá, " << Sessao::Session::getUsuarioLogado()->getName() << "\033[0m" << std::endl
 				  << std::endl;
 		if (tweets.empty()) {
 			std::cout << "Escolha a opção:" << std::endl << "3 - Meu Perfil" << std::endl << "5 - Tweetar" <<
@@ -48,22 +48,22 @@ void Feed::exibir() {
 		}
 		try {
 			std::cin >> opcao;
-			while (cin.fail()) {
-				cin.clear();
-				cin.ignore(INT_MAX, '\n');
+			while (std::cin.fail()) {
+				std::cin.clear();
+				std::cin.ignore(INT_MAX, '\n');
 				opcao = OPCAO_INVALIDA;
-				__throw_bad_function_call();
+				std::__throw_bad_function_call();
 			}
 			this->processarEntrada(opcao);
-		} catch (invalid_argument &e) {
+		} catch (std::invalid_argument &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;31mArgumento inválido: " << e.what() << std::endl
 					  << "Tente novamente.\033[0m" << std::endl << std::endl;
-		} catch (bad_function_call &e) {
+		} catch (std::bad_function_call &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;33mErro. Escolha uma opção válida do menu.\033[0m" << std::endl
 					  << std::endl;
-		} catch (out_of_range &e) {
+		} catch (std::out_of_range &e) {
 			std::cout << std::endl << "\033[1;31mErro: " << e.what() << "\033[0m" << std::endl << std::endl;
 		}
 	} while (opcao != 0);
@@ -74,12 +74,12 @@ void Feed::exibir() {
  * @param opcao
  */
 void Feed::processarEntrada(int opcao) {
-	vector<Users> users;
+	std::vector<TAD::Users> users;
 	switch (opcao) {
 		case AVANCAR:
 			if (tweets.empty()) {
 				system("clear");
-				__throw_out_of_range("Você não tem tweets para exibir. Tente seguir alguém.");
+				std::__throw_out_of_range("Você não tem tweets para exibir. Tente seguir alguém.");
 			} else {
 				avancarTweet();
 			}
@@ -88,7 +88,7 @@ void Feed::processarEntrada(int opcao) {
 		case RETROCEDER:
 			if (tweets.empty()) {
 				system("clear");
-				__throw_out_of_range("Você não tem tweets para exibir. Tente seguir alguém.");
+				std::__throw_out_of_range("Você não tem tweets para exibir. Tente seguir alguém.");
 			} else {
 				retrocederTweet();
 			}
@@ -100,7 +100,7 @@ void Feed::processarEntrada(int opcao) {
 		case COMENTARIOS:
 			if (tweets.empty()) {
 				system("clear");
-				__throw_out_of_range("Você não tem tweets ou comentários para exibir. Tente seguir alguém.");
+				std::__throw_out_of_range("Você não tem tweets ou comentários para exibir. Tente seguir alguém.");
 			} else {
 				entrarComentarios();
 			}
@@ -115,10 +115,10 @@ void Feed::processarEntrada(int opcao) {
 		case CURTIR:
 			if (tweets.empty()) {
 				system("clear");
-				__throw_out_of_range("Você não tem tweets para exibir ou curtir. Tente seguir alguém.");
+				std::__throw_out_of_range("Você não tem tweets para exibir ou curtir. Tente seguir alguém.");
 			} else {
 				ObterTweetPeloIndice()->curtirTweet(ObterTweetPeloIndice()->getId(),
-													Session::getUsuarioLogado()->getId());
+													Sessao::Session::getUsuarioLogado()->getId());
 				std::cout << "Tweet curtido com sucesso!" << std::endl;
 			}
 			break;
@@ -126,7 +126,7 @@ void Feed::processarEntrada(int opcao) {
 		case VER_CURTIDAS:
 			if (tweets.empty()) {
 				system("clear");
-				__throw_out_of_range("Você não tem tweets para exibir ou curtir. Tente seguir alguém.");
+				std::__throw_out_of_range("Você não tem tweets para exibir ou curtir. Tente seguir alguém.");
 			} else {
 				users = ObterTweetPeloIndice()->verCurtidas(ObterTweetPeloIndice()->getId());
 				for (auto &user : users) {
@@ -142,7 +142,7 @@ void Feed::processarEntrada(int opcao) {
 			std::cout << std::endl;
 			break;
 
-		default:__throw_invalid_argument("Digite outra opção.");
+		default:std::__throw_invalid_argument("Digite outra opção.");
 	}
 }
 
@@ -152,7 +152,7 @@ void Feed::processarEntrada(int opcao) {
 void Feed::entrarComentarios() {
 
 	if (tweets.empty()) {
-		cout << "Você não tem tweets a serem exibidos.";
+		std::cout << "Você não tem tweets a serem exibidos.";
 	} else {
 		auto *listComments = new ListComments(ObterTweetPeloIndice());
 		listComments->exibir();
@@ -164,7 +164,7 @@ void Feed::entrarComentarios() {
  *        Através desse índice a função retorna o respectivo Tweet
  * @return Tweet
  */
-Tweet *Feed::ObterTweetPeloIndice() {
+TAD::Tweet *Feed::ObterTweetPeloIndice() {
 	return &tweets.at(index);
 };
 
@@ -172,7 +172,7 @@ Tweet *Feed::ObterTweetPeloIndice() {
  * @brief Responsável por imprimir os Tweets no Feed do usuário
  * @param tweet
  */
-void Feed::exibirTweet(Tweet tweet) {
+void Feed::exibirTweet(TAD::Tweet tweet) {
 	std::cout << "Tweet " + std::to_string((index + 1)) + " de " + std::to_string(tweets.size()) << std::endl;
 	std::cout << std::endl << tweet.getUser()->getProfile() << ":" << std::endl;
 	std::cout << tweet.getDescription() << std::endl << std::endl;
@@ -221,13 +221,13 @@ void Feed::retrocederTweet() {
  * @brief Lê um novo tweet
  */
 void Feed::tweetar() {
-	string texto;
+	std::string texto;
 	system("clear");
 	std::cout << "Escreva o tweet: " << std::endl;
-	cin.ignore();
-	getline(cin, texto);
-	auto *tweet = new Tweet();
-	tweet->criarTweet(texto, Session::getUsuarioLogado()->getId());
+	std::cin.ignore();
+	getline(std::cin, texto);
+	auto *tweet = new TAD::Tweet();
+	tweet->criarTweet(texto, Sessao::Session::getUsuarioLogado()->getId());
 }
 
 

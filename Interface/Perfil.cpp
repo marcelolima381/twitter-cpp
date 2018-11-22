@@ -25,12 +25,12 @@ Perfil::Perfil() : AbstractInterface("Perfil") {}
 void Perfil::exibir() {
 	int opcao;
 //	auto *user = new Users();
-	std::cout << "Perfil: " << Session::getUsuarioLogado()->getProfile() << std::endl << "Nome: "
-			  << Session::getUsuarioLogado()->getName() << std::endl << "Cidade: "
-			  << Session::getUsuarioLogado()->getCity() << std::endl << "Idade: "
-			  << Session::getUsuarioLogado()->getAge() << std::endl;
-	auto *tweet = new Tweet();
-	tweets = tweet->carregarTweetsUsuarioLogado(Session::getUsuarioLogado()->getId());
+	std::cout << "Perfil: " << Sessao::Session::getUsuarioLogado()->getProfile() << std::endl << "Nome: "
+			  << Sessao::Session::getUsuarioLogado()->getName() << std::endl << "Cidade: "
+			  << Sessao::Session::getUsuarioLogado()->getCity() << std::endl << "Idade: "
+			  << Sessao::Session::getUsuarioLogado()->getAge() << std::endl;
+	auto *tweet = new TAD::Tweet();
+	tweets = tweet->carregarTweetsUsuarioLogado(Sessao::Session::getUsuarioLogado()->getId());
 	index = 0;
 	do {
 		if (tweets.empty()) {
@@ -45,22 +45,22 @@ void Perfil::exibir() {
 		}
 		try {
 			std::cin >> opcao;
-			while (cin.fail()) {
-				cin.clear();
-				cin.ignore(INT_MAX, '\n');
+			while (std::cin.fail()) {
+				std::cin.clear();
+				std::cin.ignore(INT_MAX, '\n');
 				opcao = OPCAO_INVALIDA;
-				__throw_bad_function_call();
+				std::__throw_bad_function_call();
 			}
 			this->processarEntrada(opcao);
-		} catch (invalid_argument &e) {
+		} catch (std::invalid_argument &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;31mArgumento inválido: " << e.what() << std::endl
 					  << "Tente novamente.\033[0m" << std::endl << std::endl;
-		} catch (bad_function_call &e) {
+		} catch (std::bad_function_call &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;33mErro. Escolha uma opção válida do menu.\033[0m" << std::endl
 					  << std::endl;
-		} catch (out_of_range &e) {
+		} catch (std::out_of_range &e) {
 			std::cout << std::endl << "\033[1;31mErro: " << e.what() << "\033[0m" << std::endl << std::endl;
 		}
 		if (opcao == FEED) {
@@ -77,7 +77,7 @@ void Perfil::processarEntrada(int opcao) {
 		case AVANCAR:
 			if (tweets.empty()) {
 				system("clear)");
-				__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
+				std::__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
 			} else {
 				avancarTweet();
 			}
@@ -86,7 +86,7 @@ void Perfil::processarEntrada(int opcao) {
 		case RETROCEDER:
 			if (tweets.empty()) {
 				system("clear)");
-				__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
+				std::__throw_out_of_range("Você não tem tweets para exibir. Crie um tweet.");
 			} else {
 				retrocederTweet();
 			}
@@ -99,7 +99,7 @@ void Perfil::processarEntrada(int opcao) {
 		case COMENTARIOS:
 			if (tweets.empty()) {
 				system("clear)");
-				__throw_out_of_range("Você não tem tweets ou comentários para exibir. Crie um tweet.");
+				std::__throw_out_of_range("Você não tem tweets ou comentários para exibir. Crie um tweet.");
 			} else {
 				entrarComentarios();
 			}
@@ -108,7 +108,7 @@ void Perfil::processarEntrada(int opcao) {
 		case EDITAR_PERFIL:editarPerfil();
 			break;
 
-		default:__throw_invalid_argument("Opção inválida! Digite outra opção.");
+		default:std::__throw_invalid_argument("Opção inválida! Digite outra opção.");
 	}
 }
 /**
@@ -122,14 +122,14 @@ void Perfil::entrarComentarios() {
  * @brief Mostra um tweet em determinado índice
  * @return Tweet
  */
-Tweet *Perfil::ObterTweetPeloIndice() {
+TAD::Tweet *Perfil::ObterTweetPeloIndice() {
 	return &tweets.at(index);
 };
 /**
  * @brief Mostra a posição de um tweet, o autor e o texto contido nele
  * @param tweet
  */
-void Perfil::exibirTweet(Tweet tweet) {
+void Perfil::exibirTweet(TAD::Tweet tweet) {
 	std::cout << "Tweet " + std::to_string((index + 1)) + " de " + std::to_string(tweets.size()) << std::endl;
 	std::cout << std::endl << tweet.getUser()->getProfile() << ":" << std::endl;
 	std::cout << tweet.getDescription() << std::endl << std::endl;
@@ -159,9 +159,9 @@ void Perfil::retrocederTweet() {
  * @brief Permite o usuário alterar dados em seu perfil
  */
 void Perfil::editarPerfil() {
-	auto *user = new Users();
+	auto *user = new TAD::Users();
 	int opcao;
-	string nome, cidade, senha;
+	std::string nome, cidade, senha;
 	int idade;
 	std::cout << "Qual dado do perfil você deseja editar?" << std::endl << "1 - Nome" << std::endl << "2 - Cidade"
 			  << std::endl << "3 - Idade" << std::endl << "4 - Senha" << std::endl;
@@ -170,28 +170,28 @@ void Perfil::editarPerfil() {
 		case 1:std::cout << "Digite o novo nome" << std::endl;
 			std::cin >> nome;
 			user->editarCampo("name", nome);
-			Session::getUsuarioLogado()->setName(nome);
+			Sessao::Session::getUsuarioLogado()->setName(nome);
 			break;
 
 		case 2:std::cout << "Digite a nova cidade" << std::endl;
 			std::cin >> cidade;
 			user->editarCampo("city", cidade);
-			Session::getUsuarioLogado()->setCity(cidade);
+			Sessao::Session::getUsuarioLogado()->setCity(cidade);
 			break;
 
 		case 3:std::cout << "Digite a nova idade" << std::endl;
 			std::cin >> idade;
 			user->editarCampo("age", std::to_string(idade));
-			Session::getUsuarioLogado()->setAge(idade);
+			Sessao::Session::getUsuarioLogado()->setAge(idade);
 			break;
 
 		case 4:std::cout << "Digite o novo senha" << std::endl;
 			std::cin >> senha;
 			user->editarCampo("password", senha);
-			Session::getUsuarioLogado()->setPassword(senha);
+			Sessao::Session::getUsuarioLogado()->setPassword(senha);
 			break;
 
 		default:
-			__throw_invalid_argument("Opção, inválida!");
+			std::__throw_invalid_argument("Opção, inválida!");
 	}
 }

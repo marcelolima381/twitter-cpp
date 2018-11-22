@@ -3,6 +3,7 @@
 //
 
 #include "Tweets_likes.hpp"
+namespace TAD {
 
 int Tweets_likes::getId() const {
 	return id;
@@ -26,4 +27,6 @@ int Tweets_likes::getUsers_id() const {
 
 void Tweets_likes::setUsers_id(int users_id) {
 	Tweets_likes::users_id = users_id;
+}
+
 }

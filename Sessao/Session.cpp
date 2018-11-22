@@ -5,16 +5,18 @@
 //
 
 #include "Session.hpp"
-
-Users *Session::getUsuarioLogado() {
+namespace Sessao {
+TAD::Users *Session::getUsuarioLogado() {
 	return Session::usuario;
 }
 /**
  * @brief Abre a sessão de um usuário, sendo a referência de qual conta está logada
  * @param users
  */
-void Session::setUsuarioLogado(Users *users) {
+void Session::setUsuarioLogado(TAD::Users *users) {
 	Session::usuario = users;
 }
 
-Users *Session::usuario = nullptr;
+TAD::Users *Session::usuario = nullptr;
+
+}

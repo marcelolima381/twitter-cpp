@@ -16,14 +16,14 @@ class Feed : public AbstractInterface {
 	void exibir() override;
 
  private:
-	std::vector<Tweet> tweets;
+	std::vector<TAD::Tweet> tweets;
 	unsigned long index;
 
-	Tweet *ObterTweetPeloIndice();
+	TAD::Tweet *ObterTweetPeloIndice();
 
 	void processarEntrada(int opcao) override;
 
-	void exibirTweet(Tweet tweet);
+	void exibirTweet(TAD::Tweet tweet);
 
 	void entrarComentarios();
 

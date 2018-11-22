@@ -15,7 +15,7 @@
  * Construtor
  * @param tweet
  */
-ListComments::ListComments(Tweet *tweet) : AbstractInterface("Comentarios") {
+ListComments::ListComments(TAD::Tweet *tweet) : AbstractInterface("Comentarios") {
 	this->tweet = tweet;
 }
 
@@ -30,18 +30,18 @@ void ListComments::exibir() {
 		std::cout << "Escolha a opção" << std::endl << "1 - Comentar" << std::endl << "0 - Sair" << std::endl;
 		try {
 			std::cin >> opcao;
-			while (cin.fail()) {
-				cin.clear();
-				cin.ignore(INT_MAX, '\n');
+			while (std::cin.fail()) {
+				std::cin.clear();
+				std::cin.ignore(INT_MAX, '\n');
 				opcao = OPCAO_INVALIDA;
-				__throw_bad_function_call();
+				std::__throw_bad_function_call();
 			}
 			this->processarEntrada(opcao);
-		} catch (invalid_argument &e) {
+		} catch (std::invalid_argument &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;31mArgumento inválido: " << e.what() << std::endl
 					  << "Tente novamente.\033[0m" << std::endl << std::endl;
-		} catch (bad_function_call &e) {
+		} catch (std::bad_function_call &e) {
 			system("clear");
 			std::cout << std::endl << "\033[1;33mErro. Escolha uma opção válida do menu.\033[0m" << std::endl
 					  << std::endl;
@@ -59,7 +59,7 @@ void ListComments::processarEntrada(int opcao) {
 		case 1:comentar();
 			break;
 		case 0:return;
-		default:__throw_bad_function_call();
+		default:std::__throw_bad_function_call();
 	}
 }
 
@@ -69,12 +69,12 @@ void ListComments::processarEntrada(int opcao) {
 void ListComments::comentar() {
 	std::string texto;
 
-	auto *comments = new Comments();
-	cout << "Digite o comentário:" << endl;
-	cin.ignore();
-	getline(cin, texto);
+	auto *comments = new TAD::Comments();
+	std::cout << "Digite o comentário:" << std::endl;
+	std::cin.ignore();
+	getline(std::cin, texto);
 
-	comments->inserirComentario(texto, Session::getUsuarioLogado()->getId(), this->tweet->getId());
+	comments->inserirComentario(texto, Sessao::Session::getUsuarioLogado()->getId(), this->tweet->getId());
 	delete (comments);
 }
 
@@ -83,9 +83,9 @@ void ListComments::comentar() {
  */
 void ListComments::exibirComentarios() {
 
-	auto *comments = new Comments();
+	auto *comments = new TAD::Comments();
 
-	vector<Comments> listComments = comments->carregarComments(this->tweet->getId());
+	std::vector<TAD::Comments> listComments = comments->carregarComments(this->tweet->getId());
 
 	for (auto &listComment : listComments) {
 		std::cout << listComment.getUser()->getProfile() + ": " +

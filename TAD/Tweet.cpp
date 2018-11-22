@@ -4,6 +4,8 @@
 
 #include "Tweet.hpp"
 #include <utility>
+namespace TAD {
+
 int Tweet::getId() {
 	return id;
 }
@@ -28,11 +30,11 @@ void Tweet::setUser(Users *user) {
 	Tweet::user = user;
 }
 
-vector<Comments> Tweet::getComments() {
+std::vector<Comments> Tweet::getComments() {
 	return comments;
 }
 
-void Tweet::setComments(vector<Comments> comments) {
+void Tweet::setComments(std::vector<Comments> comments) {
 	Tweet::comments = std::move(comments);
 }
 /**
@@ -41,7 +43,7 @@ void Tweet::setComments(vector<Comments> comments) {
  * @param hashtag
  * @return vector<Tweet>
  */
-vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
+std::vector<Tweet> Tweet::pesquisarPorHashtag(std::string hashtag) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -64,14 +66,14 @@ vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
 		fecharConexao();
 		return tweets;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -81,7 +83,7 @@ vector<Tweet> Tweet::pesquisarPorHashtag(string hashtag) {
  * @param user_id
  * @return vector<Tweet>
  */
-vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
+std::vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -105,14 +107,14 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
 		fecharConexao();
 		return tweets;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -122,7 +124,7 @@ vector<Tweet> Tweet::carregarTweetsUsuariosSeguidos(int user_id) {
  * @param user_id
  * @return vector<Tweet>
  */
-vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
+std::vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -145,14 +147,14 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
 		fecharConexao();
 		return tweets;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -163,7 +165,7 @@ vector<Tweet> Tweet::carregarTweetsUsuarioLogado(int user_id) {
  * @param texto_tweet
  * @param user_id
  */
-void Tweet::criarTweet(string texto_tweet, int user_id) {
+void Tweet::criarTweet(std::string texto_tweet, int user_id) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -173,14 +175,14 @@ void Tweet::criarTweet(string texto_tweet, int user_id) {
 		fecharConexao();
 
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "# ERR: SQLException in " << __FILE__;
 		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -199,14 +201,14 @@ void Tweet::curtirTweet(int tweet_id, int user_id) {
 		fecharConexao();
 
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "# ERR: SQLException in " << __FILE__;
 		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -216,7 +218,7 @@ void Tweet::curtirTweet(int tweet_id, int user_id) {
  * @param tweet_id
  * @return vector<Users>
  */
-vector<Users> Tweet::verCurtidas(int tweet_id) {
+std::vector<Users> Tweet::verCurtidas(int tweet_id) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -236,17 +238,16 @@ vector<Users> Tweet::verCurtidas(int tweet_id) {
 		fecharConexao();
 		return users;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
 
-
-
+}

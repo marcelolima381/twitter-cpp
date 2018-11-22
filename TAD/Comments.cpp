@@ -4,6 +4,7 @@
 
 #include "Comments.hpp"
 #include <vector>
+namespace TAD {
 
 int Comments::getId() const {
 	return id;
@@ -45,7 +46,7 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
-//        Query SQL
+		//        Query SQL
 		res = stmt->executeQuery(
 			"select c.id,description,tweets_id,users_id, u.profile from comments c inner join users u on u.id = c.users_id where tweets_id="
 				+
@@ -65,14 +66,14 @@ std::vector<Comments> Comments::carregarComments(int tweet_id) {
 		fecharConexao();
 		return comments;
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
 }
@@ -91,15 +92,17 @@ void Comments::inserirComentario(std::string comentario, int idUsuario, int idTw
 			std::to_string(idTweet) + "," + std::to_string(idUsuario) + ")");
 		fecharConexao();
 	} catch (sql::SQLException &e) {
-		cout << "# ERR: SQLException in " << __FILE__;
-		cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-		cout << "# ERR: " << e.what();
-		cout << " (MySQL error code: " << e.getErrorCode();
-		cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		fecharConexao();
 	} catch (std::exception &e) {
-		cout << "# ERR: " << e.what();
+		std::cout << "# ERR: " << e.what();
 		fecharConexao();
 	}
+}
+
 }
 

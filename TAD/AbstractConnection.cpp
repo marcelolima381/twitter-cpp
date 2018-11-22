@@ -3,9 +3,11 @@
 //
 
 #include "AbstractConnection.hpp"
+namespace TAD {
+
 /**
- * @brief Abre conexão com o banco de dados nas classes que herdam de AbstractConnetcion
- */
+* @brief Abre conexão com o banco de dados nas classes que herdam de AbstractConnetcion
+*/
 void AbstractConnection::abrirConexao() {
 //        Criando conexão
 	driver = get_driver_instance();
@@ -22,3 +24,6 @@ void AbstractConnection::fecharConexao() {
 	delete stmt;
 	delete con;
 }
+
+}
+

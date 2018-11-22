@@ -6,6 +6,7 @@
 #define INC_2018_2_GRUPO19_TWEETS_LIKES_HPP
 
 #include <iostream>
+namespace TAD {
 
 class Tweets_likes {
  private:
@@ -27,4 +28,5 @@ class Tweets_likes {
 	void setUsers_id(int users_id);
 };
 
+}
 #endif //INC_2018_2_GRUPO19_TWEETS_LIKES_HPP

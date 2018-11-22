@@ -19,8 +19,8 @@ class Pesquisa : public AbstractInterface {
 	void processarEntrada(int opcao) override;
 
  private:
-	std::vector<Users> usuariosPesquisados;
-	std::vector<Tweet> tweetsPesquisados;
+	std::vector<TAD::Users> usuariosPesquisados;
+	std::vector<TAD::Tweet> tweetsPesquisados;
 
 	void pesquisarHashTag();
 

@@ -9,8 +9,9 @@
 #include <vector>
 #include "AbstractConnection.hpp"
 #include "Users.hpp"
+namespace TAD {
 
-class Comments : public AbstractConnection {
+class Comments : public TAD::AbstractConnection {
  private:
 	int id;
 	std::string description;
@@ -36,7 +37,8 @@ class Comments : public AbstractConnection {
 
 	void setUser(Users *user);
 
-	vector<Comments> carregarComments(int tweet_id);
+	std::vector<Comments> carregarComments(int tweet_id);
 };
 
+}
 #endif //INC_2018_2_GRUPO19_COMMENTS_HPP
