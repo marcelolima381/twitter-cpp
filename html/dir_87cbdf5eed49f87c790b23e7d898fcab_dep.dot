@@ -1,0 +1,9 @@
+digraph "TAD" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_87cbdf5eed49f87c790b23e7d898fcab [shape=box, label="TAD", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_87cbdf5eed49f87c790b23e7d898fcab.html"];
+  dir_2aecd179f33c8dd5db061b9314cb8d63 [shape=box label="Sessao" URL="dir_2aecd179f33c8dd5db061b9314cb8d63.html"];
+  dir_87cbdf5eed49f87c790b23e7d898fcab->dir_2aecd179f33c8dd5db061b9314cb8d63 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000006.html"];
+  dir_2aecd179f33c8dd5db061b9314cb8d63->dir_87cbdf5eed49f87c790b23e7d898fcab [headlabel="1", labeldistance=1.5 headhref="dir_000006_000007.html"];
+}

@@ -1,0 +1,130 @@
+\hypertarget{class_perfil}{}\section{Perfil Class Reference}
+\label{class_perfil}\index{Perfil@{Perfil}}
+
+
+{\ttfamily \#include $<$Perfil.\+hpp$>$}
+
+
+
+Inherits \hyperlink{class_abstract_interface}{Abstract\+Interface}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}{Perfil} ()
+\item 
+void \hyperlink{class_perfil_a877aaf12fcb8e429244f4754bc2657e0}{exibir} () override
+\item 
+void \hyperlink{class_perfil_ad6a7cb27685c99b2660851819dc69b8f}{processar\+Entrada} (int opcao) override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tweet}{Tweet} $\ast$ \hyperlink{class_perfil_a7f3c421a5476419f60937e3dc9c99ccd}{Obter\+Tweet\+Pelo\+Indice} ()
+\item 
+void \hyperlink{class_perfil_a6547bb296776ad129411994a8ad31a1e}{entrar\+Comentarios} ()
+\item 
+void \hyperlink{class_perfil_a3eae1bc156b75d15bd8eb260e3329022}{exibir\+Tweet} (\hyperlink{class_tweet}{Tweet} tweet)
+\item 
+void \hyperlink{class_perfil_a2f8d3a23b664c3457ddd70b3f3857f2b}{avancar\+Tweet} ()
+\item 
+void \hyperlink{class_perfil_a4773ccaa4dee6f040e893935ea2073e9}{retroceder\+Tweet} ()
+\item 
+void \hyperlink{class_perfil_ad20877ec0e6a0d44bd3ec97c216335b0}{editar\+Perfil} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{class_perfil_a532aa01a2dddba12cc73cc79942e3d4f}{index}
+\item 
+vector$<$ \hyperlink{class_tweet}{Tweet} $>$ \hyperlink{class_perfil_a8aec470bb6a319be9a3bf65795f825d7}{tweets}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}\label{class_perfil_a7d33c31b4d676edb7d5e5ff2905ce0c0}} 
+\index{Perfil@{Perfil}!Perfil@{Perfil}}
+\index{Perfil@{Perfil}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{Perfil()}{Perfil()}}
+{\footnotesize\ttfamily Perfil\+::\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_perfil_a2f8d3a23b664c3457ddd70b3f3857f2b}\label{class_perfil_a2f8d3a23b664c3457ddd70b3f3857f2b}} 
+\index{Perfil@{Perfil}!avancar\+Tweet@{avancar\+Tweet}}
+\index{avancar\+Tweet@{avancar\+Tweet}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{avancar\+Tweet()}{avancarTweet()}}
+{\footnotesize\ttfamily void Perfil\+::avancar\+Tweet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_ad20877ec0e6a0d44bd3ec97c216335b0}\label{class_perfil_ad20877ec0e6a0d44bd3ec97c216335b0}} 
+\index{Perfil@{Perfil}!editar\+Perfil@{editar\+Perfil}}
+\index{editar\+Perfil@{editar\+Perfil}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{editar\+Perfil()}{editarPerfil()}}
+{\footnotesize\ttfamily void Perfil\+::editar\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_a6547bb296776ad129411994a8ad31a1e}\label{class_perfil_a6547bb296776ad129411994a8ad31a1e}} 
+\index{Perfil@{Perfil}!entrar\+Comentarios@{entrar\+Comentarios}}
+\index{entrar\+Comentarios@{entrar\+Comentarios}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{entrar\+Comentarios()}{entrarComentarios()}}
+{\footnotesize\ttfamily void Perfil\+::entrar\+Comentarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_a877aaf12fcb8e429244f4754bc2657e0}\label{class_perfil_a877aaf12fcb8e429244f4754bc2657e0}} 
+\index{Perfil@{Perfil}!exibir@{exibir}}
+\index{exibir@{exibir}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{exibir()}{exibir()}}
+{\footnotesize\ttfamily void Perfil\+::exibir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_abstract_interface_a1d5d2a15e6e640bd0190a835cb64e5ed}{Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_perfil_a3eae1bc156b75d15bd8eb260e3329022}\label{class_perfil_a3eae1bc156b75d15bd8eb260e3329022}} 
+\index{Perfil@{Perfil}!exibir\+Tweet@{exibir\+Tweet}}
+\index{exibir\+Tweet@{exibir\+Tweet}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{exibir\+Tweet()}{exibirTweet()}}
+{\footnotesize\ttfamily void Perfil\+::exibir\+Tweet (\begin{DoxyParamCaption}\item[{\hyperlink{class_tweet}{Tweet}}]{tweet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_a7f3c421a5476419f60937e3dc9c99ccd}\label{class_perfil_a7f3c421a5476419f60937e3dc9c99ccd}} 
+\index{Perfil@{Perfil}!Obter\+Tweet\+Pelo\+Indice@{Obter\+Tweet\+Pelo\+Indice}}
+\index{Obter\+Tweet\+Pelo\+Indice@{Obter\+Tweet\+Pelo\+Indice}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{Obter\+Tweet\+Pelo\+Indice()}{ObterTweetPeloIndice()}}
+{\footnotesize\ttfamily \hyperlink{class_tweet}{Tweet} $\ast$ Perfil\+::\+Obter\+Tweet\+Pelo\+Indice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_ad6a7cb27685c99b2660851819dc69b8f}\label{class_perfil_ad6a7cb27685c99b2660851819dc69b8f}} 
+\index{Perfil@{Perfil}!processar\+Entrada@{processar\+Entrada}}
+\index{processar\+Entrada@{processar\+Entrada}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{processar\+Entrada()}{processarEntrada()}}
+{\footnotesize\ttfamily void Perfil\+::processar\+Entrada (\begin{DoxyParamCaption}\item[{int}]{opcao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_abstract_interface_acf8223a1da27c6986158836a57fa51ee}{Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_perfil_a4773ccaa4dee6f040e893935ea2073e9}\label{class_perfil_a4773ccaa4dee6f040e893935ea2073e9}} 
+\index{Perfil@{Perfil}!retroceder\+Tweet@{retroceder\+Tweet}}
+\index{retroceder\+Tweet@{retroceder\+Tweet}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{retroceder\+Tweet()}{retrocederTweet()}}
+{\footnotesize\ttfamily void Perfil\+::retroceder\+Tweet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_perfil_a532aa01a2dddba12cc73cc79942e3d4f}\label{class_perfil_a532aa01a2dddba12cc73cc79942e3d4f}} 
+\index{Perfil@{Perfil}!index@{index}}
+\index{index@{index}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily unsigned long Perfil\+::index\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_perfil_a8aec470bb6a319be9a3bf65795f825d7}\label{class_perfil_a8aec470bb6a319be9a3bf65795f825d7}} 
+\index{Perfil@{Perfil}!tweets@{tweets}}
+\index{tweets@{tweets}!Perfil@{Perfil}}
+\subsubsection{\texorpdfstring{tweets}{tweets}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_tweet}{Tweet}$>$ Perfil\+::tweets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Interface/\hyperlink{_perfil_8hpp}{Perfil.\+hpp}\item 
+Interface/\hyperlink{_perfil_8cpp}{Perfil.\+cpp}\end{DoxyCompactItemize}

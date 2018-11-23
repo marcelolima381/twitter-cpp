@@ -1,0 +1,159 @@
+\hypertarget{class_interface_1_1_pesquisa}{}\section{Interface\+:\+:Pesquisa Class Reference}
+\label{class_interface_1_1_pesquisa}\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+
+
+{\ttfamily \#include $<$Pesquisa.\+hpp$>$}
+
+
+
+Inheritance diagram for Interface\+:\+:Pesquisa\+:
+% FIG 0
+
+
+Collaboration diagram for Interface\+:\+:Pesquisa\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interface_1_1_pesquisa_a7662b8d1f935e7edd9a13f6f0b05c329}{Pesquisa} ()
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_pesquisa_a4d89df37dbf36d20f07c2dd00a6b97f3}{exibir} () override
+\item 
+void \hyperlink{class_interface_1_1_pesquisa_aad98a86ce0fd0ef1bcd1d80bd24f167f}{processar\+Entrada} (int opcao) override
+\begin{DoxyCompactList}\small\item\em Processa a entrada recebida pelo menu de modo de pesquisa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interface_1_1_pesquisa_a28a88ff5186592cdbf7a2df056e8a6ad}{pesquisar\+Hash\+Tag} ()
+\begin{DoxyCompactList}\small\item\em Realiza a pesquisa por uma hastag. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_pesquisa_acaa0b19a0be4285fa0e9a29e16858719}{pesquisar\+Usuario} ()
+\begin{DoxyCompactList}\small\item\em Realiza a pesquisa por um usuário. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_pesquisa_a489f4605a56f01a61e9d93c7f5d34b14}{exibir\+Usuarios\+Pesquisados} ()
+\begin{DoxyCompactList}\small\item\em Exibe usuários pesquisados. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_pesquisa_ad8f5f3dbb0409a4d331f23f4bcebccb4}{exibir\+Tweets\+Pesquisados} ()
+\begin{DoxyCompactList}\small\item\em Exibe tweets pesquisados. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_pesquisa_a138948564540ebb6b5f0cdc89326451b}{associar\+Usuario} ()
+\begin{DoxyCompactList}\small\item\em Possibilita um usuário poder seguir outro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{T\+A\+D\+::\+Users} $>$ \hyperlink{class_interface_1_1_pesquisa_a5c4e622554020b6f73f1c7a804f96b58}{usuarios\+Pesquisados}
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $>$ \hyperlink{class_interface_1_1_pesquisa_a727e0bf877914015276da14ca1e8cf16}{tweets\+Pesquisados}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a7662b8d1f935e7edd9a13f6f0b05c329}\label{class_interface_1_1_pesquisa_a7662b8d1f935e7edd9a13f6f0b05c329}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!Pesquisa@{Pesquisa}}
+\index{Pesquisa@{Pesquisa}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{Pesquisa()}{Pesquisa()}}
+{\footnotesize\ttfamily Interface\+::\+Pesquisa\+::\+Pesquisa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a138948564540ebb6b5f0cdc89326451b}\label{class_interface_1_1_pesquisa_a138948564540ebb6b5f0cdc89326451b}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!associar\+Usuario@{associar\+Usuario}}
+\index{associar\+Usuario@{associar\+Usuario}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{associar\+Usuario()}{associarUsuario()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::associar\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Possibilita um usuário poder seguir outro. 
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a4d89df37dbf36d20f07c2dd00a6b97f3}\label{class_interface_1_1_pesquisa_a4d89df37dbf36d20f07c2dd00a6b97f3}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!exibir@{exibir}}
+\index{exibir@{exibir}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{exibir()}{exibir()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::exibir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Exibe um menu para escolha de modo de pesquisa 
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_af1a45726ea636cdbf1cf2d7daa5708be}{Interface\+::\+Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_ad8f5f3dbb0409a4d331f23f4bcebccb4}\label{class_interface_1_1_pesquisa_ad8f5f3dbb0409a4d331f23f4bcebccb4}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!exibir\+Tweets\+Pesquisados@{exibir\+Tweets\+Pesquisados}}
+\index{exibir\+Tweets\+Pesquisados@{exibir\+Tweets\+Pesquisados}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{exibir\+Tweets\+Pesquisados()}{exibirTweetsPesquisados()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::exibir\+Tweets\+Pesquisados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exibe tweets pesquisados. 
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a489f4605a56f01a61e9d93c7f5d34b14}\label{class_interface_1_1_pesquisa_a489f4605a56f01a61e9d93c7f5d34b14}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!exibir\+Usuarios\+Pesquisados@{exibir\+Usuarios\+Pesquisados}}
+\index{exibir\+Usuarios\+Pesquisados@{exibir\+Usuarios\+Pesquisados}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{exibir\+Usuarios\+Pesquisados()}{exibirUsuariosPesquisados()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::exibir\+Usuarios\+Pesquisados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exibe usuários pesquisados. 
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a28a88ff5186592cdbf7a2df056e8a6ad}\label{class_interface_1_1_pesquisa_a28a88ff5186592cdbf7a2df056e8a6ad}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!pesquisar\+Hash\+Tag@{pesquisar\+Hash\+Tag}}
+\index{pesquisar\+Hash\+Tag@{pesquisar\+Hash\+Tag}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{pesquisar\+Hash\+Tag()}{pesquisarHashTag()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::pesquisar\+Hash\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Realiza a pesquisa por uma hastag. 
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_acaa0b19a0be4285fa0e9a29e16858719}\label{class_interface_1_1_pesquisa_acaa0b19a0be4285fa0e9a29e16858719}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!pesquisar\+Usuario@{pesquisar\+Usuario}}
+\index{pesquisar\+Usuario@{pesquisar\+Usuario}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{pesquisar\+Usuario()}{pesquisarUsuario()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::pesquisar\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Realiza a pesquisa por um usuário. 
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_aad98a86ce0fd0ef1bcd1d80bd24f167f}\label{class_interface_1_1_pesquisa_aad98a86ce0fd0ef1bcd1d80bd24f167f}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!processar\+Entrada@{processar\+Entrada}}
+\index{processar\+Entrada@{processar\+Entrada}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{processar\+Entrada()}{processarEntrada()}}
+{\footnotesize\ttfamily void Interface\+::\+Pesquisa\+::processar\+Entrada (\begin{DoxyParamCaption}\item[{int}]{opcao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Processa a entrada recebida pelo menu de modo de pesquisa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcao} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_a9318f98f907ce54ef2dbf892ba327da2}{Interface\+::\+Abstract\+Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a727e0bf877914015276da14ca1e8cf16}\label{class_interface_1_1_pesquisa_a727e0bf877914015276da14ca1e8cf16}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!tweets\+Pesquisados@{tweets\+Pesquisados}}
+\index{tweets\+Pesquisados@{tweets\+Pesquisados}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{tweets\+Pesquisados}{tweetsPesquisados}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet}$>$ Interface\+::\+Pesquisa\+::tweets\+Pesquisados\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_interface_1_1_pesquisa_a5c4e622554020b6f73f1c7a804f96b58}\label{class_interface_1_1_pesquisa_a5c4e622554020b6f73f1c7a804f96b58}} 
+\index{Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}!usuarios\+Pesquisados@{usuarios\+Pesquisados}}
+\index{usuarios\+Pesquisados@{usuarios\+Pesquisados}!Interface\+::\+Pesquisa@{Interface\+::\+Pesquisa}}
+\subsubsection{\texorpdfstring{usuarios\+Pesquisados}{usuariosPesquisados}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_t_a_d_1_1_users}{T\+A\+D\+::\+Users}$>$ Interface\+::\+Pesquisa\+::usuarios\+Pesquisados\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Interface/\hyperlink{_pesquisa_8hpp}{Pesquisa.\+hpp}\item 
+Interface/\hyperlink{_pesquisa_8cpp}{Pesquisa.\+cpp}\end{DoxyCompactItemize}

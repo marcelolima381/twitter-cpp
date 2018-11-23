@@ -69,6 +69,7 @@ class Users : public TAD::AbstractConnection {
 	std::vector<Users> pesquisarQuemUsuarioSegue(int id);
 
 	void seguirUsuario(int id1, int id2);
+
 	void excluirSeguirUsuario(int id1, int id2);
 };
 }

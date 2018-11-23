@@ -1,0 +1,15 @@
+digraph "Interface::ListComments"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="Interface::ListComments",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Interface::AbstractInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_interface_1_1_abstract_interface.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tweet" ,fontname="Helvetica"];
+  Node4 [label="TAD::Tweet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_1_1_tweet.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TAD::AbstractConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_1_1_abstract_connection.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" user" ,fontname="Helvetica"];
+  Node6 [label="TAD::Users",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_1_1_users.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

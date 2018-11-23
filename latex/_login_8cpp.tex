@@ -1,0 +1,63 @@
+\hypertarget{_login_8cpp}{}\section{Interface/\+Login.cpp File Reference}
+\label{_login_8cpp}\index{Interface/\+Login.\+cpp@{Interface/\+Login.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Login.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+T\+A\+D/\+Users.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Sessao/\+Session.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Feed.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+Include dependency graph for Login.\+cpp\+:
+% FIG 0
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_interface}{Interface}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_login_8cpp_acacef11df8f237e2699ae1e7501f8338}{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}~400
+\item 
+\#define \hyperlink{_login_8cpp_a8b6edd0d76e01427c0368c05934b59a8}{L\+O\+G\+AR}~1
+\item 
+\#define \hyperlink{_login_8cpp_adb03d4e8dace27c8b252e1866aacffab}{C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA}~2
+\item 
+\#define \hyperlink{_login_8cpp_a1ebfd016359b8eecc23a2d3149b11631}{S\+A\+IR}~0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespace_interface_ab573d0ce6169f28d527482a31eaa5986}{Interface\+::getch} ()
+\begin{DoxyCompactList}\small\item\em Auxilia na manipulação de caracteres recebidos como entrada na senha do usuário. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespace_interface_aeb08764caefdb64e384ce67ce1b2ed88}{Interface\+::getpass} (const char $\ast$prompt, bool show\+\_\+asterisk=true)
+\begin{DoxyCompactList}\small\item\em Retorna a string correspondente à senha do usuário e faz com que suas entradas apareçam como \textquotesingle{}$\ast$\textquotesingle{} na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_login_8cpp_adb03d4e8dace27c8b252e1866aacffab}\label{_login_8cpp_adb03d4e8dace27c8b252e1866aacffab}} 
+\index{Login.\+cpp@{Login.\+cpp}!C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA@{C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA}}
+\index{C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA@{C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA}!Login.\+cpp@{Login.\+cpp}}
+\subsubsection{\texorpdfstring{C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA}{CRIAR\_CONTA}}
+{\footnotesize\ttfamily \#define C\+R\+I\+A\+R\+\_\+\+C\+O\+N\+TA~2}
+
+\mbox{\Hypertarget{_login_8cpp_a8b6edd0d76e01427c0368c05934b59a8}\label{_login_8cpp_a8b6edd0d76e01427c0368c05934b59a8}} 
+\index{Login.\+cpp@{Login.\+cpp}!L\+O\+G\+AR@{L\+O\+G\+AR}}
+\index{L\+O\+G\+AR@{L\+O\+G\+AR}!Login.\+cpp@{Login.\+cpp}}
+\subsubsection{\texorpdfstring{L\+O\+G\+AR}{LOGAR}}
+{\footnotesize\ttfamily \#define L\+O\+G\+AR~1}
+
+\mbox{\Hypertarget{_login_8cpp_acacef11df8f237e2699ae1e7501f8338}\label{_login_8cpp_acacef11df8f237e2699ae1e7501f8338}} 
+\index{Login.\+cpp@{Login.\+cpp}!O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA@{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}}
+\index{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA@{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}!Login.\+cpp@{Login.\+cpp}}
+\subsubsection{\texorpdfstring{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}{OPCAO\_INVALIDA}}
+{\footnotesize\ttfamily \#define O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA~400}
+
+\mbox{\Hypertarget{_login_8cpp_a1ebfd016359b8eecc23a2d3149b11631}\label{_login_8cpp_a1ebfd016359b8eecc23a2d3149b11631}} 
+\index{Login.\+cpp@{Login.\+cpp}!S\+A\+IR@{S\+A\+IR}}
+\index{S\+A\+IR@{S\+A\+IR}!Login.\+cpp@{Login.\+cpp}}
+\subsubsection{\texorpdfstring{S\+A\+IR}{SAIR}}
+{\footnotesize\ttfamily \#define S\+A\+IR~0}
+

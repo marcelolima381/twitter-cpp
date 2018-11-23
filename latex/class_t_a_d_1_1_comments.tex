@@ -1,0 +1,170 @@
+\hypertarget{class_t_a_d_1_1_comments}{}\section{T\+AD\+:\+:Comments Class Reference}
+\label{class_t_a_d_1_1_comments}\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+
+
+{\ttfamily \#include $<$Comments.\+hpp$>$}
+
+
+
+Inheritance diagram for T\+AD\+:\+:Comments\+:
+% FIG 0
+
+
+Collaboration diagram for T\+AD\+:\+:Comments\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_comments_a19713837395fe61765c8828e0ac6e2e4}{get\+Id} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_comments_a37a51cc0959f4eaac5b94d0cc80f684c}{set\+Id} (int \hyperlink{class_t_a_d_1_1_comments_aa79c05cab480f12f13d9864b9791d972}{id})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_comments_a1d5be175dfd5907cc76f40cb6b3f9fe0}{get\+Description} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_comments_afba65b422bcd9389111539ee4264be1f}{set\+Description} (const std\+::string \&\hyperlink{class_t_a_d_1_1_comments_a3b6ff92ac725fdee6c109036eebc889d}{description})
+\item 
+void \hyperlink{class_t_a_d_1_1_comments_a7d312da36b87d328983c2759d16452e2}{inserir\+Comentario} (std\+::string comentario, int id\+Usuario, int id\+Tweet)
+\begin{DoxyCompactList}\small\item\em Adiciona no banco de dados um novo comentário junto com o id de quem comentou e o id do tweet comentado. \end{DoxyCompactList}\item 
+int \hyperlink{class_t_a_d_1_1_comments_ab8a4d8631f22eac4d387a2d76eb8ebb9}{get\+Tweets\+\_\+id} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_comments_a8bf8b446db4ea8aa9e5b4fd2b72e7c11}{set\+Tweets\+\_\+id} (int \hyperlink{class_t_a_d_1_1_comments_afbe4b492056ffa01d03c7ae846d50ea2}{tweets\+\_\+id})
+\item 
+\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ \hyperlink{class_t_a_d_1_1_comments_a58ed274ef7b23ec769db9957a3372381}{get\+User} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_comments_a640bf5815df8f79ac9900a0f97dcf8fc}{set\+User} (\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$\hyperlink{class_t_a_d_1_1_comments_a33d578ff96661f21cc9a6de37bb21256}{user})
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ \hyperlink{class_t_a_d_1_1_comments_aa760a8d05ae39304d40a70341766d434}{carregar\+Comments} (int tweet\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Recolhe no banco de dados todos os comentários do tweet que possui o id correspondete com o parâmetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_comments_aa79c05cab480f12f13d9864b9791d972}{id}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_comments_a3b6ff92ac725fdee6c109036eebc889d}{description}
+\item 
+int \hyperlink{class_t_a_d_1_1_comments_afbe4b492056ffa01d03c7ae846d50ea2}{tweets\+\_\+id}
+\item 
+\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ \hyperlink{class_t_a_d_1_1_comments_a33d578ff96661f21cc9a6de37bb21256}{user}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_aa760a8d05ae39304d40a70341766d434}\label{class_t_a_d_1_1_comments_aa760a8d05ae39304d40a70341766d434}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!carregar\+Comments@{carregar\+Comments}}
+\index{carregar\+Comments@{carregar\+Comments}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{carregar\+Comments()}{carregarComments()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ T\+A\+D\+::\+Comments\+::carregar\+Comments (\begin{DoxyParamCaption}\item[{int}]{tweet\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Recolhe no banco de dados todos os comentários do tweet que possui o id correspondete com o parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tweet\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Coments$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a1d5be175dfd5907cc76f40cb6b3f9fe0}\label{class_t_a_d_1_1_comments_a1d5be175dfd5907cc76f40cb6b3f9fe0}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Comments\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a19713837395fe61765c8828e0ac6e2e4}\label{class_t_a_d_1_1_comments_a19713837395fe61765c8828e0ac6e2e4}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Comments\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_ab8a4d8631f22eac4d387a2d76eb8ebb9}\label{class_t_a_d_1_1_comments_ab8a4d8631f22eac4d387a2d76eb8ebb9}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!get\+Tweets\+\_\+id@{get\+Tweets\+\_\+id}}
+\index{get\+Tweets\+\_\+id@{get\+Tweets\+\_\+id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{get\+Tweets\+\_\+id()}{getTweets\_id()}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Comments\+::get\+Tweets\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a58ed274ef7b23ec769db9957a3372381}\label{class_t_a_d_1_1_comments_a58ed274ef7b23ec769db9957a3372381}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ T\+A\+D\+::\+Comments\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a7d312da36b87d328983c2759d16452e2}\label{class_t_a_d_1_1_comments_a7d312da36b87d328983c2759d16452e2}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!inserir\+Comentario@{inserir\+Comentario}}
+\index{inserir\+Comentario@{inserir\+Comentario}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{inserir\+Comentario()}{inserirComentario()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Comments\+::inserir\+Comentario (\begin{DoxyParamCaption}\item[{std\+::string}]{comentario,  }\item[{int}]{id\+Usuario,  }\item[{int}]{id\+Tweet }\end{DoxyParamCaption})}
+
+
+
+Adiciona no banco de dados um novo comentário junto com o id de quem comentou e o id do tweet comentado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comentario} & \\
+\hline
+{\em id\+Usuario} & \\
+\hline
+{\em id\+Tweet} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_afba65b422bcd9389111539ee4264be1f}\label{class_t_a_d_1_1_comments_afba65b422bcd9389111539ee4264be1f}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Comments\+::set\+Description (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a37a51cc0959f4eaac5b94d0cc80f684c}\label{class_t_a_d_1_1_comments_a37a51cc0959f4eaac5b94d0cc80f684c}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Comments\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a8bf8b446db4ea8aa9e5b4fd2b72e7c11}\label{class_t_a_d_1_1_comments_a8bf8b446db4ea8aa9e5b4fd2b72e7c11}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!set\+Tweets\+\_\+id@{set\+Tweets\+\_\+id}}
+\index{set\+Tweets\+\_\+id@{set\+Tweets\+\_\+id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{set\+Tweets\+\_\+id()}{setTweets\_id()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Comments\+::set\+Tweets\+\_\+id (\begin{DoxyParamCaption}\item[{int}]{tweets\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a640bf5815df8f79ac9900a0f97dcf8fc}\label{class_t_a_d_1_1_comments_a640bf5815df8f79ac9900a0f97dcf8fc}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!set\+User@{set\+User}}
+\index{set\+User@{set\+User}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{set\+User()}{setUser()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Comments\+::set\+User (\begin{DoxyParamCaption}\item[{\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a3b6ff92ac725fdee6c109036eebc889d}\label{class_t_a_d_1_1_comments_a3b6ff92ac725fdee6c109036eebc889d}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!description@{description}}
+\index{description@{description}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Comments\+::description\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_aa79c05cab480f12f13d9864b9791d972}\label{class_t_a_d_1_1_comments_aa79c05cab480f12f13d9864b9791d972}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!id@{id}}
+\index{id@{id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Comments\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_afbe4b492056ffa01d03c7ae846d50ea2}\label{class_t_a_d_1_1_comments_afbe4b492056ffa01d03c7ae846d50ea2}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!tweets\+\_\+id@{tweets\+\_\+id}}
+\index{tweets\+\_\+id@{tweets\+\_\+id}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{tweets\+\_\+id}{tweets\_id}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Comments\+::tweets\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_comments_a33d578ff96661f21cc9a6de37bb21256}\label{class_t_a_d_1_1_comments_a33d578ff96661f21cc9a6de37bb21256}} 
+\index{T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}!user@{user}}
+\index{user@{user}!T\+A\+D\+::\+Comments@{T\+A\+D\+::\+Comments}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_users}{Users}$\ast$ T\+A\+D\+::\+Comments\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+A\+D/\hyperlink{_comments_8hpp}{Comments.\+hpp}\item 
+T\+A\+D/\hyperlink{_comments_8cpp}{Comments.\+cpp}\end{DoxyCompactItemize}

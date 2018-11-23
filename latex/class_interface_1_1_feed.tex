@@ -1,0 +1,203 @@
+\hypertarget{class_interface_1_1_feed}{}\section{Interface\+:\+:Feed Class Reference}
+\label{class_interface_1_1_feed}\index{Interface\+::\+Feed@{Interface\+::\+Feed}}
+
+
+{\ttfamily \#include $<$Feed.\+hpp$>$}
+
+
+
+Inheritance diagram for Interface\+:\+:Feed\+:
+% FIG 0
+
+
+Collaboration diagram for Interface\+:\+:Feed\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interface_1_1_feed_a03aed37bb58912363b04bb319d16d8b8}{Feed} ()
+\item 
+void \hyperlink{class_interface_1_1_feed_a8ba454c1afcb942a84bfd9d918cf262c}{exibir} () override
+\begin{DoxyCompactList}\small\item\em Exibe o menu de opções do \hyperlink{class_interface_1_1_feed}{Feed}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $\ast$ \hyperlink{class_interface_1_1_feed_a4b11fd468df68a5c41dcb5cf2b8d637d}{Obter\+Tweet\+Pelo\+Indice} ()
+\begin{DoxyCompactList}\small\item\em Os Tweets são exibidos um a um. O controle de navegação entre os Tweets é feito por um índice. Através desse índice a função retorna o respectivo Tweet. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a16fbbeb11ad125e2633bb72b0c2ab4bf}{processar\+Entrada} (int opcao) override
+\begin{DoxyCompactList}\small\item\em Processa a entrada do menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a1b34847c7ee4f9df540a5246eedd0083}{exibir\+Tweet} (\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} tweet)
+\begin{DoxyCompactList}\small\item\em Responsável por imprimir os Tweets no \hyperlink{class_interface_1_1_feed}{Feed} do usuário. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a9367d3031cdd3a36818eff4d1f49b92c}{entrar\+Comentarios} ()
+\begin{DoxyCompactList}\small\item\em Manipula os comentários de um Tweet. Caso não haja um Tweet, uma mensagem é exibida. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a7cd09ff01bc220faeac98b0afdea1480}{entrar\+Perfil} ()
+\begin{DoxyCompactList}\small\item\em Faz a transição de interface do \hyperlink{class_interface_1_1_feed}{Feed} para o \hyperlink{class_interface_1_1_perfil}{Perfil}. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a75debf14bea8ae75c74599b117b8af5c}{entrar\+Pesquisa} ()
+\begin{DoxyCompactList}\small\item\em Faz a transição de interface do \hyperlink{class_interface_1_1_feed}{Feed} para a \hyperlink{class_interface_1_1_pesquisa}{Pesquisa}. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a2203568fb299f7ea19040e9770eb16a3}{avancar\+Tweet} ()
+\begin{DoxyCompactList}\small\item\em Avança um Tweet pelo sistema de índice. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_aace561e639f20dbb5eb0b6662a4a637e}{retroceder\+Tweet} ()
+\begin{DoxyCompactList}\small\item\em Retrocede um Tweet pelo sistema de índice. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_feed_a38ef9424e64953f3f526df972f3452a7}{tweetar} ()
+\begin{DoxyCompactList}\small\item\em Lê um novo tweet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $>$ \hyperlink{class_interface_1_1_feed_a50d506d437402c19a1b1b8319639b7cf}{tweets}
+\item 
+unsigned long \hyperlink{class_interface_1_1_feed_ac9bb88831516af18069557d6e3d8c03c}{index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_interface_1_1_feed_a03aed37bb58912363b04bb319d16d8b8}\label{class_interface_1_1_feed_a03aed37bb58912363b04bb319d16d8b8}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!Feed@{Feed}}
+\index{Feed@{Feed}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{Feed()}{Feed()}}
+{\footnotesize\ttfamily Interface\+::\+Feed\+::\+Feed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Construtor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interface_1_1_feed_a2203568fb299f7ea19040e9770eb16a3}\label{class_interface_1_1_feed_a2203568fb299f7ea19040e9770eb16a3}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!avancar\+Tweet@{avancar\+Tweet}}
+\index{avancar\+Tweet@{avancar\+Tweet}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{avancar\+Tweet()}{avancarTweet()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::avancar\+Tweet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Avança um Tweet pelo sistema de índice. 
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a9367d3031cdd3a36818eff4d1f49b92c}\label{class_interface_1_1_feed_a9367d3031cdd3a36818eff4d1f49b92c}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!entrar\+Comentarios@{entrar\+Comentarios}}
+\index{entrar\+Comentarios@{entrar\+Comentarios}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{entrar\+Comentarios()}{entrarComentarios()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::entrar\+Comentarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Manipula os comentários de um Tweet. Caso não haja um Tweet, uma mensagem é exibida. 
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a7cd09ff01bc220faeac98b0afdea1480}\label{class_interface_1_1_feed_a7cd09ff01bc220faeac98b0afdea1480}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!entrar\+Perfil@{entrar\+Perfil}}
+\index{entrar\+Perfil@{entrar\+Perfil}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{entrar\+Perfil()}{entrarPerfil()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::entrar\+Perfil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Faz a transição de interface do \hyperlink{class_interface_1_1_feed}{Feed} para o \hyperlink{class_interface_1_1_perfil}{Perfil}. 
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a75debf14bea8ae75c74599b117b8af5c}\label{class_interface_1_1_feed_a75debf14bea8ae75c74599b117b8af5c}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!entrar\+Pesquisa@{entrar\+Pesquisa}}
+\index{entrar\+Pesquisa@{entrar\+Pesquisa}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{entrar\+Pesquisa()}{entrarPesquisa()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::entrar\+Pesquisa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Faz a transição de interface do \hyperlink{class_interface_1_1_feed}{Feed} para a \hyperlink{class_interface_1_1_pesquisa}{Pesquisa}. 
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a8ba454c1afcb942a84bfd9d918cf262c}\label{class_interface_1_1_feed_a8ba454c1afcb942a84bfd9d918cf262c}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!exibir@{exibir}}
+\index{exibir@{exibir}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{exibir()}{exibir()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::exibir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe o menu de opções do \hyperlink{class_interface_1_1_feed}{Feed}. 
+
+
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_af1a45726ea636cdbf1cf2d7daa5708be}{Interface\+::\+Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a1b34847c7ee4f9df540a5246eedd0083}\label{class_interface_1_1_feed_a1b34847c7ee4f9df540a5246eedd0083}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!exibir\+Tweet@{exibir\+Tweet}}
+\index{exibir\+Tweet@{exibir\+Tweet}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{exibir\+Tweet()}{exibirTweet()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::exibir\+Tweet (\begin{DoxyParamCaption}\item[{\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet}}]{tweet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Responsável por imprimir os Tweets no \hyperlink{class_interface_1_1_feed}{Feed} do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tweet} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interface_1_1_feed_a4b11fd468df68a5c41dcb5cf2b8d637d}\label{class_interface_1_1_feed_a4b11fd468df68a5c41dcb5cf2b8d637d}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!Obter\+Tweet\+Pelo\+Indice@{Obter\+Tweet\+Pelo\+Indice}}
+\index{Obter\+Tweet\+Pelo\+Indice@{Obter\+Tweet\+Pelo\+Indice}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{Obter\+Tweet\+Pelo\+Indice()}{ObterTweetPeloIndice()}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $\ast$ Interface\+::\+Feed\+::\+Obter\+Tweet\+Pelo\+Indice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Os Tweets são exibidos um a um. O controle de navegação entre os Tweets é feito por um índice. Através desse índice a função retorna o respectivo Tweet. 
+
+\begin{DoxyReturn}{Returns}
+Tweet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interface_1_1_feed_a16fbbeb11ad125e2633bb72b0c2ab4bf}\label{class_interface_1_1_feed_a16fbbeb11ad125e2633bb72b0c2ab4bf}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!processar\+Entrada@{processar\+Entrada}}
+\index{processar\+Entrada@{processar\+Entrada}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{processar\+Entrada()}{processarEntrada()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::processar\+Entrada (\begin{DoxyParamCaption}\item[{int}]{opcao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Processa a entrada do menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcao} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_a9318f98f907ce54ef2dbf892ba327da2}{Interface\+::\+Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_interface_1_1_feed_aace561e639f20dbb5eb0b6662a4a637e}\label{class_interface_1_1_feed_aace561e639f20dbb5eb0b6662a4a637e}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!retroceder\+Tweet@{retroceder\+Tweet}}
+\index{retroceder\+Tweet@{retroceder\+Tweet}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{retroceder\+Tweet()}{retrocederTweet()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::retroceder\+Tweet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrocede um Tweet pelo sistema de índice. 
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a38ef9424e64953f3f526df972f3452a7}\label{class_interface_1_1_feed_a38ef9424e64953f3f526df972f3452a7}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!tweetar@{tweetar}}
+\index{tweetar@{tweetar}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{tweetar()}{tweetar()}}
+{\footnotesize\ttfamily void Interface\+::\+Feed\+::tweetar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lê um novo tweet. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_interface_1_1_feed_ac9bb88831516af18069557d6e3d8c03c}\label{class_interface_1_1_feed_ac9bb88831516af18069557d6e3d8c03c}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!index@{index}}
+\index{index@{index}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily unsigned long Interface\+::\+Feed\+::index\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_interface_1_1_feed_a50d506d437402c19a1b1b8319639b7cf}\label{class_interface_1_1_feed_a50d506d437402c19a1b1b8319639b7cf}} 
+\index{Interface\+::\+Feed@{Interface\+::\+Feed}!tweets@{tweets}}
+\index{tweets@{tweets}!Interface\+::\+Feed@{Interface\+::\+Feed}}
+\subsubsection{\texorpdfstring{tweets}{tweets}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet}$>$ Interface\+::\+Feed\+::tweets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Interface/\hyperlink{_feed_8hpp}{Feed.\+hpp}\item 
+Interface/\hyperlink{_feed_8cpp}{Feed.\+cpp}\end{DoxyCompactItemize}

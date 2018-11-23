@@ -1,0 +1,120 @@
+\hypertarget{class_interface_1_1_list_comments}{}\section{Interface\+:\+:List\+Comments Class Reference}
+\label{class_interface_1_1_list_comments}\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+
+
+{\ttfamily \#include $<$List\+Comments.\+hpp$>$}
+
+
+
+Inheritance diagram for Interface\+:\+:List\+Comments\+:
+% FIG 0
+
+
+Collaboration diagram for Interface\+:\+:List\+Comments\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interface_1_1_list_comments_aed618ace7a52bd5b4ab7f61e233f8251}{List\+Comments} (\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $\ast$\hyperlink{class_interface_1_1_list_comments_a4d7e333288fc27c09172b7d98344d02c}{tweet})
+\item 
+void \hyperlink{class_interface_1_1_list_comments_a86ebab6e64dc979fd0f21bbeb142ec55}{exibir} () override
+\begin{DoxyCompactList}\small\item\em Exibe o menu de opções do Comentário de um Tweet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interface_1_1_list_comments_a5b02d2e6a845fd356bfc7d4e418b9c3c}{processar\+Entrada} (int opcao) override
+\begin{DoxyCompactList}\small\item\em Processa a entrada do menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_list_comments_aa7b53cad1822bd5b2fc131e1a48271cb}{exibir\+Comentarios} ()
+\begin{DoxyCompactList}\small\item\em Imprime os comentários do Tweet atual. \end{DoxyCompactList}\item 
+void \hyperlink{class_interface_1_1_list_comments_a18a4829f8ee9639d6395b1789613b797}{comentar} ()
+\begin{DoxyCompactList}\small\item\em Lê um novo comentário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $\ast$ \hyperlink{class_interface_1_1_list_comments_a4d7e333288fc27c09172b7d98344d02c}{tweet}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_interface_1_1_list_comments_aed618ace7a52bd5b4ab7f61e233f8251}\label{class_interface_1_1_list_comments_aed618ace7a52bd5b4ab7f61e233f8251}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!List\+Comments@{List\+Comments}}
+\index{List\+Comments@{List\+Comments}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{List\+Comments()}{ListComments()}}
+{\footnotesize\ttfamily Interface\+::\+List\+Comments\+::\+List\+Comments (\begin{DoxyParamCaption}\item[{\hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet} $\ast$}]{tweet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Construtor 
+\begin{DoxyParams}{Parameters}
+{\em tweet} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interface_1_1_list_comments_a18a4829f8ee9639d6395b1789613b797}\label{class_interface_1_1_list_comments_a18a4829f8ee9639d6395b1789613b797}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!comentar@{comentar}}
+\index{comentar@{comentar}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{comentar()}{comentar()}}
+{\footnotesize\ttfamily void Interface\+::\+List\+Comments\+::comentar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lê um novo comentário. 
+
+\mbox{\Hypertarget{class_interface_1_1_list_comments_a86ebab6e64dc979fd0f21bbeb142ec55}\label{class_interface_1_1_list_comments_a86ebab6e64dc979fd0f21bbeb142ec55}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!exibir@{exibir}}
+\index{exibir@{exibir}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{exibir()}{exibir()}}
+{\footnotesize\ttfamily void Interface\+::\+List\+Comments\+::exibir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe o menu de opções do Comentário de um Tweet. 
+
+
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_af1a45726ea636cdbf1cf2d7daa5708be}{Interface\+::\+Abstract\+Interface}.
+
+\mbox{\Hypertarget{class_interface_1_1_list_comments_aa7b53cad1822bd5b2fc131e1a48271cb}\label{class_interface_1_1_list_comments_aa7b53cad1822bd5b2fc131e1a48271cb}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!exibir\+Comentarios@{exibir\+Comentarios}}
+\index{exibir\+Comentarios@{exibir\+Comentarios}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{exibir\+Comentarios()}{exibirComentarios()}}
+{\footnotesize\ttfamily void Interface\+::\+List\+Comments\+::exibir\+Comentarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Imprime os comentários do Tweet atual. 
+
+\mbox{\Hypertarget{class_interface_1_1_list_comments_a5b02d2e6a845fd356bfc7d4e418b9c3c}\label{class_interface_1_1_list_comments_a5b02d2e6a845fd356bfc7d4e418b9c3c}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!processar\+Entrada@{processar\+Entrada}}
+\index{processar\+Entrada@{processar\+Entrada}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{processar\+Entrada()}{processarEntrada()}}
+{\footnotesize\ttfamily void Interface\+::\+List\+Comments\+::processar\+Entrada (\begin{DoxyParamCaption}\item[{int}]{opcao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Processa a entrada do menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcao} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_interface_1_1_abstract_interface_a9318f98f907ce54ef2dbf892ba327da2}{Interface\+::\+Abstract\+Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_interface_1_1_list_comments_a4d7e333288fc27c09172b7d98344d02c}\label{class_interface_1_1_list_comments_a4d7e333288fc27c09172b7d98344d02c}} 
+\index{Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}!tweet@{tweet}}
+\index{tweet@{tweet}!Interface\+::\+List\+Comments@{Interface\+::\+List\+Comments}}
+\subsubsection{\texorpdfstring{tweet}{tweet}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_tweet}{T\+A\+D\+::\+Tweet}$\ast$ Interface\+::\+List\+Comments\+::tweet\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Interface/\hyperlink{_list_comments_8hpp}{List\+Comments.\+hpp}\item 
+Interface/\hyperlink{_list_comments_8cpp}{List\+Comments.\+cpp}\end{DoxyCompactItemize}

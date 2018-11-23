@@ -1,0 +1,103 @@
+\hypertarget{_feed_8cpp}{}\section{Interface/\+Feed.cpp File Reference}
+\label{_feed_8cpp}\index{Interface/\+Feed.\+cpp@{Interface/\+Feed.\+cpp}}
+{\ttfamily \#include \char`\"{}Feed.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+T\+A\+D/\+Users.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Sessao/\+Session.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+T\+A\+D/\+Tweet.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Perfil.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pesquisa.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+Include dependency graph for Feed.\+cpp\+:
+% FIG 0
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_interface}{Interface}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_feed_8cpp_a4c77f52ea12d9d398e0a7a0a33573413}{A\+V\+A\+N\+C\+AR}~1
+\item 
+\#define \hyperlink{_feed_8cpp_a030004c41a7c0f48ec13226f14d54b28}{R\+E\+T\+R\+O\+C\+E\+D\+ER}~2
+\item 
+\#define \hyperlink{_feed_8cpp_a3abc8572e1a3c9e25efecc44a8c043c9}{P\+E\+R\+F\+IL}~3
+\item 
+\#define \hyperlink{_feed_8cpp_a4337aa63fd430b396c8fc4edacab6455}{C\+O\+M\+E\+N\+T\+A\+R\+I\+OS}~4
+\item 
+\#define \hyperlink{_feed_8cpp_ac6d11af196653eb2b53ef9bc19a7a089}{T\+W\+E\+E\+T\+AR}~5
+\item 
+\#define \hyperlink{_feed_8cpp_ae6fba1948caf3f04ab5b22daa03ce902}{P\+E\+S\+Q\+U\+I\+S\+AR}~6
+\item 
+\#define \hyperlink{_feed_8cpp_a29d445df20f876688a29722253999d58}{C\+U\+R\+T\+IR}~7
+\item 
+\#define \hyperlink{_feed_8cpp_a357c75797f6bf6a8bb94555002fb2b9c}{V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS}~8
+\item 
+\#define \hyperlink{_feed_8cpp_a1ebfd016359b8eecc23a2d3149b11631}{S\+A\+IR}~0
+\item 
+\#define \hyperlink{_feed_8cpp_acacef11df8f237e2699ae1e7501f8338}{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}~400
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_feed_8cpp_a4c77f52ea12d9d398e0a7a0a33573413}\label{_feed_8cpp_a4c77f52ea12d9d398e0a7a0a33573413}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!A\+V\+A\+N\+C\+AR@{A\+V\+A\+N\+C\+AR}}
+\index{A\+V\+A\+N\+C\+AR@{A\+V\+A\+N\+C\+AR}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{A\+V\+A\+N\+C\+AR}{AVANCAR}}
+{\footnotesize\ttfamily \#define A\+V\+A\+N\+C\+AR~1}
+
+\mbox{\Hypertarget{_feed_8cpp_a4337aa63fd430b396c8fc4edacab6455}\label{_feed_8cpp_a4337aa63fd430b396c8fc4edacab6455}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!C\+O\+M\+E\+N\+T\+A\+R\+I\+OS@{C\+O\+M\+E\+N\+T\+A\+R\+I\+OS}}
+\index{C\+O\+M\+E\+N\+T\+A\+R\+I\+OS@{C\+O\+M\+E\+N\+T\+A\+R\+I\+OS}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{C\+O\+M\+E\+N\+T\+A\+R\+I\+OS}{COMENTARIOS}}
+{\footnotesize\ttfamily \#define C\+O\+M\+E\+N\+T\+A\+R\+I\+OS~4}
+
+\mbox{\Hypertarget{_feed_8cpp_a29d445df20f876688a29722253999d58}\label{_feed_8cpp_a29d445df20f876688a29722253999d58}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!C\+U\+R\+T\+IR@{C\+U\+R\+T\+IR}}
+\index{C\+U\+R\+T\+IR@{C\+U\+R\+T\+IR}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{C\+U\+R\+T\+IR}{CURTIR}}
+{\footnotesize\ttfamily \#define C\+U\+R\+T\+IR~7}
+
+\mbox{\Hypertarget{_feed_8cpp_acacef11df8f237e2699ae1e7501f8338}\label{_feed_8cpp_acacef11df8f237e2699ae1e7501f8338}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA@{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}}
+\index{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA@{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA}{OPCAO\_INVALIDA}}
+{\footnotesize\ttfamily \#define O\+P\+C\+A\+O\+\_\+\+I\+N\+V\+A\+L\+I\+DA~400}
+
+\mbox{\Hypertarget{_feed_8cpp_a3abc8572e1a3c9e25efecc44a8c043c9}\label{_feed_8cpp_a3abc8572e1a3c9e25efecc44a8c043c9}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!P\+E\+R\+F\+IL@{P\+E\+R\+F\+IL}}
+\index{P\+E\+R\+F\+IL@{P\+E\+R\+F\+IL}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{P\+E\+R\+F\+IL}{PERFIL}}
+{\footnotesize\ttfamily \#define P\+E\+R\+F\+IL~3}
+
+\mbox{\Hypertarget{_feed_8cpp_ae6fba1948caf3f04ab5b22daa03ce902}\label{_feed_8cpp_ae6fba1948caf3f04ab5b22daa03ce902}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!P\+E\+S\+Q\+U\+I\+S\+AR@{P\+E\+S\+Q\+U\+I\+S\+AR}}
+\index{P\+E\+S\+Q\+U\+I\+S\+AR@{P\+E\+S\+Q\+U\+I\+S\+AR}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{P\+E\+S\+Q\+U\+I\+S\+AR}{PESQUISAR}}
+{\footnotesize\ttfamily \#define P\+E\+S\+Q\+U\+I\+S\+AR~6}
+
+\mbox{\Hypertarget{_feed_8cpp_a030004c41a7c0f48ec13226f14d54b28}\label{_feed_8cpp_a030004c41a7c0f48ec13226f14d54b28}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!R\+E\+T\+R\+O\+C\+E\+D\+ER@{R\+E\+T\+R\+O\+C\+E\+D\+ER}}
+\index{R\+E\+T\+R\+O\+C\+E\+D\+ER@{R\+E\+T\+R\+O\+C\+E\+D\+ER}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{R\+E\+T\+R\+O\+C\+E\+D\+ER}{RETROCEDER}}
+{\footnotesize\ttfamily \#define R\+E\+T\+R\+O\+C\+E\+D\+ER~2}
+
+\mbox{\Hypertarget{_feed_8cpp_a1ebfd016359b8eecc23a2d3149b11631}\label{_feed_8cpp_a1ebfd016359b8eecc23a2d3149b11631}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!S\+A\+IR@{S\+A\+IR}}
+\index{S\+A\+IR@{S\+A\+IR}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{S\+A\+IR}{SAIR}}
+{\footnotesize\ttfamily \#define S\+A\+IR~0}
+
+\mbox{\Hypertarget{_feed_8cpp_ac6d11af196653eb2b53ef9bc19a7a089}\label{_feed_8cpp_ac6d11af196653eb2b53ef9bc19a7a089}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!T\+W\+E\+E\+T\+AR@{T\+W\+E\+E\+T\+AR}}
+\index{T\+W\+E\+E\+T\+AR@{T\+W\+E\+E\+T\+AR}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{T\+W\+E\+E\+T\+AR}{TWEETAR}}
+{\footnotesize\ttfamily \#define T\+W\+E\+E\+T\+AR~5}
+
+\mbox{\Hypertarget{_feed_8cpp_a357c75797f6bf6a8bb94555002fb2b9c}\label{_feed_8cpp_a357c75797f6bf6a8bb94555002fb2b9c}} 
+\index{Feed.\+cpp@{Feed.\+cpp}!V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS@{V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS}}
+\index{V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS@{V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS}!Feed.\+cpp@{Feed.\+cpp}}
+\subsubsection{\texorpdfstring{V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS}{VER\_CURTIDAS}}
+{\footnotesize\ttfamily \#define V\+E\+R\+\_\+\+C\+U\+R\+T\+I\+D\+AS~8}
+

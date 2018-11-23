@@ -1,0 +1,390 @@
+\hypertarget{class_t_a_d_1_1_users}{}\section{T\+AD\+:\+:Users Class Reference}
+\label{class_t_a_d_1_1_users}\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+
+
+{\ttfamily \#include $<$Users.\+hpp$>$}
+
+
+
+Inheritance diagram for T\+AD\+:\+:Users\+:
+% FIG 0
+
+
+Collaboration diagram for T\+AD\+:\+:Users\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_users_a98ba431328ee1a9eb6fe502ddfe6ccc7}{get\+Id} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_a3a81db57c1cebbfc0133d249088ebd2d}{set\+Id} (int \hyperlink{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}{id})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_users_aa013811c11f18e5a6df0a4116908e82b}{get\+Account} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_a478316bff62d1c33325b29a594a52032}{set\+Account} (const std\+::string \&\hyperlink{class_t_a_d_1_1_users_a013ff5d23b0a55d1ff6592c249a541d1}{account})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_users_ac0dd780d69386bfdefba2dd708fe8ae5}{get\+Password} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_abf523db3163e1aa01f13763b6f00e894}{set\+Password} (const std\+::string \&\hyperlink{class_t_a_d_1_1_users_a79868d049deeaf4a13005edd3c25cbc3}{password})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_users_a3a188774061518faec2e1386a1acbe5f}{get\+Profile} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_abcde026b3766964dd34a6c486b409b41}{set\+Profile} (const std\+::string \&\hyperlink{class_t_a_d_1_1_users_a5f4326a94e606d2e6aa6d60ecf0d5e68}{profile})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_users_ace1d4ea0776ad3a59518d5c1c45c7726}{get\+Name} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_ac0d03e3949130bf6a99dd8284ed07828}{set\+Name} (const std\+::string \&\hyperlink{class_t_a_d_1_1_users_af3d17249c461b12bbc71491da7b4cb94}{name})
+\item 
+int \hyperlink{class_t_a_d_1_1_users_a00ebe0f9d035097f82c37164c9dc5c6e}{get\+Age} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_a0ee5c6fbfaa0682443749cacecdd0289}{set\+Age} (int \hyperlink{class_t_a_d_1_1_users_a0801b7b5b5bb7125b839bec33b86b72f}{age})
+\item 
+const std\+::string \& \hyperlink{class_t_a_d_1_1_users_a67bf3bdf5e4030e59f136d8b29ea7cfa}{get\+City} () const
+\item 
+void \hyperlink{class_t_a_d_1_1_users_a1a11d3c4f4a76b389027434f3e2f17cc}{set\+City} (const std\+::string \&\hyperlink{class_t_a_d_1_1_users_acc9188d8a53143889d39986dd4e65997}{city})
+\item 
+\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ \hyperlink{class_t_a_d_1_1_users_a3b681998b5ce1ed820dae5fbede28c99}{buscar\+Usuario} (int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Busca no banco de dados o usuário com o id passado como parâmetro e armazena seus dados em um objeto users. \end{DoxyCompactList}\item 
+bool \hyperlink{class_t_a_d_1_1_users_a31bd3d9d888909186aec4ff540d70134}{validar\+Login} (std\+::string conta, std\+::string senha)
+\begin{DoxyCompactList}\small\item\em Busca no banco de dados se há algum usuário que possui a conta e a senha passada como parâmetro. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_a0cf77d6b4cf7b8d30b7fd04615ea1155}{criar\+Conta} (std\+::string \hyperlink{class_t_a_d_1_1_users_a013ff5d23b0a55d1ff6592c249a541d1}{account}, std\+::string \hyperlink{class_t_a_d_1_1_users_a79868d049deeaf4a13005edd3c25cbc3}{password}, std\+::string \hyperlink{class_t_a_d_1_1_users_a5f4326a94e606d2e6aa6d60ecf0d5e68}{profile}, std\+::string \hyperlink{class_t_a_d_1_1_users_af3d17249c461b12bbc71491da7b4cb94}{name}, std\+::string \hyperlink{class_t_a_d_1_1_users_acc9188d8a53143889d39986dd4e65997}{city}, int \hyperlink{class_t_a_d_1_1_users_a0801b7b5b5bb7125b839bec33b86b72f}{age})
+\begin{DoxyCompactList}\small\item\em Adiciona no banco de dados um novo usuário com os dados passados como parâmetro. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_a_d_1_1_users_a470cdc28ff46aadd7edb708f0838ae43}{editar\+Campo} (std\+::string coluna, std\+::string valor)
+\begin{DoxyCompactList}\small\item\em Receb como parâmetro o campo que se deseja editar e a nova informação que se deseja inserir e atualiza o banco de dados. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ \hyperlink{class_t_a_d_1_1_users_ad1e42eb4429af0ed1399d72f8c531c27}{pesquisar\+Usuarios} (std\+::string pesquisa)
+\begin{DoxyCompactList}\small\item\em Pesquisa no banco de dados usuários que possuam uma conta, ou nome, ou profile de acordo com o que foi pesquisado, que é passado como parâmetro. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ \hyperlink{class_t_a_d_1_1_users_ad9fbbedbd2731b8738c855e97b9d827b}{pesquisar\+Seguidores} (int \hyperlink{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}{id})
+\begin{DoxyCompactList}\small\item\em Pesquisa no banco de dados seguidores de um determinado usuario. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ \hyperlink{class_t_a_d_1_1_users_adfcb38a558ad5321af0a46b7bbbf9b02}{pesquisar\+Quem\+Usuario\+Segue} (int \hyperlink{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}{id})
+\begin{DoxyCompactList}\small\item\em Pesquisa no banco de dados seguidores de um determinado usuario. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_a_d_1_1_users_accb3e1b0025c87abeeda01895a7e3cc2}{seguir\+Usuario} (int id1, int id2)
+\begin{DoxyCompactList}\small\item\em Adiciona no banco de dados o id da dupla\+: seguidor e quem ele deseja seguir, paddados por paraâmetro. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_a_d_1_1_users_af1272c5f3545fffad21e12e1fc90cb6e}{excluir\+Seguir\+Usuario} (int id1, int id2)
+\begin{DoxyCompactList}\small\item\em Remove a conexão do usuario do id1 seguir o usuario do id2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}{id}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_a013ff5d23b0a55d1ff6592c249a541d1}{account}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_a79868d049deeaf4a13005edd3c25cbc3}{password}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_a5f4326a94e606d2e6aa6d60ecf0d5e68}{profile}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_af3d17249c461b12bbc71491da7b4cb94}{name}
+\item 
+int \hyperlink{class_t_a_d_1_1_users_a0801b7b5b5bb7125b839bec33b86b72f}{age}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_users_acc9188d8a53143889d39986dd4e65997}{city}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a3b681998b5ce1ed820dae5fbede28c99}\label{class_t_a_d_1_1_users_a3b681998b5ce1ed820dae5fbede28c99}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!buscar\+Usuario@{buscar\+Usuario}}
+\index{buscar\+Usuario@{buscar\+Usuario}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{buscar\+Usuario()}{buscarUsuario()}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ T\+A\+D\+::\+Users\+::buscar\+Usuario (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Busca no banco de dados o usuário com o id passado como parâmetro e armazena seus dados em um objeto users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$\+Users 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a0cf77d6b4cf7b8d30b7fd04615ea1155}\label{class_t_a_d_1_1_users_a0cf77d6b4cf7b8d30b7fd04615ea1155}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!criar\+Conta@{criar\+Conta}}
+\index{criar\+Conta@{criar\+Conta}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{criar\+Conta()}{criarConta()}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::criar\+Conta (\begin{DoxyParamCaption}\item[{std\+::string}]{account,  }\item[{std\+::string}]{password,  }\item[{std\+::string}]{profile,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{city,  }\item[{int}]{age }\end{DoxyParamCaption})}
+
+
+
+Adiciona no banco de dados um novo usuário com os dados passados como parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & \\
+\hline
+{\em password} & \\
+\hline
+{\em profile} & \\
+\hline
+{\em name} & \\
+\hline
+{\em city} & \\
+\hline
+{\em age} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a470cdc28ff46aadd7edb708f0838ae43}\label{class_t_a_d_1_1_users_a470cdc28ff46aadd7edb708f0838ae43}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!editar\+Campo@{editar\+Campo}}
+\index{editar\+Campo@{editar\+Campo}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{editar\+Campo()}{editarCampo()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::editar\+Campo (\begin{DoxyParamCaption}\item[{std\+::string}]{coluna,  }\item[{std\+::string}]{valor }\end{DoxyParamCaption})}
+
+
+
+Receb como parâmetro o campo que se deseja editar e a nova informação que se deseja inserir e atualiza o banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_af1272c5f3545fffad21e12e1fc90cb6e}\label{class_t_a_d_1_1_users_af1272c5f3545fffad21e12e1fc90cb6e}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!excluir\+Seguir\+Usuario@{excluir\+Seguir\+Usuario}}
+\index{excluir\+Seguir\+Usuario@{excluir\+Seguir\+Usuario}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{excluir\+Seguir\+Usuario()}{excluirSeguirUsuario()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::excluir\+Seguir\+Usuario (\begin{DoxyParamCaption}\item[{int}]{id1,  }\item[{int}]{id2 }\end{DoxyParamCaption})}
+
+
+
+Remove a conexão do usuario do id1 seguir o usuario do id2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id1} & \\
+\hline
+{\em id2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_aa013811c11f18e5a6df0a4116908e82b}\label{class_t_a_d_1_1_users_aa013811c11f18e5a6df0a4116908e82b}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Account@{get\+Account}}
+\index{get\+Account@{get\+Account}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Account()}{getAccount()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Users\+::get\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a00ebe0f9d035097f82c37164c9dc5c6e}\label{class_t_a_d_1_1_users_a00ebe0f9d035097f82c37164c9dc5c6e}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Age@{get\+Age}}
+\index{get\+Age@{get\+Age}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Age()}{getAge()}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Users\+::get\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a67bf3bdf5e4030e59f136d8b29ea7cfa}\label{class_t_a_d_1_1_users_a67bf3bdf5e4030e59f136d8b29ea7cfa}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+City@{get\+City}}
+\index{get\+City@{get\+City}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+City()}{getCity()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Users\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a98ba431328ee1a9eb6fe502ddfe6ccc7}\label{class_t_a_d_1_1_users_a98ba431328ee1a9eb6fe502ddfe6ccc7}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Users\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_ace1d4ea0776ad3a59518d5c1c45c7726}\label{class_t_a_d_1_1_users_ace1d4ea0776ad3a59518d5c1c45c7726}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Users\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_ac0dd780d69386bfdefba2dd708fe8ae5}\label{class_t_a_d_1_1_users_ac0dd780d69386bfdefba2dd708fe8ae5}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Users\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a3a188774061518faec2e1386a1acbe5f}\label{class_t_a_d_1_1_users_a3a188774061518faec2e1386a1acbe5f}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!get\+Profile@{get\+Profile}}
+\index{get\+Profile@{get\+Profile}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{get\+Profile()}{getProfile()}}
+{\footnotesize\ttfamily const std\+::string \& T\+A\+D\+::\+Users\+::get\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_adfcb38a558ad5321af0a46b7bbbf9b02}\label{class_t_a_d_1_1_users_adfcb38a558ad5321af0a46b7bbbf9b02}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!pesquisar\+Quem\+Usuario\+Segue@{pesquisar\+Quem\+Usuario\+Segue}}
+\index{pesquisar\+Quem\+Usuario\+Segue@{pesquisar\+Quem\+Usuario\+Segue}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{pesquisar\+Quem\+Usuario\+Segue()}{pesquisarQuemUsuarioSegue()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ T\+A\+D\+::\+Users\+::pesquisar\+Quem\+Usuario\+Segue (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Pesquisa no banco de dados seguidores de um determinado usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Users$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_ad9fbbedbd2731b8738c855e97b9d827b}\label{class_t_a_d_1_1_users_ad9fbbedbd2731b8738c855e97b9d827b}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!pesquisar\+Seguidores@{pesquisar\+Seguidores}}
+\index{pesquisar\+Seguidores@{pesquisar\+Seguidores}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{pesquisar\+Seguidores()}{pesquisarSeguidores()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ T\+A\+D\+::\+Users\+::pesquisar\+Seguidores (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Pesquisa no banco de dados seguidores de um determinado usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Users$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_ad1e42eb4429af0ed1399d72f8c531c27}\label{class_t_a_d_1_1_users_ad1e42eb4429af0ed1399d72f8c531c27}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!pesquisar\+Usuarios@{pesquisar\+Usuarios}}
+\index{pesquisar\+Usuarios@{pesquisar\+Usuarios}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{pesquisar\+Usuarios()}{pesquisarUsuarios()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ T\+A\+D\+::\+Users\+::pesquisar\+Usuarios (\begin{DoxyParamCaption}\item[{std\+::string}]{pesquisa }\end{DoxyParamCaption})}
+
+
+
+Pesquisa no banco de dados usuários que possuam uma conta, ou nome, ou profile de acordo com o que foi pesquisado, que é passado como parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pesquisa} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Users$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_accb3e1b0025c87abeeda01895a7e3cc2}\label{class_t_a_d_1_1_users_accb3e1b0025c87abeeda01895a7e3cc2}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!seguir\+Usuario@{seguir\+Usuario}}
+\index{seguir\+Usuario@{seguir\+Usuario}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{seguir\+Usuario()}{seguirUsuario()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::seguir\+Usuario (\begin{DoxyParamCaption}\item[{int}]{id1,  }\item[{int}]{id2 }\end{DoxyParamCaption})}
+
+
+
+Adiciona no banco de dados o id da dupla\+: seguidor e quem ele deseja seguir, paddados por paraâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id1} & \\
+\hline
+{\em id2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a478316bff62d1c33325b29a594a52032}\label{class_t_a_d_1_1_users_a478316bff62d1c33325b29a594a52032}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Account@{set\+Account}}
+\index{set\+Account@{set\+Account}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Account()}{setAccount()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Account (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{account }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a0ee5c6fbfaa0682443749cacecdd0289}\label{class_t_a_d_1_1_users_a0ee5c6fbfaa0682443749cacecdd0289}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Age@{set\+Age}}
+\index{set\+Age@{set\+Age}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Age()}{setAge()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Age (\begin{DoxyParamCaption}\item[{int}]{age }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a1a11d3c4f4a76b389027434f3e2f17cc}\label{class_t_a_d_1_1_users_a1a11d3c4f4a76b389027434f3e2f17cc}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+City@{set\+City}}
+\index{set\+City@{set\+City}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+City()}{setCity()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+City (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{city }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a3a81db57c1cebbfc0133d249088ebd2d}\label{class_t_a_d_1_1_users_a3a81db57c1cebbfc0133d249088ebd2d}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_ac0d03e3949130bf6a99dd8284ed07828}\label{class_t_a_d_1_1_users_ac0d03e3949130bf6a99dd8284ed07828}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_abf523db3163e1aa01f13763b6f00e894}\label{class_t_a_d_1_1_users_abf523db3163e1aa01f13763b6f00e894}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_abcde026b3766964dd34a6c486b409b41}\label{class_t_a_d_1_1_users_abcde026b3766964dd34a6c486b409b41}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!set\+Profile@{set\+Profile}}
+\index{set\+Profile@{set\+Profile}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{set\+Profile()}{setProfile()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Users\+::set\+Profile (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{profile }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a31bd3d9d888909186aec4ff540d70134}\label{class_t_a_d_1_1_users_a31bd3d9d888909186aec4ff540d70134}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!validar\+Login@{validar\+Login}}
+\index{validar\+Login@{validar\+Login}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{validar\+Login()}{validarLogin()}}
+{\footnotesize\ttfamily bool T\+A\+D\+::\+Users\+::validar\+Login (\begin{DoxyParamCaption}\item[{std\+::string}]{conta,  }\item[{std\+::string}]{senha }\end{DoxyParamCaption})}
+
+
+
+Busca no banco de dados se há algum usuário que possui a conta e a senha passada como parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conta} & \\
+\hline
+{\em senha} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a013ff5d23b0a55d1ff6592c249a541d1}\label{class_t_a_d_1_1_users_a013ff5d23b0a55d1ff6592c249a541d1}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!account@{account}}
+\index{account@{account}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{account}{account}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::account\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a0801b7b5b5bb7125b839bec33b86b72f}\label{class_t_a_d_1_1_users_a0801b7b5b5bb7125b839bec33b86b72f}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!age@{age}}
+\index{age@{age}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Users\+::age\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_acc9188d8a53143889d39986dd4e65997}\label{class_t_a_d_1_1_users_acc9188d8a53143889d39986dd4e65997}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!city@{city}}
+\index{city@{city}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::city\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}\label{class_t_a_d_1_1_users_a8b8c32b02b9bd942d844d738d94ff21b}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!id@{id}}
+\index{id@{id}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Users\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_af3d17249c461b12bbc71491da7b4cb94}\label{class_t_a_d_1_1_users_af3d17249c461b12bbc71491da7b4cb94}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!name@{name}}
+\index{name@{name}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a79868d049deeaf4a13005edd3c25cbc3}\label{class_t_a_d_1_1_users_a79868d049deeaf4a13005edd3c25cbc3}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!password@{password}}
+\index{password@{password}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::password\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_users_a5f4326a94e606d2e6aa6d60ecf0d5e68}\label{class_t_a_d_1_1_users_a5f4326a94e606d2e6aa6d60ecf0d5e68}} 
+\index{T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}!profile@{profile}}
+\index{profile@{profile}!T\+A\+D\+::\+Users@{T\+A\+D\+::\+Users}}
+\subsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Users\+::profile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+A\+D/\hyperlink{_users_8hpp}{Users.\+hpp}\item 
+T\+A\+D/\hyperlink{_users_8cpp}{Users.\+cpp}\end{DoxyCompactItemize}

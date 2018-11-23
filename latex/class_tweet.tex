@@ -1,0 +1,189 @@
+\hypertarget{class_tweet}{}\section{Tweet Class Reference}
+\label{class_tweet}\index{Tweet@{Tweet}}
+
+
+{\ttfamily \#include $<$Tweet.\+hpp$>$}
+
+
+
+Inherits \hyperlink{class_abstract_connection}{Abstract\+Connection}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tweet_afe4722f5b4d276f36cef27989e9ecbc3}{get\+Id} ()
+\item 
+void \hyperlink{class_tweet_a646308cec056effe64ac5f81f5c00bfa}{set\+Id} (int \hyperlink{class_tweet_a3e7ab9402d5ed1126a432b266c2b9f22}{id})
+\item 
+std\+::string \hyperlink{class_tweet_a3e4e7abc45486860373cd3fa146f1366}{get\+Description} ()
+\item 
+void \hyperlink{class_tweet_a5555b6ad8543cfe17262bd6f3ef7e1a9}{set\+Description} (std\+::string \hyperlink{class_tweet_abc8726cb97ee5d2447dd30b35d52b9d1}{description})
+\item 
+\hyperlink{class_users}{Users} $\ast$ \hyperlink{class_tweet_a4f0bf8c0ac90793ba16049390052f18a}{get\+User} ()
+\item 
+void \hyperlink{class_tweet_a1c1483f00fccc2ca3f743b9224b09a76}{set\+User} (\hyperlink{class_users}{Users} $\ast$\hyperlink{class_tweet_a084d33216fa5d5a1e7dfe1a3e1730fdd}{user})
+\item 
+vector$<$ \hyperlink{class_comments}{Comments} $>$ \hyperlink{class_tweet_a72649ed74508f540d7b0a1a48fd5313c}{get\+Comments} ()
+\item 
+void \hyperlink{class_tweet_a3f110956ae50164f10f88bed321a4e59}{set\+Comments} (vector$<$ \hyperlink{class_comments}{Comments} $>$ \hyperlink{class_tweet_a710dd5d27fc8eb0e068e5dd334634d57}{comments})
+\item 
+std\+::vector$<$ \hyperlink{class_tweet}{Tweet} $>$ \hyperlink{class_tweet_a2e9a48b91eb50b1f69666dec18bedf07}{carregar\+Tweets\+Usuarios\+Seguidos} (int user\+\_\+id)
+\item 
+std\+::vector$<$ \hyperlink{class_tweet}{Tweet} $>$ \hyperlink{class_tweet_a258770cc789790c85903f2ed3a468e8a}{carregar\+Tweets\+Usuario\+Logado} (int user\+\_\+id)
+\item 
+std\+::vector$<$ \hyperlink{class_tweet}{Tweet} $>$ \hyperlink{class_tweet_a078594cc97b6ecdd8da0eb4db315bd75}{pesquisar\+Por\+Hashtag} (string hashtag)
+\item 
+void \hyperlink{class_tweet_a044e3e2dc96af47cf44cbef3544e90bb}{avancar\+Tweet} (unsigned long index)
+\item 
+void \hyperlink{class_tweet_ad596dc45a95674b8197fed0636472053}{retroceder\+Tweet} (unsigned long index)
+\item 
+void \hyperlink{class_tweet_a597b72b7ece65d9a1a77d4f9de83477a}{criar\+Tweet} (string texto\+\_\+tweet, int user\+\_\+id)
+\item 
+void \hyperlink{class_tweet_a77af03b416c030006b97482676c03c81}{curtir\+Tweet} (int tweet\+\_\+id, int user\+\_\+id)
+\item 
+std\+::vector$<$ \hyperlink{class_users}{Users} $>$ \hyperlink{class_tweet_a85dfc231458b7595ab1ca1a7ca88e36e}{ver\+Curtidas} (int tweet\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tweet_a3e7ab9402d5ed1126a432b266c2b9f22}{id}
+\item 
+std\+::vector$<$ \hyperlink{class_comments}{Comments} $>$ \hyperlink{class_tweet_a710dd5d27fc8eb0e068e5dd334634d57}{comments}
+\item 
+std\+::string \hyperlink{class_tweet_abc8726cb97ee5d2447dd30b35d52b9d1}{description}
+\item 
+\hyperlink{class_users}{Users} $\ast$ \hyperlink{class_tweet_a084d33216fa5d5a1e7dfe1a3e1730fdd}{user}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tweet_a044e3e2dc96af47cf44cbef3544e90bb}\label{class_tweet_a044e3e2dc96af47cf44cbef3544e90bb}} 
+\index{Tweet@{Tweet}!avancar\+Tweet@{avancar\+Tweet}}
+\index{avancar\+Tweet@{avancar\+Tweet}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{avancar\+Tweet()}{avancarTweet()}}
+{\footnotesize\ttfamily void Tweet\+::avancar\+Tweet (\begin{DoxyParamCaption}\item[{unsigned long}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a258770cc789790c85903f2ed3a468e8a}\label{class_tweet_a258770cc789790c85903f2ed3a468e8a}} 
+\index{Tweet@{Tweet}!carregar\+Tweets\+Usuario\+Logado@{carregar\+Tweets\+Usuario\+Logado}}
+\index{carregar\+Tweets\+Usuario\+Logado@{carregar\+Tweets\+Usuario\+Logado}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{carregar\+Tweets\+Usuario\+Logado()}{carregarTweetsUsuarioLogado()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_tweet}{Tweet} $>$ Tweet\+::carregar\+Tweets\+Usuario\+Logado (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a2e9a48b91eb50b1f69666dec18bedf07}\label{class_tweet_a2e9a48b91eb50b1f69666dec18bedf07}} 
+\index{Tweet@{Tweet}!carregar\+Tweets\+Usuarios\+Seguidos@{carregar\+Tweets\+Usuarios\+Seguidos}}
+\index{carregar\+Tweets\+Usuarios\+Seguidos@{carregar\+Tweets\+Usuarios\+Seguidos}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{carregar\+Tweets\+Usuarios\+Seguidos()}{carregarTweetsUsuariosSeguidos()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_tweet}{Tweet} $>$ Tweet\+::carregar\+Tweets\+Usuarios\+Seguidos (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a597b72b7ece65d9a1a77d4f9de83477a}\label{class_tweet_a597b72b7ece65d9a1a77d4f9de83477a}} 
+\index{Tweet@{Tweet}!criar\+Tweet@{criar\+Tweet}}
+\index{criar\+Tweet@{criar\+Tweet}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{criar\+Tweet()}{criarTweet()}}
+{\footnotesize\ttfamily void Tweet\+::criar\+Tweet (\begin{DoxyParamCaption}\item[{string}]{texto\+\_\+tweet,  }\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a77af03b416c030006b97482676c03c81}\label{class_tweet_a77af03b416c030006b97482676c03c81}} 
+\index{Tweet@{Tweet}!curtir\+Tweet@{curtir\+Tweet}}
+\index{curtir\+Tweet@{curtir\+Tweet}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{curtir\+Tweet()}{curtirTweet()}}
+{\footnotesize\ttfamily void Tweet\+::curtir\+Tweet (\begin{DoxyParamCaption}\item[{int}]{tweet\+\_\+id,  }\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a72649ed74508f540d7b0a1a48fd5313c}\label{class_tweet_a72649ed74508f540d7b0a1a48fd5313c}} 
+\index{Tweet@{Tweet}!get\+Comments@{get\+Comments}}
+\index{get\+Comments@{get\+Comments}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{get\+Comments()}{getComments()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_comments}{Comments} $>$ Tweet\+::get\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a3e4e7abc45486860373cd3fa146f1366}\label{class_tweet_a3e4e7abc45486860373cd3fa146f1366}} 
+\index{Tweet@{Tweet}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily std\+::string Tweet\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_afe4722f5b4d276f36cef27989e9ecbc3}\label{class_tweet_afe4722f5b4d276f36cef27989e9ecbc3}} 
+\index{Tweet@{Tweet}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int Tweet\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a4f0bf8c0ac90793ba16049390052f18a}\label{class_tweet_a4f0bf8c0ac90793ba16049390052f18a}} 
+\index{Tweet@{Tweet}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily \hyperlink{class_users}{Users} $\ast$ Tweet\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a078594cc97b6ecdd8da0eb4db315bd75}\label{class_tweet_a078594cc97b6ecdd8da0eb4db315bd75}} 
+\index{Tweet@{Tweet}!pesquisar\+Por\+Hashtag@{pesquisar\+Por\+Hashtag}}
+\index{pesquisar\+Por\+Hashtag@{pesquisar\+Por\+Hashtag}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{pesquisar\+Por\+Hashtag()}{pesquisarPorHashtag()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_tweet}{Tweet} $>$ Tweet\+::pesquisar\+Por\+Hashtag (\begin{DoxyParamCaption}\item[{string}]{hashtag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_ad596dc45a95674b8197fed0636472053}\label{class_tweet_ad596dc45a95674b8197fed0636472053}} 
+\index{Tweet@{Tweet}!retroceder\+Tweet@{retroceder\+Tweet}}
+\index{retroceder\+Tweet@{retroceder\+Tweet}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{retroceder\+Tweet()}{retrocederTweet()}}
+{\footnotesize\ttfamily void Tweet\+::retroceder\+Tweet (\begin{DoxyParamCaption}\item[{unsigned long}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a3f110956ae50164f10f88bed321a4e59}\label{class_tweet_a3f110956ae50164f10f88bed321a4e59}} 
+\index{Tweet@{Tweet}!set\+Comments@{set\+Comments}}
+\index{set\+Comments@{set\+Comments}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{set\+Comments()}{setComments()}}
+{\footnotesize\ttfamily void Tweet\+::set\+Comments (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{class_comments}{Comments} $>$}]{comments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a5555b6ad8543cfe17262bd6f3ef7e1a9}\label{class_tweet_a5555b6ad8543cfe17262bd6f3ef7e1a9}} 
+\index{Tweet@{Tweet}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void Tweet\+::set\+Description (\begin{DoxyParamCaption}\item[{std\+::string}]{description }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a646308cec056effe64ac5f81f5c00bfa}\label{class_tweet_a646308cec056effe64ac5f81f5c00bfa}} 
+\index{Tweet@{Tweet}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void Tweet\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a1c1483f00fccc2ca3f743b9224b09a76}\label{class_tweet_a1c1483f00fccc2ca3f743b9224b09a76}} 
+\index{Tweet@{Tweet}!set\+User@{set\+User}}
+\index{set\+User@{set\+User}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{set\+User()}{setUser()}}
+{\footnotesize\ttfamily void Tweet\+::set\+User (\begin{DoxyParamCaption}\item[{\hyperlink{class_users}{Users} $\ast$}]{user }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tweet_a85dfc231458b7595ab1ca1a7ca88e36e}\label{class_tweet_a85dfc231458b7595ab1ca1a7ca88e36e}} 
+\index{Tweet@{Tweet}!ver\+Curtidas@{ver\+Curtidas}}
+\index{ver\+Curtidas@{ver\+Curtidas}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{ver\+Curtidas()}{verCurtidas()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_users}{Users} $>$ Tweet\+::ver\+Curtidas (\begin{DoxyParamCaption}\item[{int}]{tweet\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tweet_a710dd5d27fc8eb0e068e5dd334634d57}\label{class_tweet_a710dd5d27fc8eb0e068e5dd334634d57}} 
+\index{Tweet@{Tweet}!comments@{comments}}
+\index{comments@{comments}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{comments}{comments}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_comments}{Comments}$>$ Tweet\+::comments\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_tweet_abc8726cb97ee5d2447dd30b35d52b9d1}\label{class_tweet_abc8726cb97ee5d2447dd30b35d52b9d1}} 
+\index{Tweet@{Tweet}!description@{description}}
+\index{description@{description}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string Tweet\+::description\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_tweet_a3e7ab9402d5ed1126a432b266c2b9f22}\label{class_tweet_a3e7ab9402d5ed1126a432b266c2b9f22}} 
+\index{Tweet@{Tweet}!id@{id}}
+\index{id@{id}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Tweet\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_tweet_a084d33216fa5d5a1e7dfe1a3e1730fdd}\label{class_tweet_a084d33216fa5d5a1e7dfe1a3e1730fdd}} 
+\index{Tweet@{Tweet}!user@{user}}
+\index{user@{user}!Tweet@{Tweet}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily \hyperlink{class_users}{Users}$\ast$ Tweet\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+A\+D/\hyperlink{_tweet_8hpp}{Tweet.\+hpp}\item 
+T\+A\+D/\hyperlink{_tweet_8cpp}{Tweet.\+cpp}\end{DoxyCompactItemize}

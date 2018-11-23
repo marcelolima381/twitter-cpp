@@ -1,0 +1,247 @@
+\hypertarget{class_t_a_d_1_1_tweet}{}\section{T\+AD\+:\+:Tweet Class Reference}
+\label{class_t_a_d_1_1_tweet}\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+
+
+{\ttfamily \#include $<$Tweet.\+hpp$>$}
+
+
+
+Inheritance diagram for T\+AD\+:\+:Tweet\+:
+% FIG 0
+
+
+Collaboration diagram for T\+AD\+:\+:Tweet\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_tweet_a276cb63fb55db4baca5dc67896e22064}{get\+Id} ()
+\item 
+void \hyperlink{class_t_a_d_1_1_tweet_a97b90ec1437cb5d449ab6fa29b81b64c}{set\+Id} (int \hyperlink{class_t_a_d_1_1_tweet_a0d651a6534a245a02596f66e799e1d25}{id})
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_tweet_a5c7d069967139e2d37667b0f36d87fdc}{get\+Description} ()
+\item 
+void \hyperlink{class_t_a_d_1_1_tweet_a1a999b2e287aed6d0f516861c99552e4}{set\+Description} (std\+::string \hyperlink{class_t_a_d_1_1_tweet_a54d7321d45fc3aa94e09b45f255d5e39}{description})
+\item 
+\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ \hyperlink{class_t_a_d_1_1_tweet_a7559dba5f9e88d030920698e7f353ca7}{get\+User} ()
+\item 
+void \hyperlink{class_t_a_d_1_1_tweet_ae7cf435af414cdae915f9644a199ed4f}{set\+User} (\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$\hyperlink{class_t_a_d_1_1_tweet_a6dd31e59ddf90b5fe0083f1dbf14104b}{user})
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ \hyperlink{class_t_a_d_1_1_tweet_a20ab9183171e77face3cdd0bfd1e1197}{get\+Comments} ()
+\item 
+void \hyperlink{class_t_a_d_1_1_tweet_ac38fbf3aa171c60d535282ee1ec3d132}{set\+Comments} (std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ \hyperlink{class_t_a_d_1_1_tweet_a79850077946ffb68a228244aeeb8a3ca}{comments})
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ \hyperlink{class_t_a_d_1_1_tweet_a2004ca4ef3d3954806af8a088803c1ba}{carregar\+Tweets\+Usuarios\+Seguidos} (int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Busca no banco de dados os tweets de todos os usuarios seguidos pelo usuário que possui a id passada como parâmetro, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ \hyperlink{class_t_a_d_1_1_tweet_a94baf61ace95f86f1da485d35eaee8af}{carregar\+Tweets\+Usuario\+Logado} (int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Busca no banco de dados todos os tweets que sejam do usuário que possua o id passado como parâmetro, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ \hyperlink{class_t_a_d_1_1_tweet_ad749e73f643150bbf4f4b20a43b0ff0c}{pesquisar\+Por\+Hashtag} (std\+::string hashtag)
+\begin{DoxyCompactList}\small\item\em Pesquisa no banco de dados tweets que possuam a hashtag do parametro no seu texto, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_a_d_1_1_tweet_a9970f889481d1f565d042dd6644931a3}{criar\+Tweet} (std\+::string texto\+\_\+tweet, int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Adiciona ao banco de dados um tweet, armazenando seu texto passado e usuário que tweetou, que são passados como parâmetro. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_a_d_1_1_tweet_a3c877225ed50649b8513fffa8ed2af39}{curtir\+Tweet} (int tweet\+\_\+id, int user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Adiciona ao banco de dados um \char`\"{}like\char`\"{}, com o id do tweet curtido e o id do usuário que curtiu. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ \hyperlink{class_t_a_d_1_1_tweet_a6e5abea7662510af5063bbbea3feea7e}{ver\+Curtidas} (int tweet\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Busca no banco de dados todos os \char`\"{}likes\char`\"{} que possuam o id do tweet passado como parâmetro, pega o id do usuário de cada \char`\"{}like\char`\"{}, resgata os dados de cada usuário, os armazena em um vector e o retorna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_t_a_d_1_1_tweet_a0d651a6534a245a02596f66e799e1d25}{id}
+\item 
+std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ \hyperlink{class_t_a_d_1_1_tweet_a79850077946ffb68a228244aeeb8a3ca}{comments}
+\item 
+std\+::string \hyperlink{class_t_a_d_1_1_tweet_a54d7321d45fc3aa94e09b45f255d5e39}{description}
+\item 
+\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ \hyperlink{class_t_a_d_1_1_tweet_a6dd31e59ddf90b5fe0083f1dbf14104b}{user}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a94baf61ace95f86f1da485d35eaee8af}\label{class_t_a_d_1_1_tweet_a94baf61ace95f86f1da485d35eaee8af}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!carregar\+Tweets\+Usuario\+Logado@{carregar\+Tweets\+Usuario\+Logado}}
+\index{carregar\+Tweets\+Usuario\+Logado@{carregar\+Tweets\+Usuario\+Logado}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{carregar\+Tweets\+Usuario\+Logado()}{carregarTweetsUsuarioLogado()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ T\+A\+D\+::\+Tweet\+::carregar\+Tweets\+Usuario\+Logado (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Busca no banco de dados todos os tweets que sejam do usuário que possua o id passado como parâmetro, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Tweet$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a2004ca4ef3d3954806af8a088803c1ba}\label{class_t_a_d_1_1_tweet_a2004ca4ef3d3954806af8a088803c1ba}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!carregar\+Tweets\+Usuarios\+Seguidos@{carregar\+Tweets\+Usuarios\+Seguidos}}
+\index{carregar\+Tweets\+Usuarios\+Seguidos@{carregar\+Tweets\+Usuarios\+Seguidos}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{carregar\+Tweets\+Usuarios\+Seguidos()}{carregarTweetsUsuariosSeguidos()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ T\+A\+D\+::\+Tweet\+::carregar\+Tweets\+Usuarios\+Seguidos (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Busca no banco de dados os tweets de todos os usuarios seguidos pelo usuário que possui a id passada como parâmetro, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Tweet$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a9970f889481d1f565d042dd6644931a3}\label{class_t_a_d_1_1_tweet_a9970f889481d1f565d042dd6644931a3}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!criar\+Tweet@{criar\+Tweet}}
+\index{criar\+Tweet@{criar\+Tweet}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{criar\+Tweet()}{criarTweet()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::criar\+Tweet (\begin{DoxyParamCaption}\item[{std\+::string}]{texto\+\_\+tweet,  }\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Adiciona ao banco de dados um tweet, armazenando seu texto passado e usuário que tweetou, que são passados como parâmetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto\+\_\+tweet} & \\
+\hline
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a3c877225ed50649b8513fffa8ed2af39}\label{class_t_a_d_1_1_tweet_a3c877225ed50649b8513fffa8ed2af39}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!curtir\+Tweet@{curtir\+Tweet}}
+\index{curtir\+Tweet@{curtir\+Tweet}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{curtir\+Tweet()}{curtirTweet()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::curtir\+Tweet (\begin{DoxyParamCaption}\item[{int}]{tweet\+\_\+id,  }\item[{int}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Adiciona ao banco de dados um \char`\"{}like\char`\"{}, com o id do tweet curtido e o id do usuário que curtiu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tweet\+\_\+id} & \\
+\hline
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a20ab9183171e77face3cdd0bfd1e1197}\label{class_t_a_d_1_1_tweet_a20ab9183171e77face3cdd0bfd1e1197}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!get\+Comments@{get\+Comments}}
+\index{get\+Comments@{get\+Comments}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{get\+Comments()}{getComments()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$ T\+A\+D\+::\+Tweet\+::get\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a5c7d069967139e2d37667b0f36d87fdc}\label{class_t_a_d_1_1_tweet_a5c7d069967139e2d37667b0f36d87fdc}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Tweet\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a276cb63fb55db4baca5dc67896e22064}\label{class_t_a_d_1_1_tweet_a276cb63fb55db4baca5dc67896e22064}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Tweet\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a7559dba5f9e88d030920698e7f353ca7}\label{class_t_a_d_1_1_tweet_a7559dba5f9e88d030920698e7f353ca7}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_users}{Users} $\ast$ T\+A\+D\+::\+Tweet\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_ad749e73f643150bbf4f4b20a43b0ff0c}\label{class_t_a_d_1_1_tweet_ad749e73f643150bbf4f4b20a43b0ff0c}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!pesquisar\+Por\+Hashtag@{pesquisar\+Por\+Hashtag}}
+\index{pesquisar\+Por\+Hashtag@{pesquisar\+Por\+Hashtag}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{pesquisar\+Por\+Hashtag()}{pesquisarPorHashtag()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_tweet}{Tweet} $>$ T\+A\+D\+::\+Tweet\+::pesquisar\+Por\+Hashtag (\begin{DoxyParamCaption}\item[{std\+::string}]{hashtag }\end{DoxyParamCaption})}
+
+
+
+Pesquisa no banco de dados tweets que possuam a hashtag do parametro no seu texto, os armazena em um vetor em ordem decrescente de acordo seus id\textquotesingle{}s e retorna esse vetor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hashtag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Tweet$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_ac38fbf3aa171c60d535282ee1ec3d132}\label{class_t_a_d_1_1_tweet_ac38fbf3aa171c60d535282ee1ec3d132}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!set\+Comments@{set\+Comments}}
+\index{set\+Comments@{set\+Comments}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{set\+Comments()}{setComments()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::set\+Comments (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_t_a_d_1_1_comments}{Comments} $>$}]{comments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a1a999b2e287aed6d0f516861c99552e4}\label{class_t_a_d_1_1_tweet_a1a999b2e287aed6d0f516861c99552e4}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::set\+Description (\begin{DoxyParamCaption}\item[{std\+::string}]{description }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a97b90ec1437cb5d449ab6fa29b81b64c}\label{class_t_a_d_1_1_tweet_a97b90ec1437cb5d449ab6fa29b81b64c}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_ae7cf435af414cdae915f9644a199ed4f}\label{class_t_a_d_1_1_tweet_ae7cf435af414cdae915f9644a199ed4f}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!set\+User@{set\+User}}
+\index{set\+User@{set\+User}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{set\+User()}{setUser()}}
+{\footnotesize\ttfamily void T\+A\+D\+::\+Tweet\+::set\+User (\begin{DoxyParamCaption}\item[{\hyperlink{class_t_a_d_1_1_users}{Users} $\ast$}]{user }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a6e5abea7662510af5063bbbea3feea7e}\label{class_t_a_d_1_1_tweet_a6e5abea7662510af5063bbbea3feea7e}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!ver\+Curtidas@{ver\+Curtidas}}
+\index{ver\+Curtidas@{ver\+Curtidas}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{ver\+Curtidas()}{verCurtidas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_t_a_d_1_1_users}{Users} $>$ T\+A\+D\+::\+Tweet\+::ver\+Curtidas (\begin{DoxyParamCaption}\item[{int}]{tweet\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Busca no banco de dados todos os \char`\"{}likes\char`\"{} que possuam o id do tweet passado como parâmetro, pega o id do usuário de cada \char`\"{}like\char`\"{}, resgata os dados de cada usuário, os armazena em um vector e o retorna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tweet\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Users$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a79850077946ffb68a228244aeeb8a3ca}\label{class_t_a_d_1_1_tweet_a79850077946ffb68a228244aeeb8a3ca}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!comments@{comments}}
+\index{comments@{comments}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{comments}{comments}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_t_a_d_1_1_comments}{Comments}$>$ T\+A\+D\+::\+Tweet\+::comments\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a54d7321d45fc3aa94e09b45f255d5e39}\label{class_t_a_d_1_1_tweet_a54d7321d45fc3aa94e09b45f255d5e39}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!description@{description}}
+\index{description@{description}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string T\+A\+D\+::\+Tweet\+::description\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a0d651a6534a245a02596f66e799e1d25}\label{class_t_a_d_1_1_tweet_a0d651a6534a245a02596f66e799e1d25}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!id@{id}}
+\index{id@{id}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int T\+A\+D\+::\+Tweet\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_a_d_1_1_tweet_a6dd31e59ddf90b5fe0083f1dbf14104b}\label{class_t_a_d_1_1_tweet_a6dd31e59ddf90b5fe0083f1dbf14104b}} 
+\index{T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}!user@{user}}
+\index{user@{user}!T\+A\+D\+::\+Tweet@{T\+A\+D\+::\+Tweet}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily \hyperlink{class_t_a_d_1_1_users}{Users}$\ast$ T\+A\+D\+::\+Tweet\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+A\+D/\hyperlink{_tweet_8hpp}{Tweet.\+hpp}\item 
+T\+A\+D/\hyperlink{_tweet_8cpp}{Tweet.\+cpp}\end{DoxyCompactItemize}
