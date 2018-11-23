@@ -3,7 +3,6 @@
 //
 #define OPCAO_INVALIDA 400
 
-
 #include <iostream>
 #include "ListComments.hpp"
 #include "Feed.hpp"

@@ -12,7 +12,7 @@ void AbstractConnection::abrirConexao() {
 //        Criando conexão
 	driver = get_driver_instance();
 //        Dados do banco MySQL
-	con = driver->connect("tcp://91.121.180.213:3305", "myuser", "mypass");
+	con = driver->connect("tcp://127.0.0.1:3306", "marcelo", "fsohexbpf123");
 //        Escolhendo o database
 	con->setSchema("twittercpp");
 }
@@ -20,7 +20,7 @@ void AbstractConnection::abrirConexao() {
  * @brief Fecha conexão com o banco de dados nas classes que herdam de AbstractConnetcion
  */
 void AbstractConnection::fecharConexao() {
-	if(res != NULL)
+	if (res != NULL)
 		delete res;
 
 	delete stmt;

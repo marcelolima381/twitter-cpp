@@ -24,13 +24,13 @@ Pesquisa::Pesquisa() : AbstractInterface("Pesquisa") {}
 void Pesquisa::exibir() {
 
 	int opcao = 0;
+	system("clear");
 	do {
 		std::cout << std::endl << "Escolha a opção:" << std::endl << "1 - Pesquisar hashtag" << std::endl
 				  << "2 - Pesquisar Usuários"
 				  << std::endl << "0 - Sair" << std::endl;
 		std::cin >> opcao;
 		this->processarEntrada(opcao);
-		system("clear");
 	} while (opcao != 0);
 }
 /**
@@ -127,37 +127,34 @@ void Pesquisa::associarUsuario() {
 		std::cout << std::endl << "Digite o ID do usuário para segui-lo, ou digite 0 para voltar." << std::endl;
 		std::cin >> id;
 
-		if(id==Sessao::Session::getUsuarioLogado()->getId())
-		{
+		if (id == Sessao::Session::getUsuarioLogado()->getId()) {
 			std::cout << "Você não pode seguir a si mesmo.";
-		}
-		else
-			if (id != 0) {
+		} else if (id != 0) {
 
-				auto *userQueSigo = new TAD::Users();
+			auto *userQueSigo = new TAD::Users();
 
-				auto usuariosQueSigo = userQueSigo->pesquisarQuemUsuarioSegue(Sessao::Session::getUsuarioLogado()->getId());
+			auto usuariosQueSigo = userQueSigo->pesquisarQuemUsuarioSegue(Sessao::Session::getUsuarioLogado()->getId());
 
-				bool jaSegue = false;
-				for (auto quemSigo : usuariosQueSigo) {
-					if(quemSigo.getId()==id) {
-						std::cout << "Você já segue este usuário." << std::endl;
-						return;
-					}
+			bool jaSegue = false;
+			for (auto quemSigo : usuariosQueSigo) {
+				if (quemSigo.getId() == id) {
+					std::cout << "Você já segue este usuário." << std::endl;
+					return;
 				}
-
-				for (auto &usuariosPesquisado : usuariosPesquisados) {
-					if (usuariosPesquisado.getId() == id) {
-						auto *user = new TAD::Users();
-
-						user->seguirUsuario(Sessao::Session::getUsuarioLogado()->getId(), id);
-
-						std::cout << "Você agora segue o usuário: " << usuariosPesquisado.getProfile();
-						return;
-					}
-				}
-				std::cout << "ID não encontrado." << std::endl;
 			}
+
+			for (auto &usuariosPesquisado : usuariosPesquisados) {
+				if (usuariosPesquisado.getId() == id) {
+					auto *user = new TAD::Users();
+
+					user->seguirUsuario(Sessao::Session::getUsuarioLogado()->getId(), id);
+
+					std::cout << "Você agora segue o usuário: " << usuariosPesquisado.getProfile();
+					return;
+				}
+			}
+			std::cout << "ID não encontrado." << std::endl;
+		}
 
 	} while (id != 0);
 }

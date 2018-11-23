@@ -150,7 +150,12 @@ bool Users::validarLogin(std::string conta, std::string senha) {
  * @param age
  * @return string
  */
-std::string Users::criarConta(std::string account, std::string password, std::string profile, std::string name, std::string city, int age) {
+std::string Users::criarConta(std::string account,
+							  std::string password,
+							  std::string profile,
+							  std::string name,
+							  std::string city,
+							  int age) {
 	try {
 		abrirConexao();
 		stmt = con->createStatement();
@@ -214,78 +219,80 @@ void Users::seguirUsuario(int id1, int id2) {
  * @param id
  * @return vector<Users>
  */
-	std::vector<Users> Users::pesquisarQuemUsuarioSegue(int id) {
+std::vector<Users> Users::pesquisarQuemUsuarioSegue(int id) {
 
-		try {
-			abrirConexao();
-			stmt = con->createStatement();
+	try {
+		abrirConexao();
+		stmt = con->createStatement();
 //        Query SQL
-			res = stmt->executeQuery(
-					"select u.id, profile, name from followee f inner join users u on f.following= u.id  where f.follower = "+ std::to_string(id));
-			std::vector<Users> usuarios;
-			while (res->next()) {
-				auto *user = new Users();
-				user->setId(res->getInt("id"));
-				user->setProfile(res->getString("profile"));
-				user->setName(res->getString("name"));
+		res = stmt->executeQuery(
+			"select u.id, profile, name from followee f inner join users u on f.following= u.id  where f.follower = "
+				+ std::to_string(id));
+		std::vector<Users> usuarios;
+		while (res->next()) {
+			auto *user = new Users();
+			user->setId(res->getInt("id"));
+			user->setProfile(res->getString("profile"));
+			user->setName(res->getString("name"));
 
-				usuarios.push_back(*user);
-			}
-			fecharConexao();
-			return usuarios;
-		} catch (sql::SQLException &e) {
-			std::cout << "# ERR: SQLException in " << __FILE__;
-			std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
-			std::cout << "# ERR: " << e.what();
-			std::cout << " (MySQL error code: " << e.getErrorCode();
-			std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
-			fecharConexao();
-		} catch (std::exception &e) {
-			std::cout << "# ERR: " << e.what();
-			fecharConexao();
+			usuarios.push_back(*user);
 		}
-
-		return std::vector<Users>();
+		fecharConexao();
+		return usuarios;
+	} catch (sql::SQLException &e) {
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
+		fecharConexao();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
+		fecharConexao();
 	}
+
+	return std::vector<Users>();
+}
 
 /**
  * @brief Pesquisa no banco de dados seguidores de um determinado usuario
  * @param id
  * @return vector<Users>
  */
-	std::vector<Users> Users::pesquisarSeguidores(int id) {
+std::vector<Users> Users::pesquisarSeguidores(int id) {
 
-		try {
-			abrirConexao();
-			stmt = con->createStatement();
+	try {
+		abrirConexao();
+		stmt = con->createStatement();
 //        Query SQL
-			res = stmt->executeQuery(
-					"select u.id, profile, name from followee f inner join users u on f.follower= u.id  where f.following = "+ std::to_string(id));
-			std::vector<Users> usuarios;
-			while (res->next()) {
-				auto *user = new Users();
-				user->setId(res->getInt("id"));
-				user->setProfile(res->getString("profile"));
-				user->setName(res->getString("name"));
+		res = stmt->executeQuery(
+			"select u.id, profile, name from followee f inner join users u on f.follower= u.id  where f.following = "
+				+ std::to_string(id));
+		std::vector<Users> usuarios;
+		while (res->next()) {
+			auto *user = new Users();
+			user->setId(res->getInt("id"));
+			user->setProfile(res->getString("profile"));
+			user->setName(res->getString("name"));
 
-				usuarios.push_back(*user);
-			}
-			fecharConexao();
-			return usuarios;
-		} catch (sql::SQLException &e) {
-			std::cout << "# ERR: SQLException in " << __FILE__;
-			std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
-			std::cout << "# ERR: " << e.what();
-			std::cout << " (MySQL error code: " << e.getErrorCode();
-			std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
-			fecharConexao();
-		} catch (std::exception &e) {
-			std::cout << "# ERR: " << e.what();
-			fecharConexao();
+			usuarios.push_back(*user);
 		}
-
-		return std::vector<Users>();
+		fecharConexao();
+		return usuarios;
+	} catch (sql::SQLException &e) {
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		std::cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << std::endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
+		fecharConexao();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
+		fecharConexao();
 	}
+
+	return std::vector<Users>();
+}
 
 /**
  * @brief Pesquisa no banco de dados usuários que possuam uma conta, ou nome, ou profile de acordo com o que foi
@@ -359,24 +366,25 @@ void Users::editarCampo(std::string coluna, std::string valor) {
  * @param id1
  * @param id2
  */
-	void Users::excluirSeguirUsuario(int id1, int id2) {
-		try {
-			abrirConexao();
-			res = NULL;
-			stmt = con->createStatement();
-			stmt->execute("delete from followee where follower = "+std::to_string(id1)+" and following = "+std::to_string(id2));
-			fecharConexao();
-		} catch (sql::SQLException &e) {
-			std::cout << "# ERR: SQLException in " << __FILE__;
-			//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
-			std::cout << "# ERR: " << e.what();
-			std::cout << " (MySQL error code: " << e.getErrorCode();
-			std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
-			fecharConexao();
-		} catch (std::exception &e) {
-			std::cout << "# ERR: " << e.what();
-			fecharConexao();
-		}
+void Users::excluirSeguirUsuario(int id1, int id2) {
+	try {
+		abrirConexao();
+		res = NULL;
+		stmt = con->createStatement();
+		stmt->execute(
+			"delete from followee where follower = " + std::to_string(id1) + " and following = " + std::to_string(id2));
+		fecharConexao();
+	} catch (sql::SQLException &e) {
+		std::cout << "# ERR: SQLException in " << __FILE__;
+		//cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+		std::cout << "# ERR: " << e.what();
+		std::cout << " (MySQL error code: " << e.getErrorCode();
+		std::cout << ", SQLState: " << e.getSQLState() << " )" << std::endl;
+		fecharConexao();
+	} catch (std::exception &e) {
+		std::cout << "# ERR: " << e.what();
+		fecharConexao();
 	}
+}
 
 }

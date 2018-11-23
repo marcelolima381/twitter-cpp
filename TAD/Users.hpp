@@ -10,7 +10,7 @@
 #include "AbstractConnection.hpp"
 namespace TAD {
 
- class Users : public TAD::AbstractConnection {
+class Users : public TAD::AbstractConnection {
  private:
 	int id;
 	std::string account;
@@ -53,7 +53,12 @@ namespace TAD {
 
 	bool validarLogin(std::string conta, std::string senha);
 
- 	std::string criarConta(std::string account, std::string password, std::string profile, std::string name, std::string city, int age);
+	std::string criarConta(std::string account,
+						   std::string password,
+						   std::string profile,
+						   std::string name,
+						   std::string city,
+						   int age);
 
 	void editarCampo(std::string coluna, std::string valor);
 
