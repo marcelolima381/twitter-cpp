@@ -23,7 +23,7 @@ Na pasta *2018-2-grupo19/cmake-build-debug* encontra-se os arquivos *Makefile* e
 Para compilar novamente o projeto, basta digitar: *make*. Para executar: *./2018-2-grupo19*.
 **O projeto deve ser utilizado em um ambiente Linux compatível com as dependências citadas acima (Ubuntu, por exemplo)**
 
-Recomenda-se o uso da IDE CLion, da Jetbrains para fazer qualquer modificaço no projeto, já que o mesmo foi
+Recomenda-se o uso da IDE CLion, da Jetbrains para fazer qualquer modificação no projeto, já que o mesmo foi
 integralmente desenvolvido nesse ambiente.
 > Link para download do CLion: https://www.jetbrains.com/clion/download/
 
